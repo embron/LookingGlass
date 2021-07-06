@@ -7,6 +7,7 @@ import android.os.Bundle;
 //project member names here:
 // Alexander West
 // Michael Aiyedun
+//Suman Poudel
 
 
 public class MainActivity extends AppCompatActivity {

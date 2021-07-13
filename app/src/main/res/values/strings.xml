@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Looking Glass</string>
+    <string name="qr_code_results_go_here">QR Code results go here</string>
+    <string name="scan">Scan</string>
 </resources>

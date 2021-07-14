@@ -18,6 +18,8 @@ import com.google.zxing.integration.android.IntentResult;
 // Alexander West
 // Michael Aiyedun
 //Suman Poudel
+//Matthew Speer
+
 
 
 public class MainActivity extends AppCompatActivity {

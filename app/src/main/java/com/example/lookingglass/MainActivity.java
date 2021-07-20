@@ -14,16 +14,20 @@ import android.widget.TextView;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
+import java.util.LinkedList;
+
 //project member names here:
 // Alexander West
 // Michael Aiyedun
 //Suman Poudel
 //Matthew Speer
 
-
+class Exhibit {
+    private String name;
+}
 
 public class MainActivity extends AppCompatActivity {
-
+    LinkedList<Exhibit> database = new LinkedList<>();
     private TextView qrres;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

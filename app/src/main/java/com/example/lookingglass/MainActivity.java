@@ -34,12 +34,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        qrres = findViewById(R.id.QRRES);
+        qrres = findViewById(R.id.QRRES);// qrress needs to be called later when the snan page is made
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, PackageManager.PERMISSION_GRANTED);
     }
 
 
-    public void Scanbuttion(View view){
+    public void Scanbutton(View view){
         IntentIntegrator intentIntegrator = new IntentIntegrator(this);
         intentIntegrator.initiateScan();
 
@@ -52,7 +52,8 @@ public class MainActivity extends AppCompatActivity {
             if(intentResult.getContents()==null){
                 qrres.setText("empty");
             }else{
-                qrres.setText(intentResult.getContents());
+                qrres.setText(intentResult.getContents());// compare database results here
+
             }
 
 

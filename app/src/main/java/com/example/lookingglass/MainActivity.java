@@ -4,6 +4,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
+// for scrolling activtity
+
+
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -33,6 +36,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+    findViewById(R.id.Histbutton).setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),HistorytabActivity.class));
+                overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
+        }
+    });
 
         qrres = findViewById(R.id.QRRES);// qrress needs to be called later when the snan page is made
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, PackageManager.PERMISSION_GRANTED);

@@ -6,27 +6,67 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+##posts the QR value in a text box for the user
     <TextView
         android:id="@+id/QRRES"
-        android:layout_width="246dp"
-        android:layout_height="73dp"
+        android:layout_width="242dp"
+        android:layout_height="65dp"
         android:rotation="0"
         android:rotationY="0"
         android:text="@string/qr_code_results_go_here"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.899" />
+## Scanner button
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="139dp"
+        android:layout_width="178dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="284dp"
         android:onClick="Scanbutton"
-        android:text="@string/scan"
+        android:text="Scan Codes"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+## History tab button
+    <Button
+        android:id="@+id/Histbutton"
+        android:layout_width="142dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="408dp"
+        android:text="History"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+##Exhibit browser tab (?) button
+    <Button
+        android:id="@+id/Exhibbutton"
+        android:layout_width="142dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="464dp"
+        android:text="@string/exhibit_browser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+## literally just the title needs to be fancier later, or not doesn't matter towards the end goal really
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="178dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="136dp"
+        android:text="@string/looking_glass"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

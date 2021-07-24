@@ -27,6 +27,12 @@ import java.util.LinkedList;
 
 class Exhibit {
     private String name;
+    private int videoNumber;
+
+    public Exhibit(String exhibitName)
+    {
+        name = exhibitName;
+    }
 }
 
 public class MainActivity extends AppCompatActivity {
@@ -36,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        exhibitSetUp(database);
 
     findViewById(R.id.Histbutton).setOnClickListener(new View.OnClickListener() {
         @Override
@@ -49,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, PackageManager.PERMISSION_GRANTED);
     }
 
+    public void exhibitSetUp(LinkedList<Exhibit> dataEntry)
+    {
+        dataEntry.add(new Exhibit("MonaLisa"));
+        dataEntry.add(new Exhibit("StarryNight"));
+        dataEntry.add(new Exhibit("BirthOfVenus"));
+        dataEntry.add(new Exhibit("Guernica"));
+        dataEntry.add(new Exhibit("AmericanGothic"));
+    }
 
     public void Scanbutton(View view){
         IntentIntegrator intentIntegrator = new IntentIntegrator(this);

@@ -1,12 +1,5 @@
 package com.example.lookingglass;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-
-// for scrolling activtity
-
-
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -14,10 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 import java.util.LinkedList;
+
+// for scrolling activtity
 
 //project member names here:
 // Alexander West
@@ -27,11 +26,19 @@ import java.util.LinkedList;
 
 class Exhibit {
     private String name;
-    private int videoNumber;
+    private String videoPath;
 
-    public Exhibit(String exhibitName)
+    public Exhibit(String exhibitName, int videoID)
     {
         name = exhibitName;
+        if (videoID == -99)
+        {
+            videoPath = "NULL";
+        }
+        else
+        {
+            //videoPath = "android.resource://" + getActivity().getPackageName() + "/" + videoID;
+        }
     }
 }
 
@@ -58,11 +65,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void exhibitSetUp(LinkedList<Exhibit> dataEntry)
     {
-        dataEntry.add(new Exhibit("MonaLisa"));
-        dataEntry.add(new Exhibit("StarryNight"));
-        dataEntry.add(new Exhibit("BirthOfVenus"));
-        dataEntry.add(new Exhibit("Guernica"));
-        dataEntry.add(new Exhibit("AmericanGothic"));
+        //dataEntry.add(new Exhibit("MonaLisa", R.id.testvideo));
+        dataEntry.add(new Exhibit("StarryNight", -99));
+        dataEntry.add(new Exhibit("BirthOfVenus", -99));
+        dataEntry.add(new Exhibit("Guernica", -99));
+        dataEntry.add(new Exhibit("AmericanGothic", -99));
     }
 
     public void Scanbutton(View view){

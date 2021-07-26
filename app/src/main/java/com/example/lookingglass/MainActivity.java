@@ -37,7 +37,7 @@ class Exhibit {
         }
         else
         {
-            //videoPath = "android.resource://" + getActivity().getPackageName() + "/" + videoID;
+            //videoPath = "android.resource://" + getPackageName() + "/" + videoID;
         }
     }
 }
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void exhibitSetUp(LinkedList<Exhibit> dataEntry)
     {
-        //dataEntry.add(new Exhibit("MonaLisa", R.id.testvideo));
+        dataEntry.add(new Exhibit("MonaLisa", R.raw.testvideo));
         dataEntry.add(new Exhibit("StarryNight", -99));
         dataEntry.add(new Exhibit("BirthOfVenus", -99));
         dataEntry.add(new Exhibit("Guernica", -99));

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".HistorytabActivity">
 
+
     <Button
         android:id="@+id/fab"
         android:layout_width="108dp"
@@ -27,9 +28,14 @@
         android:layout_width="415dp"
         android:layout_height="54dp"
         android:background="@color/teal_200"
+        android:isScrollContainer="false"
+        android:keepScreenOn="false"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
+        android:visibility="visible"
         app:layout_collapseMode="pin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:popupTheme="@style/Theme.LookingGlass.PopupOverlay" />
@@ -39,13 +45,14 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:fillViewport="false"
+        android:keepScreenOn="false"
         android:orientation="vertical"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -59,20 +66,20 @@
                 android:scaleType="centerCrop" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/firstbutton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="KNOW MORE" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/titletest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="testing"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/just"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/large_text"

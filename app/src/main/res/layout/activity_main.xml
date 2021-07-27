@@ -60,8 +60,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="178dp"
-        android:layout_height="46dp"
+        android:layout_width="215dp"
+        android:layout_height="62dp"
         android:layout_marginTop="136dp"
         android:text="@string/looking_glass"
         android:textSize="28sp"

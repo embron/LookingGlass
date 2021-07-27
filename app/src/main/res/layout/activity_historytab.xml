@@ -44,48 +44,162 @@
         android:id="@+id/scrollView2"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:layout_marginTop="64dp"
         android:fillViewport="false"
         android:keepScreenOn="false"
         android:orientation="vertical"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.0"
-        tools:visibility="visible">
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/i1"
-                android:layout_width="wrap_content"
-                android:layout_height="200dp"
-                android:scaleType="centerCrop" />
 
             <Button
-                android:id="@+id/firstbutton"
+                android:id="@+id/lastscan_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="KNOW MORE" />
 
+            <ImageButton
+                android:id="@+id/imagels_1"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:scaleType="centerCrop" />
+
             <TextView
-                android:id="@+id/titletest"
-                android:layout_width="wrap_content"
+                android:id="@+id/titlels_1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="testing"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:id="@+id/just"
-                android:layout_width="wrap_content"
+                android:id="@+id/destls_1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/large_text"
+                android:text="Description but is's super long"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
+            ################################# Second to last
+            scan###############################################
 
+            <Button
+                android:id="@+id/lastscan_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KNOW MORE" />
+
+            <ImageButton
+                android:id="@+id/imagels_2"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/titlels_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="testing"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/destls_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description but is's super long"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            ################################# Second to last
+            scan###############################################
+
+            <Button
+                android:id="@+id/lastscan_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KNOW MORE" />
+
+            <ImageButton
+                android:id="@+id/imagels_3"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/titlels_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="testing"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/destls_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description but is's super long"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            ################################# Second to last
+            scan###############################################
+
+            <Button
+                android:id="@+id/lastscan_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KNOW MORE" />
+
+            <ImageButton
+                android:id="@+id/imagels_4"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/titlels_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="testing"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/destls_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description but is's super long"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            ################################# Second to last
+            scan###############################################
+
+            <Button
+                android:id="@+id/lastscan_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KNOW MORE" />
+
+            <ImageButton
+                android:id="@+id/imagels_5"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/titlels_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="testing"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/destls_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="test \n"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

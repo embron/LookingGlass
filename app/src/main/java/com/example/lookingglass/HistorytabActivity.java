@@ -1,5 +1,6 @@
 package com.example.lookingglass;
 
+
 import android.os.Bundle;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
@@ -26,8 +27,6 @@ public class HistorytabActivity extends AppCompatActivity {
 
         Toolbar toolbar = binding.toolbar;
         setSupportActionBar(toolbar);
-        CollapsingToolbarLayout toolBarLayout = binding.toolbarLayout;
-        toolBarLayout.setTitle(getTitle());
 
 
         findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {

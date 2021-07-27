@@ -1,12 +1,5 @@
 package com.example.lookingglass;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-
-// for scrolling activtity
-
-
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -14,10 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+// media player imports
+import android.widget.MediaController;
+import android.widget.VideoView;
+
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 import java.util.LinkedList;
+
+// for scrolling activtity
 
 //project member names here:
 // Alexander West
@@ -27,6 +31,20 @@ import java.util.LinkedList;
 
 class Exhibit {
     private String name;
+    private String videoPath;
+
+    public Exhibit(String exhibitName, int videoID)
+    {
+        name = exhibitName;
+        if (videoID == -99)
+        {
+            videoPath = "NULL";
+        }
+        else
+        {
+            //videoPath = "android.resource://" + getPackageName() + "/" + videoID;
+        }
+    }
 }
 
 public class MainActivity extends AppCompatActivity {
@@ -36,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        exhibitSetUp(database);
 
     findViewById(R.id.Histbutton).setOnClickListener(new View.OnClickListener() {
         @Override
@@ -49,6 +68,14 @@ public class MainActivity extends AppCompatActivity {
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, PackageManager.PERMISSION_GRANTED);
     }
 
+    public void exhibitSetUp(LinkedList<Exhibit> dataEntry)
+    {
+        dataEntry.add(new Exhibit("MonaLisa", R.raw.testvideo));
+        dataEntry.add(new Exhibit("StarryNight", -99));
+        dataEntry.add(new Exhibit("BirthOfVenus", -99));
+        dataEntry.add(new Exhibit("Guernica", -99));
+        dataEntry.add(new Exhibit("AmericanGothic", -99));
+    }
 
     public void Scanbutton(View view){
         IntentIntegrator intentIntegrator = new IntentIntegrator(this);

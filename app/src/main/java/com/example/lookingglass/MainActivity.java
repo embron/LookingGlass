@@ -32,19 +32,39 @@ import java.util.LinkedList;
 class Exhibit {
     private String name;
     private String videoPath;
+    private String textPath;
+    private String title;
+    private String artist;
+    private String description;
+    private Context exhContext;
 
-    public Exhibit(String exhibitName, int videoID)
+    public Exhibit(String exhibitName, String videoSetPath)
     {
         name = exhibitName;
-        if (videoID == -99)
-        {
-            videoPath = "NULL";
-        }
-        else
-        {
-            //videoPath = "android.resource://" + getPackageName() + "/" + videoID;
-        }
+        videoPath = videoSetPath;
     }
+
+    public String getName()
+    {
+        return name;
+    }
+    public String getVideoPath()
+    {
+        return videoPath;
+    }
+    public String getTitle()
+    {
+        return title;
+    }
+    public String getArtist()
+    {
+        return artist;
+    }
+    public String getDescription()
+    {
+        return description;
+    }
+
 }
 
 public class MainActivity extends AppCompatActivity {
@@ -70,11 +90,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void exhibitSetUp(LinkedList<Exhibit> dataEntry)
     {
-        dataEntry.add(new Exhibit("MonaLisa", R.raw.testvideo));
-        dataEntry.add(new Exhibit("StarryNight", -99));
-        dataEntry.add(new Exhibit("BirthOfVenus", -99));
-        dataEntry.add(new Exhibit("Guernica", -99));
-        dataEntry.add(new Exhibit("AmericanGothic", -99));
+        String videoPath = "android.resource://" + getPackageName() + "/";
+        dataEntry.add(new Exhibit("MonaLisa", videoPath + R.raw.testvideo));
+        dataEntry.add(new Exhibit("StarryNight", videoPath + R.raw.testvideo));
+        dataEntry.add(new Exhibit("BirthOfVenus", videoPath + R.raw.testvideo));
+        dataEntry.add(new Exhibit("Guernica", videoPath + R.raw.testvideo));
+        dataEntry.add(new Exhibit("AmericanGothic", videoPath + R.raw.testvideo));
+
+        exhibitText(dataEntry);
+    }
+
+    public void exhibitText(LinkedList<Exhibit> dataEntry)
+    {
+
     }
 
     public void Scanbutton(View view){

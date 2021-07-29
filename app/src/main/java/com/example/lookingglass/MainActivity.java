@@ -36,7 +36,7 @@ class Exhibit {
     private String title;
     private String artist;
     private String description;
-    private Context exhContext;
+    private int test;
 
     public Exhibit(String exhibitName, String videoSetPath)
     {

@@ -70,17 +70,39 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="385dp"
+        android:layout_height="518dp"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="-154dp" />
+
     <TextView
         android:id="@+id/textView"
-        android:layout_width="338dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="160dp"
+        android:layout_width="239dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="168dp"
         android:gravity="center"
-        android:text="@string/looking_glass"
-        android:textSize="38sp"
+        android:text="@string/looking"
+        android:textSize="30sp"
         android:theme="@style/Text.Black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="239dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="168dp"
+        android:gravity="center"
+        android:text="@string/glass"
+        android:textSize="30sp"
+        android:theme="@style/Text.Black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

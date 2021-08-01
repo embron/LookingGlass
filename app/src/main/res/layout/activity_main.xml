@@ -71,12 +71,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="385dp"
-        android:layout_height="518dp"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="-154dp" />
+        android:id="@+id/Logodesign"
+        android:layout_width="262dp"
+        android:layout_height="306dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView"

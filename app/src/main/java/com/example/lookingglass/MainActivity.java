@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         exhibitSetUp(database);
-
+//history button
     findViewById(R.id.Histbutton).setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -84,6 +84,14 @@ public class MainActivity extends AppCompatActivity {
         }
     });
 
+//Exhibit button
+    findViewById(R.id.Exhibbutton).setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+            overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
+        }
+    });
         qrres = findViewById(R.id.QRRES);// qrress needs to be called later when the snan page is made
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, PackageManager.PERMISSION_GRANTED);
     }

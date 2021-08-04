@@ -32,16 +32,18 @@ import java.util.LinkedList;
 class Exhibit {
     private String name;
     private String videoPath;
-    private String textPath;
     private String title;
     private String artist;
     private String description;
-    private int test;
 
-    public Exhibit(String exhibitName, String videoSetPath)
+    public Exhibit(String exhibitName, String videoSetPath, String fileText)
     {
         name = exhibitName;
         videoPath = videoSetPath;
+        String textArray[] = fileText.split("\n");
+        title = textArray[0];
+        artist = textArray[1];
+        description = textArray[2];
     }
 
     public String getName()
@@ -99,19 +101,15 @@ public class MainActivity extends AppCompatActivity {
     public void exhibitSetUp(LinkedList<Exhibit> dataEntry)
     {
         String videoPath = "android.resource://" + getPackageName() + "/";
-        dataEntry.add(new Exhibit("MonaLisa", videoPath + R.raw.testvideo));
-        dataEntry.add(new Exhibit("StarryNight", videoPath + R.raw.testvideo));
-        dataEntry.add(new Exhibit("BirthOfVenus", videoPath + R.raw.testvideo));
-        dataEntry.add(new Exhibit("Guernica", videoPath + R.raw.testvideo));
-        dataEntry.add(new Exhibit("AmericanGothic", videoPath + R.raw.testvideo));
+        dataEntry.add(new Exhibit("MonaLisa", videoPath + R.raw.testvideo, "@string/textexample.txt"));
+        dataEntry.add(new Exhibit("StarryNight", videoPath + R.raw.testvideo, "@string/textexample.txt"));
+        dataEntry.add(new Exhibit("BirthOfVenus", videoPath + R.raw.testvideo, "@string/textexample.txt"));
+        dataEntry.add(new Exhibit("Guernica", videoPath + R.raw.testvideo, "@string/textexample.txt"));
+        dataEntry.add(new Exhibit("AmericanGothic", videoPath + R.raw.testvideo, "@string/textexample.txt"));
 
-        exhibitText(dataEntry);
-    }
-
-    public void exhibitText(LinkedList<Exhibit> dataEntry)
-    {
 
     }
+
 
     public void Scanbutton(View view){
         IntentIntegrator intentIntegrator = new IntentIntegrator(this);

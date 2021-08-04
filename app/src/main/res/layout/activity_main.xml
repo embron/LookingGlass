@@ -31,6 +31,16 @@
 
     ## literally just the title needs to be fancier later, or not doesn't matter towards the end
     goal really
+    <shape
+        android:id="@+id/listview_background_shape">
+        <stroke android:width="178dp" android:color="#FF000000" />
+        <padding android:left="92dp"
+            android:top="2dp"
+            android:right="2dp"
+            android:bottom="2dp" />
+        <corners android:radius="5dp" />
+        <solid android:color="#FF000000" />
+    </shape>
 
     <Button
         android:id="@+id/button"
@@ -40,6 +50,7 @@
         android:onClick="Scanbutton"
         android:text="Scan Codes"
         android:textSize="20sp"
+        android:background = "@drawable/rectangles"
         android:theme="@style/Button.Gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -49,10 +60,11 @@
     <Button
         android:id="@+id/Histbutton"
         android:layout_width="142dp"
-        android:layout_height="47dp"
+        android:layout_height= "58dp"
         android:layout_marginTop="472dp"
         android:text="History"
         android:theme="@style/Button.Gray"
+        android:background = "@drawable/rectangles"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,20 +77,18 @@
         android:layout_marginTop="536dp"
         android:text="@string/exhibit_browser"
         android:theme="@style/Button.Gray"
+        android:background = "@drawable/rectangles"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/Logodesign"
-        android:layout_width="262dp"
-        android:layout_height="306dp"
-        android:layout_marginStart="104dp"
-        android:layout_marginBottom="60dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logo" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/black"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="168dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -88,11 +98,13 @@
         android:gravity="center"
         android:text="@string/looking"
         android:textSize="30sp"
-        android:theme="@style/Text.Black"
+        android:theme="@style/Text.White"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/textView2"
@@ -102,10 +114,21 @@
         android:gravity="center"
         android:text="@string/glass"
         android:textSize="30sp"
-        android:theme="@style/Text.Black"
+        android:theme="@style/Text.White"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.906"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Logodesign"
+        android:layout_width="145dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

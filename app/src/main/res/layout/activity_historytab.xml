@@ -10,28 +10,30 @@
     <Button
         android:id="@+id/fab"
         android:layout_width="108dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="180dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="185dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="384dp"
+        android:background="@drawable/rectangles"
         android:text="Go back"
+        android:theme="@style/Button.Gray"
         app:layout_anchorGravity="bottom|end"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.022" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="415dp"
         android:layout_height="54dp"
-        android:background="@color/teal_200"
+        android:background="@color/black"
         android:isScrollContainer="false"
         android:keepScreenOn="false"
         android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
+        android:theme="@style/Button.Gray"
         android:visibility="visible"
         app:layout_collapseMode="pin"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -65,7 +67,9 @@
             <Button
                 android:id="@+id/lastscan_1"
                 android:layout_width="match_parent"
+                android:theme="@style/Button.Gray"
                 android:layout_height="wrap_content"
+                android:background = "@drawable/rectangles"
                 android:text="KNOW MORE" />
 
             <ImageButton
@@ -91,8 +95,10 @@
 ################################ Second to last thing scanned###############################################
                 <Button
                 android:id="@+id/lastscan_2"
+                    android:theme="@style/Button.Gray"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                    android:background = "@drawable/rectangles"
                 android:text="KNOW MORE" />
 
             <ImageButton

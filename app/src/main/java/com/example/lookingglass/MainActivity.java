@@ -101,11 +101,11 @@ public class MainActivity extends AppCompatActivity {
     public void exhibitSetUp(LinkedList<Exhibit> dataEntry)
     {
         String videoPath = "android.resource://" + getPackageName() + "/";
-        dataEntry.add(new Exhibit("MonaLisa", videoPath + R.raw.testvideo, "@string/textexample.txt"));
-        dataEntry.add(new Exhibit("StarryNight", videoPath + R.raw.testvideo, "@string/textexample.txt"));
-        dataEntry.add(new Exhibit("BirthOfVenus", videoPath + R.raw.testvideo, "@string/textexample.txt"));
-        dataEntry.add(new Exhibit("Guernica", videoPath + R.raw.testvideo, "@string/textexample.txt"));
-        dataEntry.add(new Exhibit("AmericanGothic", videoPath + R.raw.testvideo, "@string/textexample.txt"));
+        dataEntry.add(new Exhibit("MonaLisa", videoPath + R.raw.testvideo, getString(R.string.example_text)));
+        dataEntry.add(new Exhibit("StarryNight", videoPath + R.raw.testvideo, getString(R.string.example_text)));
+        dataEntry.add(new Exhibit("BirthOfVenus", videoPath + R.raw.testvideo, getString(R.string.example_text)));
+        dataEntry.add(new Exhibit("Guernica", videoPath + R.raw.testvideo, getString(R.string.example_text)));
+        dataEntry.add(new Exhibit("AmericanGothic", videoPath + R.raw.testvideo, getString(R.string.example_text)));
 
 
     }

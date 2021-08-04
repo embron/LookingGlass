@@ -4,7 +4,9 @@
     <string name="scan">Scan</string>
     <string name="exhibit_browser">Exhibit browser</string>
     <string name="looking_glass">Looking Glass</string>
-    <string name="textexample.txt">textexample</string>
+    <string name="example_text">textexample
+    line 2
+    line3</string>
     <string name="looking">Looking</string>
     <string name="glass">Glass</string>
     <string name="title_activity_history">ScrollingActivity</string>

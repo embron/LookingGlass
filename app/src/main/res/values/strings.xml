@@ -7,6 +7,9 @@
     <string name="example_text">textexample
     line 2
     line3</string>
+    <string name="lunchonthegrass">Lunch On The Grass
+    Edouard Manet
+    The original painting that inspired the impressionist movement. Initially created in 1862, this painting by Manet was met with hostility as it rejected conventional notions of art at the time. As a result of the controversy, Manet sparked an artistic revolution.</string>
     <string name="looking">Looking</string>
     <string name="glass">Glass</string>
     <string name="title_activity_history">ScrollingActivity</string>

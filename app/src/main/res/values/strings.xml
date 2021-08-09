@@ -7,9 +7,24 @@
     <string name="example_text">textexample
     line 2
     line3</string>
+    <string name="error">Invalid Exhibit
+    Code Does Not Exist
+    Please either scan a different code or seek an administrator if you believe the code should work.</string>
     <string name="lunchonthegrass">Lunch On The Grass
     Edouard Manet
     The original painting that inspired the impressionist movement. Initially created in 1862, this painting by Manet was met with hostility as it rejected conventional notions of art at the time. As a result of the controversy, Manet sparked an artistic revolution.</string>
+    <string name="impressionsunrise">Impression Sunrise
+    Claude Monet
+    Directly responsible for the name of the movement, Impression Sunrise was derisively referred to as “impressionistic”. As a result, the term was quickly adopted by the painters as they formed their own exhibitions and united them in their efforts.</string>
+    <string name="thedanceclass">The Dance Class
+    Edgar Degas
+    Created as a series of painting, The Dance Class paintings were favored subjects of Degas as he strongly preferred to avoid painting outdoors. They offered prime attributes of many impressionistic paintings as they were bright and modern without any sentimentality. Although staged at the Opera, the compositions were posed for in his studio.</string>
+    <string name="luncheonattheboatingparty">Luncheon At The Boating Party
+    Pierre-Auguste Renoir
+    One of the pinnacle paintings of the impressionist movement, Luncheon At The Boating Party depicts a modern scene devoid of imparting any moral message. A master of delight, Renoir’s painting is considered one of the most famous French paintings of all time now as it combines multiple genres into one image including portrait, still life, and even landscape.</string>
+    <string name="thecardplayers">The Card Players
+    Paul Cezanne
+    As one of the highest valued paintings sold ever, Cezanne’s work is a striking study created as part of a series of five. Perhaps in an effort to distinguish himself, he focuses the illustrations far more on the social shared space of the game and provides an intimacy to the setting. As per the impressionist movement, the art depicts the mundane without need for excitement or melodrama.</string>
     <string name="looking">Looking</string>
     <string name="glass">Glass</string>
     <string name="title_activity_history">ScrollingActivity</string>

@@ -102,11 +102,12 @@ public class MainActivity extends AppCompatActivity {
     public void exhibitSetUp(LinkedList<Exhibit> dataEntry)
     {
         String videoPath = "android.resource://" + getPackageName() + "/";
+        dataEntry.add(new Exhibit("Error", videoPath + R.raw.errorvideo, getString(R.string.error)));
         dataEntry.add(new Exhibit("LunchOnTheGrass", videoPath + R.raw.lunchonthegrassvideo, getString(R.string.lunchonthegrass)));
-        dataEntry.add(new Exhibit("StarryNight", videoPath + R.raw.testvideo, getString(R.string.example_text)));
-        dataEntry.add(new Exhibit("BirthOfVenus", videoPath + R.raw.testvideo, getString(R.string.example_text)));
-        dataEntry.add(new Exhibit("Guernica", videoPath + R.raw.testvideo, getString(R.string.example_text)));
-        dataEntry.add(new Exhibit("AmericanGothic", videoPath + R.raw.testvideo, getString(R.string.example_text)));
+        dataEntry.add(new Exhibit("ImpressionSunrise", videoPath + R.raw.impressionsunrisevideo, getString(R.string.impressionsunrise)));
+        dataEntry.add(new Exhibit("TheDanceClass", videoPath + R.raw.thedanceclassvideo, getString(R.string.thedanceclass)));
+        dataEntry.add(new Exhibit("LuncheonAtTheBoatingParty", videoPath + R.raw.luncheonattheboatingpartyvideo, getString(R.string.luncheonattheboatingparty)));
+        dataEntry.add(new Exhibit("TheCardPlayers", videoPath + R.raw.thecardplayersvideo, getString(R.string.thecardplayers)));
 
 
     }

@@ -103,8 +103,8 @@ public class MainActivity extends AppCompatActivity {
     {
         String videoPath = "android.resource://" + getPackageName() + "/";
         dataEntry.add(new Exhibit("LunchOnTheGrass", videoPath + R.raw.lunchonthegrassvideo, getString(R.string.lunchonthegrass)));
-        dataEntry.add(new Exhibit("StarryNight", videoPath + R.raw.testvideo, getString(R.string.example_text)));
-        dataEntry.add(new Exhibit("BirthOfVenus", videoPath + R.raw.testvideo, getString(R.string.example_text)));
+        dataEntry.add(new Exhibit("ImpressionSunrise", videoPath + R.raw.impressionsunrisevideo, getString(R.string.impressionsunrise)));
+        dataEntry.add(new Exhibit("TheDanceClass", videoPath + R.raw.thedanceclassvideo, getString(R.string.thedanceclass)));
         dataEntry.add(new Exhibit("Guernica", videoPath + R.raw.testvideo, getString(R.string.example_text)));
         dataEntry.add(new Exhibit("AmericanGothic", videoPath + R.raw.testvideo, getString(R.string.example_text)));
 

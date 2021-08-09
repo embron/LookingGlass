@@ -70,6 +70,7 @@ class Exhibit {
 }
 
 public class MainActivity extends AppCompatActivity {
+    String qrcode;
     LinkedList<Exhibit> database = new LinkedList<>();
     private TextView qrres;
     @Override

@@ -72,11 +72,10 @@
                 android:background = "@drawable/rectangles"
                 android:text="KNOW MORE" />
 
-            <ImageButton
-                android:id="@+id/imagels_1"
+            <VideoView
+                android:id="@+id/Artistvidls_1"
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:scaleType="centerCrop" />
+                android:layout_height="350dp"/>
 
             <TextView
                 android:id="@+id/titlels_1"
@@ -101,11 +100,10 @@
                     android:background = "@drawable/rectangles"
                 android:text="KNOW MORE" />
 
-            <ImageButton
-                android:id="@+id/imagels_2"
+            <VideoView
+                android:id="@+id/Artistvidls_2"
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:scaleType="centerCrop" />
+                android:layout_height="350dp"/>
 
             <TextView
                 android:id="@+id/titlels_2"
@@ -128,11 +126,10 @@
                 android:layout_height="wrap_content"
                 android:text="KNOW MORE" />
 
-            <ImageButton
-                android:id="@+id/imagels_3"
+            <VideoView
+                android:id="@+id/Artistvidls_3"
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:scaleType="centerCrop" />
+                android:layout_height="350dp"/>
 
             <TextView
                 android:id="@+id/titlels_3"
@@ -155,11 +152,10 @@
                 android:layout_height="wrap_content"
                 android:text="KNOW MORE" />
 
-            <ImageButton
-                android:id="@+id/imagels_4"
+            <VideoView
+                android:id="@+id/Artistvidls_4"
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:scaleType="centerCrop" />
+                android:layout_height="350dp"/>
 
             <TextView
                 android:id="@+id/titlels_4"
@@ -183,11 +179,10 @@
                 android:layout_height="wrap_content"
                 android:text="KNOW MORE" />
 
-            <ImageButton
-                android:id="@+id/imagels_5"
+            <VideoView
+                android:id="@+id/Artistvidls_5"
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:scaleType="centerCrop" />
+                android:layout_height="350dp"/>
 
             <TextView
                 android:id="@+id/titlels_5"
@@ -211,11 +206,10 @@
                 android:layout_height="wrap_content"
                 android:text="KNOW MORE" />
 
-            <ImageButton
-                android:id="@+id/imagels_6"
+            <VideoView
+                android:id="@+id/Artistvidls_6"
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:scaleType="centerCrop" />
+                android:layout_height="350dp"/>
 
             <TextView
                 android:id="@+id/titlels_6"
@@ -239,11 +233,10 @@
                 android:layout_height="wrap_content"
                 android:text="KNOW MORE" />
 
-            <ImageButton
-                android:id="@+id/imagels_7"
+            <VideoView
+                android:id="@+id/Artistvidls_7"
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:scaleType="centerCrop" />
+                android:layout_height="350dp"/>
 
             <TextView
                 android:id="@+id/titlels_7"
@@ -266,11 +259,10 @@
                 android:layout_height="wrap_content"
                 android:text="KNOW MORE" />
 
-            <ImageButton
-                android:id="@+id/imagels_8"
+            <VideoView
+                android:id="@+id/Artistvidls_8"
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:scaleType="centerCrop" />
+                android:layout_height="350dp"/>
 
             <TextView
                 android:id="@+id/titlels_8"
@@ -293,11 +285,10 @@
                 android:layout_height="wrap_content"
                 android:text="KNOW MORE" />
 
-            <ImageButton
-                android:id="@+id/imagels_9"
+            <VideoView
+                android:id="@+id/Artistvidls_9"
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:scaleType="centerCrop" />
+                android:layout_height="350dp"/>
 
             <TextView
                 android:id="@+id/titlels_9"
@@ -321,11 +312,10 @@
                 android:layout_height="wrap_content"
                 android:text="KNOW MORE" />
 
-            <ImageButton
-                android:id="@+id/imagels_10"
+            <VideoView
+                android:id="@+id/Artistvidls_10"
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:scaleType="centerCrop" />
+                android:layout_height="350dp"/>
 
             <TextView
                 android:id="@+id/titlels_10"

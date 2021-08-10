@@ -63,13 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="350dp"/>
 
-        <ImageButton
-            android:id="@+id/Artistpic"
-            android:layout_width="match_parent"
-            android:layout_height="350dp"
-            android:scaleType="centerCrop" />
-
-        <TextView
+            <TextView
             android:id="@+id/artistdesc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

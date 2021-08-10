@@ -6,6 +6,7 @@ import java.util.LinkedList;
 public class Exhibitinfo extends Application{
     public String Qrcode;
     public String history[]= new String[10];
+    public int count=0;
     public LinkedList<Exhibitinfo> database = new LinkedList<>();
     private String name;
     private String videoPath;
@@ -25,25 +26,25 @@ public class Exhibitinfo extends Application{
         description = textArray[2];
     }
 
-    public String getName()
+    public String getName(int i)
     {
-        return name;
+        return database.get(i).name;
     }
-    public String getVideoPath()
+    public String getVideoPath(int i)
     {
-        return videoPath;
+        return database.get(i).videoPath;
     }
-    public String getTitle()
+    public String getTitle(int i)
     {
-        return title;
+        return database.get(i).title;
     }
-    public String getArtist()
+    public String getArtist(int i)
     {
-        return artist;
+        return database.get(i).artist;
     }
-    public String getDescription()
+    public String getDescription(int i)
     {
-        return description;
+        return database.get(i).description;
     }
 
 

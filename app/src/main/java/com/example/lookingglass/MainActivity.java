@@ -70,7 +70,7 @@ class Exhibit {
 }
 
 public class MainActivity extends AppCompatActivity {
-    String qrcode;
+    Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) this.getApplication();
     LinkedList<Exhibit> database = new LinkedList<>();
     private TextView qrres;
     @Override
@@ -126,7 +126,10 @@ public class MainActivity extends AppCompatActivity {
             if(intentResult.getContents()==null){
                 qrres.setText("empty");
             }else{
-                qrres.setText(intentResult.getContents());// compare database results here
+                Exhibitinfo.Qrcode =intentResult.getContents();
+                qrres.setText(Exhibitinfo.Qrcode);// compare database results here
+                startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
 
             }
 

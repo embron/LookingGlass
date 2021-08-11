@@ -127,6 +127,16 @@ public class MainActivity extends AppCompatActivity {
                 qrres.setText("empty");
             }else{
                 Exhibitinfo.Qrcode =intentResult.getContents();
+
+                if(Exhibitinfo.count<10){
+                Exhibitinfo.history[Exhibitinfo.count]=Exhibitinfo.Qrcode;
+                Exhibitinfo.count++;
+                }else{
+                    for (int a=0;a<9;a++){
+                        Exhibitinfo.history[9-a]=Exhibitinfo.history[9-a-1];
+                    }
+                    Exhibitinfo.history[0]=Exhibitinfo.Qrcode;
+                }
                 qrres.setText(Exhibitinfo.Qrcode);// compare database results here
                 startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                 overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);

@@ -70,7 +70,7 @@
                 android:theme="@style/Button.Gray"
                 android:layout_height="wrap_content"
                 android:background = "@drawable/rectangles"
-                android:text="KNOW MORE" />
+                android:text="Visit Exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_1"
@@ -98,7 +98,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                     android:background = "@drawable/rectangles"
-                android:text="KNOW MORE" />
+                android:text="Visit Exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_2"
@@ -124,7 +124,7 @@
                 android:id="@+id/lastscan_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="KNOW MORE" />
+                android:text="Visit Exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_3"
@@ -150,7 +150,7 @@
                 android:id="@+id/lastscan_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="KNOW MORE" />
+                android:text="Visit Exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_4"
@@ -177,7 +177,7 @@
                 android:id="@+id/lastscan_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="KNOW MORE" />
+                android:text="Visit Exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_5"
@@ -204,7 +204,7 @@
                 android:id="@+id/lastscan_6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="KNOW MORE" />
+                android:text="Visit Exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_6"
@@ -231,7 +231,7 @@
                 android:id="@+id/lastscan_7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="KNOW MORE" />
+                android:text="Visit Exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_7"
@@ -257,7 +257,7 @@
                 android:id="@+id/lastscan_8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="KNOW MORE" />
+                android:text="Visit Exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_8"
@@ -283,7 +283,7 @@
                 android:id="@+id/lastscan_9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="KNOW MORE" />
+                android:text="Visit Exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_9"
@@ -310,7 +310,7 @@
                 android:id="@+id/lastscan_10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="KNOW MORE" />
+                android:text="Visit Exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_10"

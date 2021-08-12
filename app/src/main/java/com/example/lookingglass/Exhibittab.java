@@ -130,7 +130,7 @@ public class Exhibittab extends AppCompatActivity {
 
             name = exhibitName;
             videoPath = videoSetPath;
-            String textArray[] = fileText.split("\n");
+            String[] textArray = fileText.split("\n");
             title = textArray[0];
             artist = textArray[1];
             description = textArray[2];

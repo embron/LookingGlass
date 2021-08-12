@@ -92,7 +92,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
             name = exhibitName;
             videoPath = videoSetPath;
-            String textArray[] = fileText.split("\n");
+            String[] textArray = fileText.split("\n");
             title = textArray[0];
             artist = textArray[1];
             description = textArray[2];
@@ -170,12 +170,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_1.setText(getTitle(1));
                 Desls_1.setText(getArtist(1));
                 vidls_1.setVideoPath(getVideoPath(1));
-                   findViewById(R.id.lastscan_1).setOnClickListener(new View.OnClickListener() {
-                        @Override
-                       public void onClick(View v) {
-                               startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                                overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                       }
+                   findViewById(R.id.lastscan_1).setOnClickListener(v -> {
+                          startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                           overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                   });
 
                 break;
@@ -184,12 +181,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_1.setText(getTitle(2));
                 Desls_1.setText(getArtist(2));
                 vidls_1.setVideoPath(getVideoPath(2));
-                findViewById(R.id.lastscan_1).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_1).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -198,12 +192,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_1.setText(getTitle(3));
                 Desls_1.setText(getArtist(3));
                 vidls_1.setVideoPath(getVideoPath(3));
-                findViewById(R.id.lastscan_1).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_1).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -212,12 +203,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_1.setText(getTitle(4));
                 Desls_1.setText(getArtist(4));
                 vidls_1.setVideoPath(getVideoPath(4));
-                findViewById(R.id.lastscan_1).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_1).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -226,12 +214,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_1.setText(getTitle(5));
                 Desls_1.setText(getArtist(5));
                 vidls_1.setVideoPath(getVideoPath(5));
-                findViewById(R.id.lastscan_1).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_1).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -240,12 +225,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_1.setText(getTitle(0));
                 Desls_1.setText(getArtist(0));
                 vidls_1.setVideoPath(getVideoPath(0));
-                findViewById(R.id.lastscan_1).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_1).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -257,12 +239,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_2.setText(getTitle(1));
                 Desls_2.setText(getArtist(1));
                 vidls_2.setVideoPath(getVideoPath(1));
-                findViewById(R.id.lastscan_2).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_2).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -271,12 +250,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_2.setText(getTitle(2));
                 Desls_2.setText(getArtist(2));
                 vidls_2.setVideoPath(getVideoPath(2));
-                findViewById(R.id.lastscan_2).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_2).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -285,12 +261,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_2.setText(getTitle(3));
                 Desls_2.setText(getArtist(3));
                 vidls_2.setVideoPath(getVideoPath(3));
-                findViewById(R.id.lastscan_2).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_2).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -299,12 +272,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_2.setText(getTitle(4));
                 Desls_2.setText(getArtist(4));
                 vidls_2.setVideoPath(getVideoPath(4));
-                findViewById(R.id.lastscan_2).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_2).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -313,12 +283,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_2.setText(getTitle(5));
                 Desls_2.setText(getArtist(5));
                 vidls_2.setVideoPath(getVideoPath(5));
-                findViewById(R.id.lastscan_2).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_2).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -327,12 +294,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_2.setText(getTitle(0));
                 Desls_2.setText(getArtist(0));
                 vidls_2.setVideoPath(getVideoPath(0));
-                findViewById(R.id.lastscan_2).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_2).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -344,12 +308,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_3.setText(getTitle(1));
                 Desls_3.setText(getArtist(1));
                 vidls_3.setVideoPath(getVideoPath(1));
-                findViewById(R.id.lastscan_3).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_3).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -358,12 +319,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_3.setText(getTitle(2));
                 Desls_3.setText(getArtist(2));
                 vidls_3.setVideoPath(getVideoPath(2));
-                findViewById(R.id.lastscan_3).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_3).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -372,12 +330,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_3.setText(getTitle(3));
                 Desls_3.setText(getArtist(3));
                 vidls_3.setVideoPath(getVideoPath(3));
-                findViewById(R.id.lastscan_3).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_3).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -386,12 +341,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_3.setText(getTitle(4));
                 Desls_3.setText(getArtist(4));
                 vidls_3.setVideoPath(getVideoPath(4));
-                findViewById(R.id.lastscan_3).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_3).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -400,12 +352,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_3.setText(getTitle(5));
                 Desls_3.setText(getArtist(5));
                 vidls_3.setVideoPath(getVideoPath(5));
-                findViewById(R.id.lastscan_3).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_3).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -414,12 +363,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_3.setText(getTitle(0));
                 Desls_3.setText(getArtist(0));
                 vidls_3.setVideoPath(getVideoPath(0));
-                findViewById(R.id.lastscan_3).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_3).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -431,12 +377,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_4.setText(getTitle(1));
                 Desls_4.setText(getArtist(1));
                 vidls_4.setVideoPath(getVideoPath(1));
-                findViewById(R.id.lastscan_4).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_4).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -445,12 +388,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_4.setText(getTitle(2));
                 Desls_4.setText(getArtist(2));
                 vidls_4.setVideoPath(getVideoPath(2));
-                findViewById(R.id.lastscan_4).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_4).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -459,12 +399,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_4.setText(getTitle(3));
                 Desls_4.setText(getArtist(3));
                 vidls_4.setVideoPath(getVideoPath(3));
-                findViewById(R.id.lastscan_4).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_4).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -473,12 +410,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_4.setText(getTitle(4));
                 Desls_4.setText(getArtist(4));
                 vidls_4.setVideoPath(getVideoPath(4));
-                findViewById(R.id.lastscan_4).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_4).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -487,12 +421,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_4.setText(getTitle(5));
                 Desls_4.setText(getArtist(5));
                 vidls_4.setVideoPath(getVideoPath(5));
-                findViewById(R.id.lastscan_4).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_4).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -501,12 +432,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_4.setText(getTitle(0));
                 Desls_4.setText(getArtist(0));
                 vidls_4.setVideoPath(getVideoPath(0));
-                findViewById(R.id.lastscan_4).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_4).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -518,12 +446,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_5.setText(getTitle(1));
                 Desls_5.setText(getArtist(1));
                 vidls_5.setVideoPath(getVideoPath(1));
-                findViewById(R.id.lastscan_5).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_5).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -532,12 +457,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_5.setText(getTitle(2));
                 Desls_5.setText(getArtist(2));
                 vidls_5.setVideoPath(getVideoPath(2));
-                findViewById(R.id.lastscan_5).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_5).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -546,12 +468,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_5.setText(getTitle(3));
                 Desls_5.setText(getArtist(3));
                 vidls_5.setVideoPath(getVideoPath(3));
-                findViewById(R.id.lastscan_5).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_5).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -560,12 +479,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_5.setText(getTitle(4));
                 Desls_5.setText(getArtist(4));
                 vidls_5.setVideoPath(getVideoPath(4));
-                findViewById(R.id.lastscan_5).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_5).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -574,12 +490,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_5.setText(getTitle(5));
                 Desls_5.setText(getArtist(5));
                 vidls_5.setVideoPath(getVideoPath(5));
-                findViewById(R.id.lastscan_5).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_5).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -588,12 +501,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_5.setText(getTitle(0));
                 Desls_5.setText(getArtist(0));
                 vidls_5.setVideoPath(getVideoPath(0));
-                findViewById(R.id.lastscan_5).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_5).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -605,12 +515,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_6.setText(getTitle(1));
                 Desls_6.setText(getArtist(1));
                 vidls_6.setVideoPath(getVideoPath(1));
-                findViewById(R.id.lastscan_6).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_6).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -619,12 +526,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_6.setText(getTitle(2));
                 Desls_6.setText(getArtist(2));
                 vidls_6.setVideoPath(getVideoPath(2));
-                findViewById(R.id.lastscan_6).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_6).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -633,12 +537,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_6.setText(getTitle(3));
                 Desls_6.setText(getArtist(3));
                 vidls_6.setVideoPath(getVideoPath(3));
-                findViewById(R.id.lastscan_6).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_6).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -647,12 +548,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_6.setText(getTitle(4));
                 Desls_6.setText(getArtist(4));
                 vidls_6.setVideoPath(getVideoPath(4));
-                findViewById(R.id.lastscan_6).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_6).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -661,12 +559,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_6.setText(getTitle(5));
                 Desls_6.setText(getArtist(5));
                 vidls_6.setVideoPath(getVideoPath(5));
-                findViewById(R.id.lastscan_6).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_6).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -675,12 +570,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_6.setText(getTitle(0));
                 Desls_6.setText(getArtist(0));
                 vidls_6.setVideoPath(getVideoPath(0));
-                findViewById(R.id.lastscan_6).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_6).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -692,12 +584,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_7.setText(getTitle(1));
                 Desls_7.setText(getArtist(1));
                 vidls_7.setVideoPath(getVideoPath(1));
-                findViewById(R.id.lastscan_7).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_7).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -706,12 +595,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_7.setText(getTitle(2));
                 Desls_7.setText(getArtist(2));
                 vidls_7.setVideoPath(getVideoPath(2));
-                findViewById(R.id.lastscan_7).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_7).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -720,12 +606,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_7.setText(getTitle(3));
                 Desls_7.setText(getArtist(3));
                 vidls_7.setVideoPath(getVideoPath(3));
-                findViewById(R.id.lastscan_7).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_7).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -734,12 +617,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_7.setText(getTitle(4));
                 Desls_7.setText(getArtist(4));
                 vidls_7.setVideoPath(getVideoPath(4));
-                findViewById(R.id.lastscan_7).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_7).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -748,12 +628,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_7.setText(getTitle(5));
                 Desls_7.setText(getArtist(5));
                 vidls_7.setVideoPath(getVideoPath(5));
-                findViewById(R.id.lastscan_7).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_7).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -762,12 +639,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_7.setText(getTitle(0));
                 Desls_7.setText(getArtist(0));
                 vidls_7.setVideoPath(getVideoPath(0));
-                findViewById(R.id.lastscan_7).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_7).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -779,12 +653,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_8.setText(getTitle(1));
                 Desls_8.setText(getArtist(1));
                 vidls_8.setVideoPath(getVideoPath(1));
-                findViewById(R.id.lastscan_8).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_8).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -793,12 +664,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_8.setText(getTitle(2));
                 Desls_8.setText(getArtist(2));
                 vidls_8.setVideoPath(getVideoPath(2));
-                findViewById(R.id.lastscan_8).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_8).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -807,12 +675,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_8.setText(getTitle(3));
                 Desls_8.setText(getArtist(3));
                 vidls_8.setVideoPath(getVideoPath(3));
-                findViewById(R.id.lastscan_8).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_8).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -821,12 +686,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_8.setText(getTitle(4));
                 Desls_8.setText(getArtist(4));
                 vidls_8.setVideoPath(getVideoPath(4));
-                findViewById(R.id.lastscan_8).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_8).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -835,12 +697,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_8.setText(getTitle(5));
                 Desls_8.setText(getArtist(5));
                 vidls_8.setVideoPath(getVideoPath(5));
-                findViewById(R.id.lastscan_8).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_8).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -849,12 +708,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_8.setText(getTitle(0));
                 Desls_8.setText(getArtist(0));
                 vidls_8.setVideoPath(getVideoPath(0));
-                findViewById(R.id.lastscan_8).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_8).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -866,12 +722,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_9.setText(getTitle(1));
                 Desls_9.setText(getArtist(1));
                 vidls_9.setVideoPath(getVideoPath(1));
-                findViewById(R.id.lastscan_9).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_9).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -880,12 +733,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_9.setText(getTitle(2));
                 Desls_9.setText(getArtist(2));
                 vidls_9.setVideoPath(getVideoPath(2));
-                findViewById(R.id.lastscan_9).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_9).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -894,12 +744,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_9.setText(getTitle(3));
                 Desls_9.setText(getArtist(3));
                 vidls_9.setVideoPath(getVideoPath(3));
-                findViewById(R.id.lastscan_9).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_9).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -908,12 +755,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_9.setText(getTitle(4));
                 Desls_9.setText(getArtist(4));
                 vidls_9.setVideoPath(getVideoPath(4));
-                findViewById(R.id.lastscan_9).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_9).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -922,12 +766,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_9.setText(getTitle(5));
                 Desls_9.setText(getArtist(5));
                 vidls_9.setVideoPath(getVideoPath(5));
-                findViewById(R.id.lastscan_9).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_9).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -936,12 +777,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_9.setText(getTitle(0));
                 Desls_9.setText(getArtist(0));
                 vidls_9.setVideoPath(getVideoPath(0));
-                findViewById(R.id.lastscan_9).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_9).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -953,12 +791,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_10.setText(getTitle(1));
                 Desls_10.setText(getArtist(1));
                 vidls_10.setVideoPath(getVideoPath(1));
-                findViewById(R.id.lastscan_10).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_10).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -967,12 +802,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_10.setText(getTitle(2));
                 Desls_10.setText(getArtist(2));
                 vidls_10.setVideoPath(getVideoPath(2));
-                findViewById(R.id.lastscan_10).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_10).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -981,12 +813,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_10.setText(getTitle(3));
                 Desls_10.setText(getArtist(3));
                 vidls_10.setVideoPath(getVideoPath(3));
-                findViewById(R.id.lastscan_10).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_10).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -995,12 +824,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_10.setText(getTitle(4));
                 Desls_10.setText(getArtist(4));
                 vidls_10.setVideoPath(getVideoPath(4));
-                findViewById(R.id.lastscan_10).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_10).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -1009,12 +835,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_10.setText(getTitle(5));
                 Desls_10.setText(getArtist(5));
                 vidls_10.setVideoPath(getVideoPath(5));
-                findViewById(R.id.lastscan_10).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_10).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
@@ -1023,25 +846,15 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_10.setText(getTitle(0));
                 Desls_10.setText(getArtist(0));
                 vidls_10.setVideoPath(getVideoPath(0));
-                findViewById(R.id.lastscan_10).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                    }
+                findViewById(R.id.lastscan_10).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
 
                 break;
         }
 
-        findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onBackPressed();
-
-
-            }
-        });
+        findViewById(R.id.fab).setOnClickListener(view -> onBackPressed());
 
 
     }

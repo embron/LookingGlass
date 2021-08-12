@@ -7,11 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-// media player imports
-import android.widget.MediaController;
-import android.widget.VideoView;
-
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -20,6 +15,8 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 import java.util.LinkedList;
+
+// media player imports
 
 // for scrolling activtity
 
@@ -40,7 +37,7 @@ class Exhibit {
     {
         name = exhibitName;
         videoPath = videoSetPath;
-        String textArray[] = fileText.split("\n");
+        String[] textArray = fileText.split("\n");
         title = textArray[0];
         artist = textArray[1];
         description = textArray[2];
@@ -79,21 +76,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         exhibitSetUp(database);
 //history button
-    findViewById(R.id.Histbutton).setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),HistorytabActivity.class));
-                overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-        }
+    findViewById(R.id.Histbutton).setOnClickListener(v -> {
+            startActivity(new Intent(getApplicationContext(),HistorytabActivity.class));
+            overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
     });
 
 //Exhibit button
-    findViewById(R.id.Exhibbutton).setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-            overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-        }
+    findViewById(R.id.Exhibbutton).setOnClickListener(v -> {
+        startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
     });
         qrres = findViewById(R.id.QRRES);// qrress needs to be called later when the snan page is made
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, PackageManager.PERMISSION_GRANTED);

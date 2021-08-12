@@ -17,6 +17,9 @@ import android.widget.VideoView;
 
 import com.example.lookingglass.databinding.ActivityHistorytabBinding;
 
+import java.util.LinkedList;
+
+
 public class HistorytabActivity extends AppCompatActivity {
 
     private ActivityHistorytabBinding binding;
@@ -50,12 +53,72 @@ public class HistorytabActivity extends AppCompatActivity {
     private TextView titls_10;
     private TextView Desls_10;
 
+
+
+    public LinkedList<Exhibit> database = new LinkedList<>();
+    public String videoPath = "android.resource://" + getPackageName() + "/";
+    public String getName(int i)
+    {
+        return database.get(i).name;
+    }
+    public String getVideoPath(int i)
+    {
+        return database.get(i).videoPath;
+    }
+    public String getTitle(int i)
+    {
+        return database.get(i).title;
+    }
+    public String getArtist(int i)
+    {
+        return database.get(i).artist;
+    }
+    public String getDescription(int i)
+    {
+        return database.get(i).description;
+    }
+
+
+    static class Exhibit {
+        private String name;
+        private String videoPath;
+        private String title;
+        private String artist;
+        private String description;
+
+        public Exhibit(String exhibitName, String videoSetPath, String fileText)
+        {
+
+
+            name = exhibitName;
+            videoPath = videoSetPath;
+            String textArray[] = fileText.split("\n");
+            title = textArray[0];
+            artist = textArray[1];
+            description = textArray[2];
+        }
+
+
+    }
+
+    public void exhibitSetUp(LinkedList<Exhibit> dataEntry){
+        dataEntry.add(new Exhibit("Error", videoPath + R.raw.errorvideo, getString(R.string.error)));
+        dataEntry.add(new Exhibit("LunchOnTheGrass", videoPath + R.raw.lunchonthegrassvideo, getString(R.string.lunchonthegrass)));
+        dataEntry.add(new Exhibit("ImpressionSunrise", videoPath + R.raw.impressionsunrisevideo, getString(R.string.impressionsunrise)));
+        dataEntry.add(new Exhibit("TheDanceClass", videoPath + R.raw.thedanceclassvideo, getString(R.string.thedanceclass)));
+        dataEntry.add(new Exhibit("LuncheonAtTheBoatingParty", videoPath + R.raw.luncheonattheboatingpartyvideo, getString(R.string.luncheonattheboatingparty)));
+        dataEntry.add(new Exhibit("TheCardPlayers", videoPath + R.raw.thecardplayersvideo, getString(R.string.thecardplayers)));
+    }
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) this.getApplication();
         binding = ActivityHistorytabBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        exhibitSetUp(database);
 
         titls_1=findViewById(R.id.titlels_1);
         Desls_1=findViewById(R.id.destls_1);
@@ -104,9 +167,9 @@ public class HistorytabActivity extends AppCompatActivity {
         switch ( Exhibitinfo.history[0]){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
-                titls_1.setText(Exhibitinfo.getTitle(1));
-                Desls_1.setText(Exhibitinfo.getArtist(1));
-                vidls_1.setVideoPath(Exhibitinfo.getVideoPath(1));
+                titls_1.setText(getTitle(1));
+                Desls_1.setText(getArtist(1));
+                vidls_1.setVideoPath(getVideoPath(1));
                    findViewById(R.id.lastscan_1).setOnClickListener(new View.OnClickListener() {
                         @Override
                        public void onClick(View v) {
@@ -118,9 +181,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"ImpressionSunrise":
                 Exhibitinfo.Qrcode ="ImpressionSunrise";
-                titls_1.setText(Exhibitinfo.getTitle(2));
-                Desls_1.setText(Exhibitinfo.getArtist(2));
-                vidls_1.setVideoPath(Exhibitinfo.getVideoPath(2));
+                titls_1.setText(getTitle(2));
+                Desls_1.setText(getArtist(2));
+                vidls_1.setVideoPath(getVideoPath(2));
                 findViewById(R.id.lastscan_1).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -132,9 +195,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheDanceClass":
                 Exhibitinfo.Qrcode ="TheDanceClass";
-                titls_1.setText(Exhibitinfo.getTitle(3));
-                Desls_1.setText(Exhibitinfo.getArtist(3));
-                vidls_1.setVideoPath(Exhibitinfo.getVideoPath(3));
+                titls_1.setText(getTitle(3));
+                Desls_1.setText(getArtist(3));
+                vidls_1.setVideoPath(getVideoPath(3));
                 findViewById(R.id.lastscan_1).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -146,9 +209,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"LuncheonAtTheBoatingParty":
                 Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
-                titls_1.setText(Exhibitinfo.getTitle(4));
-                Desls_1.setText(Exhibitinfo.getArtist(4));
-                vidls_1.setVideoPath(Exhibitinfo.getVideoPath(4));
+                titls_1.setText(getTitle(4));
+                Desls_1.setText(getArtist(4));
+                vidls_1.setVideoPath(getVideoPath(4));
                 findViewById(R.id.lastscan_1).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -160,9 +223,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheCardPlayers":
                 Exhibitinfo.Qrcode ="TheCardPlayers";
-                titls_1.setText(Exhibitinfo.getTitle(5));
-                Desls_1.setText(Exhibitinfo.getArtist(5));
-                vidls_1.setVideoPath(Exhibitinfo.getVideoPath(5));
+                titls_1.setText(getTitle(5));
+                Desls_1.setText(getArtist(5));
+                vidls_1.setVideoPath(getVideoPath(5));
                 findViewById(R.id.lastscan_1).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -174,9 +237,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
                 Exhibitinfo.Qrcode ="Error";
-                titls_1.setText(Exhibitinfo.getTitle(0));
-                Desls_1.setText(Exhibitinfo.getArtist(0));
-                vidls_1.setVideoPath(Exhibitinfo.getVideoPath(0));
+                titls_1.setText(getTitle(0));
+                Desls_1.setText(getArtist(0));
+                vidls_1.setVideoPath(getVideoPath(0));
                 findViewById(R.id.lastscan_1).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -191,9 +254,9 @@ public class HistorytabActivity extends AppCompatActivity {
         switch ( Exhibitinfo.history[1]){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
-                titls_2.setText(Exhibitinfo.getTitle(1));
-                Desls_2.setText(Exhibitinfo.getArtist(1));
-                vidls_2.setVideoPath(Exhibitinfo.getVideoPath(1));
+                titls_2.setText(getTitle(1));
+                Desls_2.setText(getArtist(1));
+                vidls_2.setVideoPath(getVideoPath(1));
                 findViewById(R.id.lastscan_2).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -205,9 +268,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"ImpressionSunrise":
                 Exhibitinfo.Qrcode ="ImpressionSunrise";
-                titls_2.setText(Exhibitinfo.getTitle(2));
-                Desls_2.setText(Exhibitinfo.getArtist(2));
-                vidls_2.setVideoPath(Exhibitinfo.getVideoPath(2));
+                titls_2.setText(getTitle(2));
+                Desls_2.setText(getArtist(2));
+                vidls_2.setVideoPath(getVideoPath(2));
                 findViewById(R.id.lastscan_2).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -219,9 +282,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheDanceClass":
                 Exhibitinfo.Qrcode ="TheDanceClass";
-                titls_2.setText(Exhibitinfo.getTitle(3));
-                Desls_2.setText(Exhibitinfo.getArtist(3));
-                vidls_2.setVideoPath(Exhibitinfo.getVideoPath(3));
+                titls_2.setText(getTitle(3));
+                Desls_2.setText(getArtist(3));
+                vidls_2.setVideoPath(getVideoPath(3));
                 findViewById(R.id.lastscan_2).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -233,9 +296,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"LuncheonAtTheBoatingParty":
                 Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
-                titls_2.setText(Exhibitinfo.getTitle(4));
-                Desls_2.setText(Exhibitinfo.getArtist(4));
-                vidls_2.setVideoPath(Exhibitinfo.getVideoPath(4));
+                titls_2.setText(getTitle(4));
+                Desls_2.setText(getArtist(4));
+                vidls_2.setVideoPath(getVideoPath(4));
                 findViewById(R.id.lastscan_2).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -247,9 +310,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheCardPlayers":
                 Exhibitinfo.Qrcode ="TheCardPlayers";
-                titls_2.setText(Exhibitinfo.getTitle(5));
-                Desls_2.setText(Exhibitinfo.getArtist(5));
-                vidls_2.setVideoPath(Exhibitinfo.getVideoPath(5));
+                titls_2.setText(getTitle(5));
+                Desls_2.setText(getArtist(5));
+                vidls_2.setVideoPath(getVideoPath(5));
                 findViewById(R.id.lastscan_2).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -261,9 +324,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
                 Exhibitinfo.Qrcode ="Error";
-                titls_2.setText(Exhibitinfo.getTitle(0));
-                Desls_2.setText(Exhibitinfo.getArtist(0));
-                vidls_2.setVideoPath(Exhibitinfo.getVideoPath(0));
+                titls_2.setText(getTitle(0));
+                Desls_2.setText(getArtist(0));
+                vidls_2.setVideoPath(getVideoPath(0));
                 findViewById(R.id.lastscan_2).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -278,9 +341,9 @@ public class HistorytabActivity extends AppCompatActivity {
         switch ( Exhibitinfo.history[2]){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
-                titls_3.setText(Exhibitinfo.getTitle(1));
-                Desls_3.setText(Exhibitinfo.getArtist(1));
-                vidls_3.setVideoPath(Exhibitinfo.getVideoPath(1));
+                titls_3.setText(getTitle(1));
+                Desls_3.setText(getArtist(1));
+                vidls_3.setVideoPath(getVideoPath(1));
                 findViewById(R.id.lastscan_3).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -292,9 +355,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"ImpressionSunrise":
                 Exhibitinfo.Qrcode ="ImpressionSunrise";
-                titls_3.setText(Exhibitinfo.getTitle(2));
-                Desls_3.setText(Exhibitinfo.getArtist(2));
-                vidls_3.setVideoPath(Exhibitinfo.getVideoPath(2));
+                titls_3.setText(getTitle(2));
+                Desls_3.setText(getArtist(2));
+                vidls_3.setVideoPath(getVideoPath(2));
                 findViewById(R.id.lastscan_3).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -306,9 +369,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheDanceClass":
                 Exhibitinfo.Qrcode ="TheDanceClass";
-                titls_3.setText(Exhibitinfo.getTitle(3));
-                Desls_3.setText(Exhibitinfo.getArtist(3));
-                vidls_3.setVideoPath(Exhibitinfo.getVideoPath(3));
+                titls_3.setText(getTitle(3));
+                Desls_3.setText(getArtist(3));
+                vidls_3.setVideoPath(getVideoPath(3));
                 findViewById(R.id.lastscan_3).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -320,9 +383,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"LuncheonAtTheBoatingParty":
                 Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
-                titls_3.setText(Exhibitinfo.getTitle(4));
-                Desls_3.setText(Exhibitinfo.getArtist(4));
-                vidls_3.setVideoPath(Exhibitinfo.getVideoPath(4));
+                titls_3.setText(getTitle(4));
+                Desls_3.setText(getArtist(4));
+                vidls_3.setVideoPath(getVideoPath(4));
                 findViewById(R.id.lastscan_3).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -334,9 +397,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheCardPlayers":
                 Exhibitinfo.Qrcode ="TheCardPlayers";
-                titls_3.setText(Exhibitinfo.getTitle(5));
-                Desls_3.setText(Exhibitinfo.getArtist(5));
-                vidls_3.setVideoPath(Exhibitinfo.getVideoPath(5));
+                titls_3.setText(getTitle(5));
+                Desls_3.setText(getArtist(5));
+                vidls_3.setVideoPath(getVideoPath(5));
                 findViewById(R.id.lastscan_3).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -348,9 +411,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
                 Exhibitinfo.Qrcode ="Error";
-                titls_3.setText(Exhibitinfo.getTitle(0));
-                Desls_3.setText(Exhibitinfo.getArtist(0));
-                vidls_3.setVideoPath(Exhibitinfo.getVideoPath(0));
+                titls_3.setText(getTitle(0));
+                Desls_3.setText(getArtist(0));
+                vidls_3.setVideoPath(getVideoPath(0));
                 findViewById(R.id.lastscan_3).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -365,9 +428,9 @@ public class HistorytabActivity extends AppCompatActivity {
         switch ( Exhibitinfo.history[3]){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
-                titls_4.setText(Exhibitinfo.getTitle(1));
-                Desls_4.setText(Exhibitinfo.getArtist(1));
-                vidls_4.setVideoPath(Exhibitinfo.getVideoPath(1));
+                titls_4.setText(getTitle(1));
+                Desls_4.setText(getArtist(1));
+                vidls_4.setVideoPath(getVideoPath(1));
                 findViewById(R.id.lastscan_4).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -379,9 +442,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"ImpressionSunrise":
                 Exhibitinfo.Qrcode ="ImpressionSunrise";
-                titls_4.setText(Exhibitinfo.getTitle(2));
-                Desls_4.setText(Exhibitinfo.getArtist(2));
-                vidls_4.setVideoPath(Exhibitinfo.getVideoPath(2));
+                titls_4.setText(getTitle(2));
+                Desls_4.setText(getArtist(2));
+                vidls_4.setVideoPath(getVideoPath(2));
                 findViewById(R.id.lastscan_4).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -393,9 +456,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheDanceClass":
                 Exhibitinfo.Qrcode ="TheDanceClass";
-                titls_4.setText(Exhibitinfo.getTitle(3));
-                Desls_4.setText(Exhibitinfo.getArtist(3));
-                vidls_4.setVideoPath(Exhibitinfo.getVideoPath(3));
+                titls_4.setText(getTitle(3));
+                Desls_4.setText(getArtist(3));
+                vidls_4.setVideoPath(getVideoPath(3));
                 findViewById(R.id.lastscan_4).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -407,9 +470,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"LuncheonAtTheBoatingParty":
                 Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
-                titls_4.setText(Exhibitinfo.getTitle(4));
-                Desls_4.setText(Exhibitinfo.getArtist(4));
-                vidls_4.setVideoPath(Exhibitinfo.getVideoPath(4));
+                titls_4.setText(getTitle(4));
+                Desls_4.setText(getArtist(4));
+                vidls_4.setVideoPath(getVideoPath(4));
                 findViewById(R.id.lastscan_4).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -421,9 +484,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheCardPlayers":
                 Exhibitinfo.Qrcode ="TheCardPlayers";
-                titls_4.setText(Exhibitinfo.getTitle(5));
-                Desls_4.setText(Exhibitinfo.getArtist(5));
-                vidls_4.setVideoPath(Exhibitinfo.getVideoPath(5));
+                titls_4.setText(getTitle(5));
+                Desls_4.setText(getArtist(5));
+                vidls_4.setVideoPath(getVideoPath(5));
                 findViewById(R.id.lastscan_4).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -435,9 +498,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
                 Exhibitinfo.Qrcode ="Error";
-                titls_4.setText(Exhibitinfo.getTitle(0));
-                Desls_4.setText(Exhibitinfo.getArtist(0));
-                vidls_4.setVideoPath(Exhibitinfo.getVideoPath(0));
+                titls_4.setText(getTitle(0));
+                Desls_4.setText(getArtist(0));
+                vidls_4.setVideoPath(getVideoPath(0));
                 findViewById(R.id.lastscan_4).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -452,9 +515,9 @@ public class HistorytabActivity extends AppCompatActivity {
         switch ( Exhibitinfo.history[4]){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
-                titls_5.setText(Exhibitinfo.getTitle(1));
-                Desls_5.setText(Exhibitinfo.getArtist(1));
-                vidls_5.setVideoPath(Exhibitinfo.getVideoPath(1));
+                titls_5.setText(getTitle(1));
+                Desls_5.setText(getArtist(1));
+                vidls_5.setVideoPath(getVideoPath(1));
                 findViewById(R.id.lastscan_5).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -466,9 +529,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"ImpressionSunrise":
                 Exhibitinfo.Qrcode ="ImpressionSunrise";
-                titls_5.setText(Exhibitinfo.getTitle(2));
-                Desls_5.setText(Exhibitinfo.getArtist(2));
-                vidls_5.setVideoPath(Exhibitinfo.getVideoPath(2));
+                titls_5.setText(getTitle(2));
+                Desls_5.setText(getArtist(2));
+                vidls_5.setVideoPath(getVideoPath(2));
                 findViewById(R.id.lastscan_5).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -480,9 +543,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheDanceClass":
                 Exhibitinfo.Qrcode ="TheDanceClass";
-                titls_5.setText(Exhibitinfo.getTitle(3));
-                Desls_5.setText(Exhibitinfo.getArtist(3));
-                vidls_5.setVideoPath(Exhibitinfo.getVideoPath(3));
+                titls_5.setText(getTitle(3));
+                Desls_5.setText(getArtist(3));
+                vidls_5.setVideoPath(getVideoPath(3));
                 findViewById(R.id.lastscan_5).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -494,9 +557,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"LuncheonAtTheBoatingParty":
                 Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
-                titls_5.setText(Exhibitinfo.getTitle(4));
-                Desls_5.setText(Exhibitinfo.getArtist(4));
-                vidls_5.setVideoPath(Exhibitinfo.getVideoPath(4));
+                titls_5.setText(getTitle(4));
+                Desls_5.setText(getArtist(4));
+                vidls_5.setVideoPath(getVideoPath(4));
                 findViewById(R.id.lastscan_5).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -508,9 +571,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheCardPlayers":
                 Exhibitinfo.Qrcode ="TheCardPlayers";
-                titls_5.setText(Exhibitinfo.getTitle(5));
-                Desls_5.setText(Exhibitinfo.getArtist(5));
-                vidls_5.setVideoPath(Exhibitinfo.getVideoPath(5));
+                titls_5.setText(getTitle(5));
+                Desls_5.setText(getArtist(5));
+                vidls_5.setVideoPath(getVideoPath(5));
                 findViewById(R.id.lastscan_5).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -522,9 +585,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
                 Exhibitinfo.Qrcode ="Error";
-                titls_5.setText(Exhibitinfo.getTitle(0));
-                Desls_5.setText(Exhibitinfo.getArtist(0));
-                vidls_5.setVideoPath(Exhibitinfo.getVideoPath(0));
+                titls_5.setText(getTitle(0));
+                Desls_5.setText(getArtist(0));
+                vidls_5.setVideoPath(getVideoPath(0));
                 findViewById(R.id.lastscan_5).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -539,9 +602,9 @@ public class HistorytabActivity extends AppCompatActivity {
         switch ( Exhibitinfo.history[5]){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
-                titls_6.setText(Exhibitinfo.getTitle(1));
-                Desls_6.setText(Exhibitinfo.getArtist(1));
-                vidls_6.setVideoPath(Exhibitinfo.getVideoPath(1));
+                titls_6.setText(getTitle(1));
+                Desls_6.setText(getArtist(1));
+                vidls_6.setVideoPath(getVideoPath(1));
                 findViewById(R.id.lastscan_6).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -553,9 +616,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"ImpressionSunrise":
                 Exhibitinfo.Qrcode ="ImpressionSunrise";
-                titls_6.setText(Exhibitinfo.getTitle(2));
-                Desls_6.setText(Exhibitinfo.getArtist(2));
-                vidls_6.setVideoPath(Exhibitinfo.getVideoPath(2));
+                titls_6.setText(getTitle(2));
+                Desls_6.setText(getArtist(2));
+                vidls_6.setVideoPath(getVideoPath(2));
                 findViewById(R.id.lastscan_6).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -567,9 +630,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheDanceClass":
                 Exhibitinfo.Qrcode ="TheDanceClass";
-                titls_6.setText(Exhibitinfo.getTitle(3));
-                Desls_6.setText(Exhibitinfo.getArtist(3));
-                vidls_6.setVideoPath(Exhibitinfo.getVideoPath(3));
+                titls_6.setText(getTitle(3));
+                Desls_6.setText(getArtist(3));
+                vidls_6.setVideoPath(getVideoPath(3));
                 findViewById(R.id.lastscan_6).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -581,9 +644,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"LuncheonAtTheBoatingParty":
                 Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
-                titls_6.setText(Exhibitinfo.getTitle(4));
-                Desls_6.setText(Exhibitinfo.getArtist(4));
-                vidls_6.setVideoPath(Exhibitinfo.getVideoPath(4));
+                titls_6.setText(getTitle(4));
+                Desls_6.setText(getArtist(4));
+                vidls_6.setVideoPath(getVideoPath(4));
                 findViewById(R.id.lastscan_6).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -595,9 +658,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheCardPlayers":
                 Exhibitinfo.Qrcode ="TheCardPlayers";
-                titls_6.setText(Exhibitinfo.getTitle(5));
-                Desls_6.setText(Exhibitinfo.getArtist(5));
-                vidls_6.setVideoPath(Exhibitinfo.getVideoPath(5));
+                titls_6.setText(getTitle(5));
+                Desls_6.setText(getArtist(5));
+                vidls_6.setVideoPath(getVideoPath(5));
                 findViewById(R.id.lastscan_6).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -609,9 +672,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
                 Exhibitinfo.Qrcode ="Error";
-                titls_6.setText(Exhibitinfo.getTitle(0));
-                Desls_6.setText(Exhibitinfo.getArtist(0));
-                vidls_6.setVideoPath(Exhibitinfo.getVideoPath(0));
+                titls_6.setText(getTitle(0));
+                Desls_6.setText(getArtist(0));
+                vidls_6.setVideoPath(getVideoPath(0));
                 findViewById(R.id.lastscan_6).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -626,9 +689,9 @@ public class HistorytabActivity extends AppCompatActivity {
         switch ( Exhibitinfo.history[6]){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
-                titls_7.setText(Exhibitinfo.getTitle(1));
-                Desls_7.setText(Exhibitinfo.getArtist(1));
-                vidls_7.setVideoPath(Exhibitinfo.getVideoPath(1));
+                titls_7.setText(getTitle(1));
+                Desls_7.setText(getArtist(1));
+                vidls_7.setVideoPath(getVideoPath(1));
                 findViewById(R.id.lastscan_7).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -640,9 +703,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"ImpressionSunrise":
                 Exhibitinfo.Qrcode ="ImpressionSunrise";
-                titls_7.setText(Exhibitinfo.getTitle(2));
-                Desls_7.setText(Exhibitinfo.getArtist(2));
-                vidls_7.setVideoPath(Exhibitinfo.getVideoPath(2));
+                titls_7.setText(getTitle(2));
+                Desls_7.setText(getArtist(2));
+                vidls_7.setVideoPath(getVideoPath(2));
                 findViewById(R.id.lastscan_7).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -654,9 +717,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheDanceClass":
                 Exhibitinfo.Qrcode ="TheDanceClass";
-                titls_7.setText(Exhibitinfo.getTitle(3));
-                Desls_7.setText(Exhibitinfo.getArtist(3));
-                vidls_7.setVideoPath(Exhibitinfo.getVideoPath(3));
+                titls_7.setText(getTitle(3));
+                Desls_7.setText(getArtist(3));
+                vidls_7.setVideoPath(getVideoPath(3));
                 findViewById(R.id.lastscan_7).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -668,9 +731,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"LuncheonAtTheBoatingParty":
                 Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
-                titls_7.setText(Exhibitinfo.getTitle(4));
-                Desls_7.setText(Exhibitinfo.getArtist(4));
-                vidls_7.setVideoPath(Exhibitinfo.getVideoPath(4));
+                titls_7.setText(getTitle(4));
+                Desls_7.setText(getArtist(4));
+                vidls_7.setVideoPath(getVideoPath(4));
                 findViewById(R.id.lastscan_7).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -682,9 +745,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheCardPlayers":
                 Exhibitinfo.Qrcode ="TheCardPlayers";
-                titls_7.setText(Exhibitinfo.getTitle(5));
-                Desls_7.setText(Exhibitinfo.getArtist(5));
-                vidls_7.setVideoPath(Exhibitinfo.getVideoPath(5));
+                titls_7.setText(getTitle(5));
+                Desls_7.setText(getArtist(5));
+                vidls_7.setVideoPath(getVideoPath(5));
                 findViewById(R.id.lastscan_7).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -696,9 +759,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
                 Exhibitinfo.Qrcode ="Error";
-                titls_7.setText(Exhibitinfo.getTitle(0));
-                Desls_7.setText(Exhibitinfo.getArtist(0));
-                vidls_7.setVideoPath(Exhibitinfo.getVideoPath(0));
+                titls_7.setText(getTitle(0));
+                Desls_7.setText(getArtist(0));
+                vidls_7.setVideoPath(getVideoPath(0));
                 findViewById(R.id.lastscan_7).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -713,9 +776,9 @@ public class HistorytabActivity extends AppCompatActivity {
         switch ( Exhibitinfo.history[7]){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
-                titls_8.setText(Exhibitinfo.getTitle(1));
-                Desls_8.setText(Exhibitinfo.getArtist(1));
-                vidls_8.setVideoPath(Exhibitinfo.getVideoPath(1));
+                titls_8.setText(getTitle(1));
+                Desls_8.setText(getArtist(1));
+                vidls_8.setVideoPath(getVideoPath(1));
                 findViewById(R.id.lastscan_8).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -727,9 +790,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"ImpressionSunrise":
                 Exhibitinfo.Qrcode ="ImpressionSunrise";
-                titls_8.setText(Exhibitinfo.getTitle(2));
-                Desls_8.setText(Exhibitinfo.getArtist(2));
-                vidls_8.setVideoPath(Exhibitinfo.getVideoPath(2));
+                titls_8.setText(getTitle(2));
+                Desls_8.setText(getArtist(2));
+                vidls_8.setVideoPath(getVideoPath(2));
                 findViewById(R.id.lastscan_8).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -741,9 +804,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheDanceClass":
                 Exhibitinfo.Qrcode ="TheDanceClass";
-                titls_8.setText(Exhibitinfo.getTitle(3));
-                Desls_8.setText(Exhibitinfo.getArtist(3));
-                vidls_8.setVideoPath(Exhibitinfo.getVideoPath(3));
+                titls_8.setText(getTitle(3));
+                Desls_8.setText(getArtist(3));
+                vidls_8.setVideoPath(getVideoPath(3));
                 findViewById(R.id.lastscan_8).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -755,9 +818,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"LuncheonAtTheBoatingParty":
                 Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
-                titls_8.setText(Exhibitinfo.getTitle(4));
-                Desls_8.setText(Exhibitinfo.getArtist(4));
-                vidls_8.setVideoPath(Exhibitinfo.getVideoPath(4));
+                titls_8.setText(getTitle(4));
+                Desls_8.setText(getArtist(4));
+                vidls_8.setVideoPath(getVideoPath(4));
                 findViewById(R.id.lastscan_8).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -769,9 +832,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheCardPlayers":
                 Exhibitinfo.Qrcode ="TheCardPlayers";
-                titls_8.setText(Exhibitinfo.getTitle(5));
-                Desls_8.setText(Exhibitinfo.getArtist(5));
-                vidls_8.setVideoPath(Exhibitinfo.getVideoPath(5));
+                titls_8.setText(getTitle(5));
+                Desls_8.setText(getArtist(5));
+                vidls_8.setVideoPath(getVideoPath(5));
                 findViewById(R.id.lastscan_8).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -783,9 +846,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
                 Exhibitinfo.Qrcode ="Error";
-                titls_8.setText(Exhibitinfo.getTitle(0));
-                Desls_8.setText(Exhibitinfo.getArtist(0));
-                vidls_8.setVideoPath(Exhibitinfo.getVideoPath(0));
+                titls_8.setText(getTitle(0));
+                Desls_8.setText(getArtist(0));
+                vidls_8.setVideoPath(getVideoPath(0));
                 findViewById(R.id.lastscan_8).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -800,9 +863,9 @@ public class HistorytabActivity extends AppCompatActivity {
         switch ( Exhibitinfo.history[8]){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
-                titls_9.setText(Exhibitinfo.getTitle(1));
-                Desls_9.setText(Exhibitinfo.getArtist(1));
-                vidls_9.setVideoPath(Exhibitinfo.getVideoPath(1));
+                titls_9.setText(getTitle(1));
+                Desls_9.setText(getArtist(1));
+                vidls_9.setVideoPath(getVideoPath(1));
                 findViewById(R.id.lastscan_9).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -814,9 +877,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"ImpressionSunrise":
                 Exhibitinfo.Qrcode ="ImpressionSunrise";
-                titls_9.setText(Exhibitinfo.getTitle(2));
-                Desls_9.setText(Exhibitinfo.getArtist(2));
-                vidls_9.setVideoPath(Exhibitinfo.getVideoPath(2));
+                titls_9.setText(getTitle(2));
+                Desls_9.setText(getArtist(2));
+                vidls_9.setVideoPath(getVideoPath(2));
                 findViewById(R.id.lastscan_9).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -828,9 +891,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheDanceClass":
                 Exhibitinfo.Qrcode ="TheDanceClass";
-                titls_9.setText(Exhibitinfo.getTitle(3));
-                Desls_9.setText(Exhibitinfo.getArtist(3));
-                vidls_9.setVideoPath(Exhibitinfo.getVideoPath(3));
+                titls_9.setText(getTitle(3));
+                Desls_9.setText(getArtist(3));
+                vidls_9.setVideoPath(getVideoPath(3));
                 findViewById(R.id.lastscan_9).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -842,9 +905,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"LuncheonAtTheBoatingParty":
                 Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
-                titls_9.setText(Exhibitinfo.getTitle(4));
-                Desls_9.setText(Exhibitinfo.getArtist(4));
-                vidls_9.setVideoPath(Exhibitinfo.getVideoPath(4));
+                titls_9.setText(getTitle(4));
+                Desls_9.setText(getArtist(4));
+                vidls_9.setVideoPath(getVideoPath(4));
                 findViewById(R.id.lastscan_9).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -856,9 +919,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheCardPlayers":
                 Exhibitinfo.Qrcode ="TheCardPlayers";
-                titls_9.setText(Exhibitinfo.getTitle(5));
-                Desls_9.setText(Exhibitinfo.getArtist(5));
-                vidls_9.setVideoPath(Exhibitinfo.getVideoPath(5));
+                titls_9.setText(getTitle(5));
+                Desls_9.setText(getArtist(5));
+                vidls_9.setVideoPath(getVideoPath(5));
                 findViewById(R.id.lastscan_9).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -870,9 +933,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
                 Exhibitinfo.Qrcode ="Error";
-                titls_9.setText(Exhibitinfo.getTitle(0));
-                Desls_9.setText(Exhibitinfo.getArtist(0));
-                vidls_9.setVideoPath(Exhibitinfo.getVideoPath(0));
+                titls_9.setText(getTitle(0));
+                Desls_9.setText(getArtist(0));
+                vidls_9.setVideoPath(getVideoPath(0));
                 findViewById(R.id.lastscan_9).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -887,9 +950,9 @@ public class HistorytabActivity extends AppCompatActivity {
         switch ( Exhibitinfo.history[9]){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
-                titls_10.setText(Exhibitinfo.getTitle(1));
-                Desls_10.setText(Exhibitinfo.getArtist(1));
-                vidls_10.setVideoPath(Exhibitinfo.getVideoPath(1));
+                titls_10.setText(getTitle(1));
+                Desls_10.setText(getArtist(1));
+                vidls_10.setVideoPath(getVideoPath(1));
                 findViewById(R.id.lastscan_10).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -901,9 +964,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"ImpressionSunrise":
                 Exhibitinfo.Qrcode ="ImpressionSunrise";
-                titls_10.setText(Exhibitinfo.getTitle(2));
-                Desls_10.setText(Exhibitinfo.getArtist(2));
-                vidls_10.setVideoPath(Exhibitinfo.getVideoPath(2));
+                titls_10.setText(getTitle(2));
+                Desls_10.setText(getArtist(2));
+                vidls_10.setVideoPath(getVideoPath(2));
                 findViewById(R.id.lastscan_10).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -915,9 +978,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheDanceClass":
                 Exhibitinfo.Qrcode ="TheDanceClass";
-                titls_10.setText(Exhibitinfo.getTitle(3));
-                Desls_10.setText(Exhibitinfo.getArtist(3));
-                vidls_10.setVideoPath(Exhibitinfo.getVideoPath(3));
+                titls_10.setText(getTitle(3));
+                Desls_10.setText(getArtist(3));
+                vidls_10.setVideoPath(getVideoPath(3));
                 findViewById(R.id.lastscan_10).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -929,9 +992,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"LuncheonAtTheBoatingParty":
                 Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
-                titls_10.setText(Exhibitinfo.getTitle(4));
-                Desls_10.setText(Exhibitinfo.getArtist(4));
-                vidls_10.setVideoPath(Exhibitinfo.getVideoPath(4));
+                titls_10.setText(getTitle(4));
+                Desls_10.setText(getArtist(4));
+                vidls_10.setVideoPath(getVideoPath(4));
                 findViewById(R.id.lastscan_10).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -943,9 +1006,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             case"TheCardPlayers":
                 Exhibitinfo.Qrcode ="TheCardPlayers";
-                titls_10.setText(Exhibitinfo.getTitle(5));
-                Desls_10.setText(Exhibitinfo.getArtist(5));
-                vidls_10.setVideoPath(Exhibitinfo.getVideoPath(5));
+                titls_10.setText(getTitle(5));
+                Desls_10.setText(getArtist(5));
+                vidls_10.setVideoPath(getVideoPath(5));
                 findViewById(R.id.lastscan_10).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -957,9 +1020,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
                 Exhibitinfo.Qrcode ="Error";
-                titls_10.setText(Exhibitinfo.getTitle(0));
-                Desls_10.setText(Exhibitinfo.getArtist(0));
-                vidls_10.setVideoPath(Exhibitinfo.getVideoPath(0));
+                titls_10.setText(getTitle(0));
+                Desls_10.setText(getArtist(0));
+                vidls_10.setVideoPath(getVideoPath(0));
                 findViewById(R.id.lastscan_10).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

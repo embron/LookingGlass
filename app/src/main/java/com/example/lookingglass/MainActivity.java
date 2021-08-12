@@ -33,6 +33,14 @@ class Exhibit {
     private String artist;
     private String description;
 
+    public Exhibit()
+    {
+        name = "error";
+        videoPath = "error";
+        title = "error";
+        artist = "error";
+        description = "error";
+    }
     public Exhibit(String exhibitName, String videoSetPath, String fileText)
     {
         name = exhibitName;

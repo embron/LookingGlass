@@ -11,6 +11,7 @@ public class Exhibitinfo extends Application{
     {
         Qrcode = "error";
         history = new String[10];
+        history = null;
         count = 0;
     }
 

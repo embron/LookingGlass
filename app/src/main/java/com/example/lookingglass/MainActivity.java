@@ -137,8 +137,6 @@ public class MainActivity extends AppCompatActivity {
                     Exhibitinfo.history[0]=Exhibitinfo.Qrcode;
                 }
                 qrres.setText(Exhibitinfo.Qrcode);// compare database results here
-                startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
 
             }
 

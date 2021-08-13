@@ -14,7 +14,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="119dp"
         android:layout_marginBottom="674dp"
-        android:text="Artist name"
+        android:text="@string/artist_name"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +31,7 @@
         android:layout_marginEnd="18dp"
         android:layout_marginBottom="675dp"
         android:background = "@drawable/rectangles"
-        android:text="Return"
+        android:text="@string/returneded"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Artistname"
@@ -67,14 +67,14 @@
             android:id="@+id/artistdesc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="short artist description"
+            android:text="@string/short_artist_description"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
             android:id="@+id/Artistsumm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Summary of the artist goes here"
+            android:text="@string/summary_of_the_artist_goes_here"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
         </LinearLayout>

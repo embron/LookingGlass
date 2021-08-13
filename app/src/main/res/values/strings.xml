@@ -127,4 +127,16 @@
     <string name="close">Close</string>
     <string name="title_activity_historytab">ScrollingActivity</string>
     <string name="go_back">Go Back</string>
+    <string name="visit_exhibit">Visit Exhibit</string>
+    <string name="tostertext">testing</string>
+    <string name="longdesct">Description but is\'s super long</string>
+    <string name="go_bacc">Go back</string>
+    <string name="tost">test \n</string>
+    <string name="artist_name">Artist name</string>
+    <string name="returneded">Return</string>
+    <string name="short_artist_description">short artist description</string>
+    <string name="summary_of_the_artist_goes_here">Summary of the artist goes here</string>
+    <string name="scan_codes">Scan Codes</string>
+    <string name="history">History</string>
+    <string name="looking_glass_logo">Looking Glass logo</string>
 </resources>

@@ -15,7 +15,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="384dp"
         android:background="@drawable/rectangles"
-        android:text="Go back"
+        android:text="@string/go_bacc"
         android:theme="@style/Button.Gray"
         app:layout_anchorGravity="bottom|end"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -59,7 +59,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             tools:ignore="ExtraText">
 
@@ -70,7 +70,7 @@
                 android:theme="@style/Button.Gray"
                 android:layout_height="wrap_content"
                 android:background = "@drawable/rectangles"
-                android:text="Visit Exhibit" />
+                android:text="@string/visit_exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_1"
@@ -81,14 +81,14 @@
                 android:id="@+id/titlels_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="testing"
+                android:text="@string/tostertext"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
                 android:id="@+id/destls_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Description but is's super long"
+                android:text="@string/longdesct"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
 ################################ Second to last thing scanned###############################################
@@ -98,7 +98,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                     android:background = "@drawable/rectangles"
-                android:text="Visit Exhibit" />
+                android:text="@string/visit_exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_2"
@@ -109,14 +109,14 @@
                 android:id="@+id/titlels_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="testing"
+                android:text="@string/tostertext"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
                 android:id="@+id/destls_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Description but is's super long"
+                android:text="@string/longdesct"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 ################################# third  last thing scanned###############################################
 
@@ -124,7 +124,7 @@
                 android:id="@+id/lastscan_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Visit Exhibit" />
+                android:text="@string/visit_exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_3"
@@ -135,14 +135,14 @@
                 android:id="@+id/titlels_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="testing"
+                android:text="@string/tostertext"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
                 android:id="@+id/destls_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Description but is's super long"
+                android:text="@string/longdesct"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 ################################# Fourth last thing scanned###############################################
 
@@ -150,7 +150,7 @@
                 android:id="@+id/lastscan_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Visit Exhibit" />
+                android:text="@string/visit_exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_4"
@@ -161,14 +161,14 @@
                 android:id="@+id/titlels_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="testing"
+                android:text="@string/tostertext"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
                 android:id="@+id/destls_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Description but is's super long"
+                android:text="@string/longdesct"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
 ################################# Fifth last thing scanned###############################################
@@ -177,7 +177,7 @@
                 android:id="@+id/lastscan_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Visit Exhibit" />
+                android:text="@string/visit_exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_5"
@@ -188,14 +188,14 @@
                 android:id="@+id/titlels_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="testing"
+                android:text="@string/tostertext"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
                 android:id="@+id/destls_5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="test \n"
+                android:text="@string/tost"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
             ################################# Sixth last thing scanned###############################################
@@ -204,7 +204,7 @@
                 android:id="@+id/lastscan_6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Visit Exhibit" />
+                android:text="@string/visit_exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_6"
@@ -215,14 +215,14 @@
                 android:id="@+id/titlels_6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="testing"
+                android:text="@string/tostertext"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
                 android:id="@+id/destls_6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Description but is's super long"
+                android:text="@string/longdesct"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
 ################################# Seventh last thing scanned###############################################
@@ -231,7 +231,7 @@
                 android:id="@+id/lastscan_7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Visit Exhibit" />
+                android:text="@string/visit_exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_7"
@@ -242,14 +242,14 @@
                 android:id="@+id/titlels_7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="testing"
+                android:text="@string/tostertext"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
                 android:id="@+id/destls_7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Description but is's super long"
+                android:text="@string/longdesct"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 ################################# eighth  last thing scanned########################################
 
@@ -257,7 +257,7 @@
                 android:id="@+id/lastscan_8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Visit Exhibit" />
+                android:text="@string/visit_exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_8"
@@ -268,14 +268,14 @@
                 android:id="@+id/titlels_8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="testing"
+                android:text="@string/tostertext"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
                 android:id="@+id/destls_8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Description but is's super long"
+                android:text="@string/longdesct"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 ################################# 9th to last scan###############################################
 
@@ -283,7 +283,7 @@
                 android:id="@+id/lastscan_9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Visit Exhibit" />
+                android:text="@string/visit_exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_9"
@@ -294,14 +294,14 @@
                 android:id="@+id/titlels_9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="testing"
+                android:text="@string/tostertext"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
                 android:id="@+id/destls_9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Description but is's super long"
+                android:text="@string/longdesct"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
  ################################# 10th last thing scanned####################################
@@ -310,7 +310,7 @@
                 android:id="@+id/lastscan_10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Visit Exhibit" />
+                android:text="@string/visit_exhibit" />
 
             <VideoView
                 android:id="@+id/Artistvidls_10"
@@ -321,14 +321,14 @@
                 android:id="@+id/titlels_10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="testing"
+                android:text="@string/tostertext"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
                 android:id="@+id/destls_10"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="test \n"
+                android:text="@string/tost"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
         </LinearLayout>

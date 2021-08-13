@@ -5,7 +5,7 @@ import android.app.Application;
 public class Exhibitinfo extends Application{
     public String Qrcode;
     public String[] history;
-    public int count=0;
+    public int count;
 
     public Exhibitinfo()
     {

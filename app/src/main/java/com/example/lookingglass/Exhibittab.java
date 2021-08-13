@@ -1,22 +1,17 @@
 package com.example.lookingglass;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 import android.widget.VideoView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.LinkedList;
 
 public class Exhibittab extends AppCompatActivity {
-    private TextView artname;
-    private TextView artdesc;
-    private TextView artsum;
 
 
     public LinkedList<Exhibit> database = new LinkedList<>();
-    String videoPath = "android.resource://" + getPackageName() + "/";
     public String getName(int i)
     {
         return database.get(i).name;
@@ -47,19 +42,14 @@ public class Exhibittab extends AppCompatActivity {
         exhibitSetUp(database);
 
         Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) this.getApplication();
-        VideoView artvid = (VideoView) findViewById(R.id.Artistvid);
+        VideoView artvid = findViewById(R.id.Artistvid);
 
 
-        artname=findViewById(R.id.Artistname);
-        artdesc=findViewById(R.id.artistdesc);
-        artsum=findViewById(R.id.Artistsumm);
+        TextView artname = findViewById(R.id.Artistname);
+        TextView artdesc = findViewById(R.id.artistdesc);
+        TextView artsum = findViewById(R.id.Artistsumm);
 
-        findViewById(R.id.returning).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
+        findViewById(R.id.returning).setOnClickListener(v -> onBackPressed());
 
 
     switch (Exhibitinfo.Qrcode){
@@ -118,11 +108,11 @@ public class Exhibittab extends AppCompatActivity {
     }
 
     static class Exhibit {
-        private String name;
-        private String videoPath;
-        private String title;
-        private String artist;
-        private String description;
+        private final String name;
+        private final String videoPath;
+        private final String title;
+        private final String artist;
+        private final String description;
 
         public Exhibit(String exhibitName, String videoSetPath, String fileText)
         {

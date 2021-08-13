@@ -1,6 +1,7 @@
 package com.example.lookingglass;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -27,11 +28,11 @@ import java.util.LinkedList;
 //Matthew Speer
 
 class Exhibit {
-    private String name;
-    private String videoPath;
-    private String title;
-    private String artist;
-    private String description;
+    private final String name;
+    private final String videoPath;
+    private final String title;
+    private final String artist;
+    private final String description;
 
     public Exhibit()
     {
@@ -118,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         IntentResult intentResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
@@ -136,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     Exhibitinfo.history[0]=Exhibitinfo.Qrcode;
                 }
+
                 qrres.setText(Exhibitinfo.Qrcode);// compare database results here
 
             }

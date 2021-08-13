@@ -1,7 +1,7 @@
 package com.example.lookingglass;
 
 
-import android.content.Intent;
+import android.content.*;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.VideoView;

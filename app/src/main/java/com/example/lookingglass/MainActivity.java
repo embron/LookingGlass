@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
                     Exhibitinfo.history[0]=Exhibitinfo.Qrcode;
                 }
 
-                qrres.setText(Exhibitinfo.Qrcode);// compare database results here
+                qrres.setText(intentResult.getContents());// compare database results here
 
             }
 

@@ -15,7 +15,7 @@
         android:theme="@style/Theme.LookingGlass"
         tools:ignore="Instantiatable">
 
-        <activity android:name=".Exhibittab"></activity>
+        <activity android:name=".Exhibittab" />
         <activity android:name=".HistorytabActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

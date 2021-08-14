@@ -18,7 +18,6 @@ public class HistorytabActivity extends AppCompatActivity {
 
 
     public LinkedList<Exhibit> database;
-
     public String getName(int i)
     {
         return database.get(i).name;

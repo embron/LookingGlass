@@ -18,7 +18,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
 
     public LinkedList<Exhibit> database;
-    public String videoPath;
+
     public String getName(int i)
     {
         return database.get(i).name;
@@ -64,6 +64,7 @@ public class HistorytabActivity extends AppCompatActivity {
     }
 
     public void exhibitSetUp(LinkedList<Exhibit> dataEntry){
+        String videoPath = "android.resource://" + getPackageName() + '/';
         dataEntry.add(new Exhibit("Error", videoPath + R.raw.errorvideo, getString(R.string.error)));
         dataEntry.add(new Exhibit("LunchOnTheGrass", videoPath + R.raw.lunchonthegrassvideo, getString(R.string.lunchonthegrass)));
         dataEntry.add(new Exhibit("ImpressionSunrise", videoPath + R.raw.impressionsunrisevideo, getString(R.string.impressionsunrise)));
@@ -81,7 +82,6 @@ public class HistorytabActivity extends AppCompatActivity {
         com.example.lookingglass.databinding.ActivityHistorytabBinding binding = ActivityHistorytabBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         database = new LinkedList<>();
-        videoPath = "android.resource://" + getPackageName() + "/";
         exhibitSetUp(database);
 
         TextView titls_1 = findViewById(R.id.titlels_1);

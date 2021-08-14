@@ -1,13 +1,13 @@
 package com.example.lookingglass;
 
 
-import android.content.*;
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import com.example.lookingglass.databinding.ActivityHistorytabBinding;
 
@@ -15,7 +15,6 @@ import java.util.LinkedList;
 
 
 public class HistorytabActivity extends AppCompatActivity {
-
 
 
 
@@ -70,8 +69,8 @@ public class HistorytabActivity extends AppCompatActivity {
         TextView desls_10 = findViewById(R.id.destls_10);
         VideoView vidls_10 =findViewById(R.id.Artistvidls_10);
 
-        Toolbar toolbar = binding.toolbar;
-        setSupportActionBar(toolbar);
+        //Toolbar toolbar = binding.toolbar;
+        //setSupportActionBar(toolbar);
 
 /////////////////1
         switch ( Exhibitinfo.history[0]){

@@ -17,60 +17,7 @@ import java.util.LinkedList;
 public class HistorytabActivity extends AppCompatActivity {
 
 
-    public LinkedList<Exhibit> database;
-    public String getName(int i)
-    {
-        return database.get(i).name;
-    }
-    public String getVideoPath(int i)
-    {
-        return database.get(i).videoPath;
-    }
-    public String getTitle(int i)
-    {
-        return database.get(i).title;
-    }
-    public String getArtist(int i)
-    {
-        return database.get(i).artist;
-    }
-    public String getDescription(int i)
-    {
-        return database.get(i).description;
-    }
 
-
-    static class Exhibit {
-        private final String name;
-        private final String videoPath;
-        private final String title;
-        private final String artist;
-        private final String description;
-
-        public Exhibit(String exhibitName, String videoSetPath, String fileText)
-        {
-
-
-            name = exhibitName;
-            videoPath = videoSetPath;
-            String[] textArray = fileText.split("\n");
-            title = textArray[0];
-            artist = textArray[1];
-            description = textArray[2];
-        }
-
-
-    }
-
-    public void exhibitSetUp(LinkedList<Exhibit> dataEntry){
-        String videoPath = "android.resource://" + getPackageName() + '/';
-        dataEntry.add(new Exhibit("Error", videoPath + R.raw.errorvideo, getString(R.string.error)));
-        dataEntry.add(new Exhibit("LunchOnTheGrass", videoPath + R.raw.lunchonthegrassvideo, getString(R.string.lunchonthegrass)));
-        dataEntry.add(new Exhibit("ImpressionSunrise", videoPath + R.raw.impressionsunrisevideo, getString(R.string.impressionsunrise)));
-        dataEntry.add(new Exhibit("TheDanceClass", videoPath + R.raw.thedanceclassvideo, getString(R.string.thedanceclass)));
-        dataEntry.add(new Exhibit("LuncheonAtTheBoatingParty", videoPath + R.raw.luncheonattheboatingpartyvideo, getString(R.string.luncheonattheboatingparty)));
-        dataEntry.add(new Exhibit("TheCardPlayers", videoPath + R.raw.thecardplayersvideo, getString(R.string.thecardplayers)));
-    }
 
 
 
@@ -820,6 +767,61 @@ public class HistorytabActivity extends AppCompatActivity {
         findViewById(R.id.fab).setOnClickListener(view -> onBackPressed());
 
 
+    }
+
+    public LinkedList<Exhibit> database;
+    public String getName(int i)
+    {
+        return database.get(i).name;
+    }
+    public String getVideoPath(int i)
+    {
+        return database.get(i).videoPath;
+    }
+    public String getTitle(int i)
+    {
+        return database.get(i).title;
+    }
+    public String getArtist(int i)
+    {
+        return database.get(i).artist;
+    }
+    public String getDescription(int i)
+    {
+        return database.get(i).description;
+    }
+
+
+    static class Exhibit {
+        private final String name;
+        private final String videoPath;
+        private final String title;
+        private final String artist;
+        private final String description;
+
+        public Exhibit(String exhibitName, String videoSetPath, String fileText)
+        {
+
+
+            name = exhibitName;
+            videoPath = videoSetPath;
+            String[] textArray = fileText.split("\n");
+            title = textArray[0];
+            artist = textArray[1];
+            description = textArray[2];
+        }
+
+
+    }
+
+    public void exhibitSetUp(LinkedList<Exhibit> dataEntry){
+        String videoPath = "android.resource://" + getPackageName() + '/';
+        dataEntry.add(new Exhibit("Error", videoPath + R.raw.errorvideo, getString(R.string.error)));
+        dataEntry.add(new Exhibit("LunchOnTheGrass", videoPath + R.raw.lunchonthegrassvideo, getString(R.string.lunchonthegrass)));
+        dataEntry.add(new Exhibit("ImpressionSunrise", videoPath + R.raw.impressionsunrisevideo, getString(R.string.impressionsunrise)));
+        dataEntry.add(new Exhibit("TheDanceClass", videoPath + R.raw.thedanceclassvideo, getString(R.string.thedanceclass)));
+        dataEntry.add(new Exhibit("LuncheonAtTheBoatingParty", videoPath + R.raw.luncheonattheboatingpartyvideo, getString(R.string.luncheonattheboatingparty)));
+        dataEntry.add(new Exhibit("TheCardPlayers", videoPath + R.raw.thecardplayersvideo, getString(R.string.thecardplayers)));
     }
 
     @Override

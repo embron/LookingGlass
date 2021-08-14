@@ -2,6 +2,8 @@ package com.example.lookingglass;
 
 import android.app.Application;
 
+import java.util.Arrays;
+
 public class Exhibitinfo extends Application{
     public String Qrcode;
     public String[] history;
@@ -11,7 +13,7 @@ public class Exhibitinfo extends Application{
     {
         Qrcode = "error";
         history = new String[10];
-        history = null;
+        Arrays.fill(history, "Error");
         count = 0;
     }
 

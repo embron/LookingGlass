@@ -3,7 +3,9 @@ package com.example.lookingglass;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
 
@@ -28,6 +30,9 @@ public class HistorytabActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         database = new LinkedList<>();
         exhibitSetUp(database);
+
+        MediaController mediaController = new MediaController(this);
+        Uri uri = Uri.parse(getVideoPath(0));
 
         TextView titls_1 = findViewById(R.id.titlels_1);
         TextView desls_1 = findViewById(R.id.destls_1);
@@ -79,6 +84,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_1.setText(getTitle(1));
                 desls_1.setText(getArtist(1));
                 vidls_1.setVideoPath(getVideoPath(1));
+                uri =Uri.parse(getVideoPath(1));
+                vidls_1.setVideoURI(uri);
+                vidls_1.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_1);
                    findViewById(R.id.lastscan_1).setOnClickListener(v -> {
                           startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                            overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -90,6 +99,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_1.setText(getTitle(2));
                 desls_1.setText(getArtist(2));
                 vidls_1.setVideoPath(getVideoPath(2));
+                uri =Uri.parse(getVideoPath(2));
+                vidls_1.setVideoURI(uri);
+                vidls_1.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_1);
                 findViewById(R.id.lastscan_1).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -101,6 +114,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_1.setText(getTitle(3));
                 desls_1.setText(getArtist(3));
                 vidls_1.setVideoPath(getVideoPath(3));
+                uri =Uri.parse(getVideoPath(3));
+                vidls_1.setVideoURI(uri);
+                vidls_1.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_1);
                 findViewById(R.id.lastscan_1).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -112,6 +129,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_1.setText(getTitle(4));
                 desls_1.setText(getArtist(4));
                 vidls_1.setVideoPath(getVideoPath(4));
+                uri =Uri.parse(getVideoPath(4));
+                vidls_1.setVideoURI(uri);
+                vidls_1.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_1);
                 findViewById(R.id.lastscan_1).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -123,6 +144,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_1.setText(getTitle(5));
                 desls_1.setText(getArtist(5));
                 vidls_1.setVideoPath(getVideoPath(5));
+                uri =Uri.parse(getVideoPath(5));
+                vidls_1.setVideoURI(uri);
+                vidls_1.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_1);
                 findViewById(R.id.lastscan_1).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -134,6 +159,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_1.setText(getTitle(0));
                 desls_1.setText(getArtist(0));
                 vidls_1.setVideoPath(getVideoPath(0));
+                vidls_1.setVideoURI(uri);
+                vidls_1.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_1);
                 findViewById(R.id.lastscan_1).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -148,6 +176,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_2.setText(getTitle(1));
                 desls_2.setText(getArtist(1));
                 vidls_2.setVideoPath(getVideoPath(1));
+                uri =Uri.parse(getVideoPath(1));
+                vidls_2.setVideoURI(uri);
+                vidls_2.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_2);
                 findViewById(R.id.lastscan_2).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -159,6 +191,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_2.setText(getTitle(2));
                 desls_2.setText(getArtist(2));
                 vidls_2.setVideoPath(getVideoPath(2));
+                uri =Uri.parse(getVideoPath(2));
+                vidls_2.setVideoURI(uri);
+                vidls_2.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_2);
                 findViewById(R.id.lastscan_2).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -170,6 +206,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_2.setText(getTitle(3));
                 desls_2.setText(getArtist(3));
                 vidls_2.setVideoPath(getVideoPath(3));
+                uri =Uri.parse(getVideoPath(3));
+                vidls_2.setVideoURI(uri);
+                vidls_2.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_2);
                 findViewById(R.id.lastscan_2).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -181,6 +221,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_2.setText(getTitle(4));
                 desls_2.setText(getArtist(4));
                 vidls_2.setVideoPath(getVideoPath(4));
+                uri =Uri.parse(getVideoPath(4));
+                vidls_2.setVideoURI(uri);
+                vidls_2.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_2);
                 findViewById(R.id.lastscan_2).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -192,6 +236,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_2.setText(getTitle(5));
                 desls_2.setText(getArtist(5));
                 vidls_2.setVideoPath(getVideoPath(5));
+                uri =Uri.parse(getVideoPath(5));
+                vidls_2.setVideoURI(uri);
+                vidls_2.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_2);
                 findViewById(R.id.lastscan_2).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -203,6 +251,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_2.setText(getTitle(0));
                 desls_2.setText(getArtist(0));
                 vidls_2.setVideoPath(getVideoPath(0));
+                vidls_2.setVideoURI(uri);
+                vidls_2.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_2);
                 findViewById(R.id.lastscan_2).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -217,6 +268,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_3.setText(getTitle(1));
                 desls_3.setText(getArtist(1));
                 vidls_3.setVideoPath(getVideoPath(1));
+                uri =Uri.parse(getVideoPath(1));
+                vidls_3.setVideoURI(uri);
+                vidls_3.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_3);
                 findViewById(R.id.lastscan_3).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -228,6 +283,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_3.setText(getTitle(2));
                 desls_3.setText(getArtist(2));
                 vidls_3.setVideoPath(getVideoPath(2));
+                uri =Uri.parse(getVideoPath(2));
+                vidls_3.setVideoURI(uri);
+                vidls_3.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_3);
                 findViewById(R.id.lastscan_3).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -239,6 +298,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_3.setText(getTitle(3));
                 desls_3.setText(getArtist(3));
                 vidls_3.setVideoPath(getVideoPath(3));
+                uri =Uri.parse(getVideoPath(3));
+                vidls_3.setVideoURI(uri);
+                vidls_3.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_3);
                 findViewById(R.id.lastscan_3).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -250,6 +313,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_3.setText(getTitle(4));
                 desls_3.setText(getArtist(4));
                 vidls_3.setVideoPath(getVideoPath(4));
+                uri =Uri.parse(getVideoPath(4));
+                vidls_3.setVideoURI(uri);
+                vidls_3.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_3);
                 findViewById(R.id.lastscan_3).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -261,6 +328,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_3.setText(getTitle(5));
                 desls_3.setText(getArtist(5));
                 vidls_3.setVideoPath(getVideoPath(5));
+                uri =Uri.parse(getVideoPath(5));
+                vidls_3.setVideoURI(uri);
+                vidls_3.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_3);
                 findViewById(R.id.lastscan_3).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -272,6 +343,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_3.setText(getTitle(0));
                 desls_3.setText(getArtist(0));
                 vidls_3.setVideoPath(getVideoPath(0));
+                vidls_3.setVideoURI(uri);
+                vidls_3.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_3);
                 findViewById(R.id.lastscan_3).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -286,6 +360,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_4.setText(getTitle(1));
                 desls_4.setText(getArtist(1));
                 vidls_4.setVideoPath(getVideoPath(1));
+                uri =Uri.parse(getVideoPath(1));
+                vidls_4.setVideoURI(uri);
+                vidls_4.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_4);
                 findViewById(R.id.lastscan_4).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -297,6 +375,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_4.setText(getTitle(2));
                 desls_4.setText(getArtist(2));
                 vidls_4.setVideoPath(getVideoPath(2));
+                uri =Uri.parse(getVideoPath(2));
+                vidls_4.setVideoURI(uri);
+                vidls_4.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_4);
                 findViewById(R.id.lastscan_4).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -308,6 +390,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_4.setText(getTitle(3));
                 desls_4.setText(getArtist(3));
                 vidls_4.setVideoPath(getVideoPath(3));
+                uri =Uri.parse(getVideoPath(3));
+                vidls_4.setVideoURI(uri);
+                vidls_4.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_4);
                 findViewById(R.id.lastscan_4).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -319,6 +405,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_4.setText(getTitle(4));
                 desls_4.setText(getArtist(4));
                 vidls_4.setVideoPath(getVideoPath(4));
+                uri =Uri.parse(getVideoPath(4));
+                vidls_4.setVideoURI(uri);
+                vidls_4.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_4);
                 findViewById(R.id.lastscan_4).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -330,6 +420,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_4.setText(getTitle(5));
                 desls_4.setText(getArtist(5));
                 vidls_4.setVideoPath(getVideoPath(5));
+                uri =Uri.parse(getVideoPath(5));
+                vidls_4.setVideoURI(uri);
+                vidls_4.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_4);
                 findViewById(R.id.lastscan_4).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -341,6 +435,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_4.setText(getTitle(0));
                 desls_4.setText(getArtist(0));
                 vidls_4.setVideoPath(getVideoPath(0));
+                vidls_4.setVideoURI(uri);
+                vidls_4.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_4);
                 findViewById(R.id.lastscan_4).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -355,6 +452,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_5.setText(getTitle(1));
                 desls_5.setText(getArtist(1));
                 vidls_5.setVideoPath(getVideoPath(1));
+                uri =Uri.parse(getVideoPath(1));
+                vidls_5.setVideoURI(uri);
+                vidls_5.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_5);
                 findViewById(R.id.lastscan_5).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -366,6 +467,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_5.setText(getTitle(2));
                 desls_5.setText(getArtist(2));
                 vidls_5.setVideoPath(getVideoPath(2));
+                uri =Uri.parse(getVideoPath(2));
+                vidls_5.setVideoURI(uri);
+                vidls_5.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_5);
                 findViewById(R.id.lastscan_5).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -377,6 +482,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_5.setText(getTitle(3));
                 desls_5.setText(getArtist(3));
                 vidls_5.setVideoPath(getVideoPath(3));
+                uri =Uri.parse(getVideoPath(3));
+                vidls_5.setVideoURI(uri);
+                vidls_5.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_5);
                 findViewById(R.id.lastscan_5).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -388,6 +497,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_5.setText(getTitle(4));
                 desls_5.setText(getArtist(4));
                 vidls_5.setVideoPath(getVideoPath(4));
+                uri =Uri.parse(getVideoPath(4));
+                vidls_5.setVideoURI(uri);
+                vidls_5.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_5);
                 findViewById(R.id.lastscan_5).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -399,6 +512,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_5.setText(getTitle(5));
                 desls_5.setText(getArtist(5));
                 vidls_5.setVideoPath(getVideoPath(5));
+                uri =Uri.parse(getVideoPath(5));
+                vidls_5.setVideoURI(uri);
+                vidls_5.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_5);
                 findViewById(R.id.lastscan_5).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -410,6 +527,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_5.setText(getTitle(0));
                 desls_5.setText(getArtist(0));
                 vidls_5.setVideoPath(getVideoPath(0));
+                vidls_5.setVideoURI(uri);
+                vidls_5.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_5);
                 findViewById(R.id.lastscan_5).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -424,6 +544,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_6.setText(getTitle(1));
                 desls_6.setText(getArtist(1));
                 vidls_6.setVideoPath(getVideoPath(1));
+                uri =Uri.parse(getVideoPath(1));
+                vidls_6.setVideoURI(uri);
+                vidls_6.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_6);
                 findViewById(R.id.lastscan_6).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -435,6 +559,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_6.setText(getTitle(2));
                 desls_6.setText(getArtist(2));
                 vidls_6.setVideoPath(getVideoPath(2));
+                uri =Uri.parse(getVideoPath(2));
+                vidls_6.setVideoURI(uri);
+                vidls_6.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_6);
                 findViewById(R.id.lastscan_6).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -446,6 +574,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_6.setText(getTitle(3));
                 desls_6.setText(getArtist(3));
                 vidls_6.setVideoPath(getVideoPath(3));
+                uri =Uri.parse(getVideoPath(3));
+                vidls_6.setVideoURI(uri);
+                vidls_6.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_6);
                 findViewById(R.id.lastscan_6).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -457,6 +589,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_6.setText(getTitle(4));
                 desls_6.setText(getArtist(4));
                 vidls_6.setVideoPath(getVideoPath(4));
+                uri =Uri.parse(getVideoPath(4));
+                vidls_6.setVideoURI(uri);
+                vidls_6.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_6);
                 findViewById(R.id.lastscan_6).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -468,6 +604,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_6.setText(getTitle(5));
                 desls_6.setText(getArtist(5));
                 vidls_6.setVideoPath(getVideoPath(5));
+                uri =Uri.parse(getVideoPath(5));
+                vidls_6.setVideoURI(uri);
+                vidls_6.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_6);
                 findViewById(R.id.lastscan_6).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -479,6 +619,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_6.setText(getTitle(0));
                 desls_6.setText(getArtist(0));
                 vidls_6.setVideoPath(getVideoPath(0));
+                vidls_6.setVideoURI(uri);
+                vidls_6.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_6);
                 findViewById(R.id.lastscan_6).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -493,6 +636,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_7.setText(getTitle(1));
                 desls_7.setText(getArtist(1));
                 vidls_7.setVideoPath(getVideoPath(1));
+                uri =Uri.parse(getVideoPath(1));
+                vidls_7.setVideoURI(uri);
+                vidls_7.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_7);
                 findViewById(R.id.lastscan_7).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -504,6 +651,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_7.setText(getTitle(2));
                 desls_7.setText(getArtist(2));
                 vidls_7.setVideoPath(getVideoPath(2));
+                uri =Uri.parse(getVideoPath(2));
+                vidls_7.setVideoURI(uri);
+                vidls_7.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_7);
                 findViewById(R.id.lastscan_7).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -515,6 +666,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_7.setText(getTitle(3));
                 desls_7.setText(getArtist(3));
                 vidls_7.setVideoPath(getVideoPath(3));
+                uri =Uri.parse(getVideoPath(3));
+                vidls_7.setVideoURI(uri);
+                vidls_7.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_7);
                 findViewById(R.id.lastscan_7).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -526,6 +681,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_7.setText(getTitle(4));
                 desls_7.setText(getArtist(4));
                 vidls_7.setVideoPath(getVideoPath(4));
+                uri =Uri.parse(getVideoPath(4));
+                vidls_7.setVideoURI(uri);
+                vidls_7.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_7);
                 findViewById(R.id.lastscan_7).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -537,6 +696,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_7.setText(getTitle(5));
                 desls_7.setText(getArtist(5));
                 vidls_7.setVideoPath(getVideoPath(5));
+                uri =Uri.parse(getVideoPath(5));
+                vidls_7.setVideoURI(uri);
+                vidls_7.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_7);
                 findViewById(R.id.lastscan_7).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -548,6 +711,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_7.setText(getTitle(0));
                 desls_7.setText(getArtist(0));
                 vidls_7.setVideoPath(getVideoPath(0));
+                vidls_7.setVideoURI(uri);
+                vidls_7.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_7);
                 findViewById(R.id.lastscan_7).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -562,6 +728,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_8.setText(getTitle(1));
                 desls_8.setText(getArtist(1));
                 vidls_8.setVideoPath(getVideoPath(1));
+                uri =Uri.parse(getVideoPath(1));
+                vidls_8.setVideoURI(uri);
+                vidls_8.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_8);
                 findViewById(R.id.lastscan_8).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -573,6 +743,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_8.setText(getTitle(2));
                 desls_8.setText(getArtist(2));
                 vidls_8.setVideoPath(getVideoPath(2));
+                uri =Uri.parse(getVideoPath(2));
+                vidls_8.setVideoURI(uri);
+                vidls_8.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_8);
                 findViewById(R.id.lastscan_8).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -584,6 +758,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_8.setText(getTitle(3));
                 desls_8.setText(getArtist(3));
                 vidls_8.setVideoPath(getVideoPath(3));
+                uri =Uri.parse(getVideoPath(3));
+                vidls_8.setVideoURI(uri);
+                vidls_8.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_8);
                 findViewById(R.id.lastscan_8).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -595,6 +773,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_8.setText(getTitle(4));
                 desls_8.setText(getArtist(4));
                 vidls_8.setVideoPath(getVideoPath(4));
+                uri =Uri.parse(getVideoPath(4));
+                vidls_8.setVideoURI(uri);
+                vidls_8.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_8);
                 findViewById(R.id.lastscan_8).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -606,6 +788,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_8.setText(getTitle(5));
                 desls_8.setText(getArtist(5));
                 vidls_8.setVideoPath(getVideoPath(5));
+                uri =Uri.parse(getVideoPath(5));
+                vidls_8.setVideoURI(uri);
+                vidls_8.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_8);
                 findViewById(R.id.lastscan_8).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -617,6 +803,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_8.setText(getTitle(0));
                 desls_8.setText(getArtist(0));
                 vidls_8.setVideoPath(getVideoPath(0));
+                vidls_8.setVideoURI(uri);
+                vidls_8.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_8);
                 findViewById(R.id.lastscan_8).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -631,6 +820,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_9.setText(getTitle(1));
                 desls_9.setText(getArtist(1));
                 vidls_9.setVideoPath(getVideoPath(1));
+                uri =Uri.parse(getVideoPath(1));
+                vidls_9.setVideoURI(uri);
+                vidls_9.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_9);
                 findViewById(R.id.lastscan_9).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -642,6 +835,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_9.setText(getTitle(2));
                 desls_9.setText(getArtist(2));
                 vidls_9.setVideoPath(getVideoPath(2));
+                uri =Uri.parse(getVideoPath(2));
+                vidls_9.setVideoURI(uri);
+                vidls_9.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_9);
                 findViewById(R.id.lastscan_9).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -653,6 +850,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_9.setText(getTitle(3));
                 desls_9.setText(getArtist(3));
                 vidls_9.setVideoPath(getVideoPath(3));
+                uri =Uri.parse(getVideoPath(3));
+                vidls_9.setVideoURI(uri);
+                vidls_9.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_9);
                 findViewById(R.id.lastscan_9).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -664,6 +865,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_9.setText(getTitle(4));
                 desls_9.setText(getArtist(4));
                 vidls_9.setVideoPath(getVideoPath(4));
+                uri =Uri.parse(getVideoPath(4));
+                vidls_9.setVideoURI(uri);
+                vidls_9.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_9);
                 findViewById(R.id.lastscan_9).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -675,6 +880,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_9.setText(getTitle(5));
                 desls_9.setText(getArtist(5));
                 vidls_9.setVideoPath(getVideoPath(5));
+                uri =Uri.parse(getVideoPath(5));
+                vidls_9.setVideoURI(uri);
+                vidls_9.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_9);
                 findViewById(R.id.lastscan_9).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -686,6 +895,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_9.setText(getTitle(0));
                 desls_9.setText(getArtist(0));
                 vidls_9.setVideoPath(getVideoPath(0));
+                vidls_9.setVideoURI(uri);
+                vidls_9.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_9);
                 findViewById(R.id.lastscan_9).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -700,6 +912,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_10.setText(getTitle(1));
                 desls_10.setText(getArtist(1));
                 vidls_10.setVideoPath(getVideoPath(1));
+                uri =Uri.parse(getVideoPath(1));
+                vidls_10.setVideoURI(uri);
+                vidls_10.setMediaController(mediaController);
                 findViewById(R.id.lastscan_10).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -711,6 +926,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_10.setText(getTitle(2));
                 desls_10.setText(getArtist(2));
                 vidls_10.setVideoPath(getVideoPath(2));
+                uri =Uri.parse(getVideoPath(2));
+                vidls_10.setVideoURI(uri);
+                vidls_10.setMediaController(mediaController);
                 findViewById(R.id.lastscan_10).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -722,6 +940,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_10.setText(getTitle(3));
                 desls_10.setText(getArtist(3));
                 vidls_10.setVideoPath(getVideoPath(3));
+                uri =Uri.parse(getVideoPath(3));
+                vidls_10.setVideoURI(uri);
+                vidls_10.setMediaController(mediaController);
                 findViewById(R.id.lastscan_10).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -733,6 +954,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_10.setText(getTitle(4));
                 desls_10.setText(getArtist(4));
                 vidls_10.setVideoPath(getVideoPath(4));
+                uri =Uri.parse(getVideoPath(4));
+                vidls_10.setVideoURI(uri);
+                vidls_10.setMediaController(mediaController);
                 findViewById(R.id.lastscan_10).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -744,6 +968,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_10.setText(getTitle(5));
                 desls_10.setText(getArtist(5));
                 vidls_10.setVideoPath(getVideoPath(5));
+                uri =Uri.parse(getVideoPath(5));
+                vidls_10.setVideoURI(uri);
+                vidls_10.setMediaController(mediaController);
                 findViewById(R.id.lastscan_10).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -755,6 +982,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_10.setText(getTitle(0));
                 desls_10.setText(getArtist(0));
                 vidls_10.setVideoPath(getVideoPath(0));
+                vidls_10.setVideoURI(uri);
+                vidls_10.setMediaController(mediaController);
                 findViewById(R.id.lastscan_10).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);

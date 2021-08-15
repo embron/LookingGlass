@@ -1,6 +1,8 @@
 package com.example.lookingglass;
 
+import android.net.Uri;
 import android.os.Bundle;
+import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
 
@@ -44,6 +46,8 @@ public class Exhibittab extends AppCompatActivity {
         Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) this.getApplication();
         VideoView artvid = findViewById(R.id.Artistvid);
 
+        MediaController mediaController = new MediaController(this);
+        Uri uri =Uri.parse(getVideoPath(0));
 
         TextView artname = findViewById(R.id.Artistname);
         TextView artdesc = findViewById(R.id.artistdesc);
@@ -58,6 +62,10 @@ public class Exhibittab extends AppCompatActivity {
             artdesc.setText(getArtist(1));
             artsum.setText(getDescription(1));
             artvid.setVideoPath(getVideoPath(1));
+            uri =Uri.parse(getVideoPath(1));
+            artvid.setVideoURI(uri);
+            artvid.setMediaController(mediaController);
+            mediaController.setAnchorView(artvid);
 
             break;
         case"ImpressionSunrise":
@@ -65,6 +73,10 @@ public class Exhibittab extends AppCompatActivity {
             artdesc.setText(getArtist(2));
             artsum.setText(getDescription(2));
             artvid.setVideoPath(getVideoPath(2));
+            uri =Uri.parse(getVideoPath(2));
+            artvid.setVideoURI(uri);
+            artvid.setMediaController(mediaController);
+            mediaController.setAnchorView(artvid);
 
             break;
         case"TheDanceClass":
@@ -72,6 +84,10 @@ public class Exhibittab extends AppCompatActivity {
             artdesc.setText(getArtist(3));
             artsum.setText(getDescription(3));
             artvid.setVideoPath(getVideoPath(3));
+            uri =Uri.parse(getVideoPath(3));
+            artvid.setVideoURI(uri);
+            artvid.setMediaController(mediaController);
+            mediaController.setAnchorView(artvid);
 
             break;
         case"LuncheonAtTheBoatingParty":
@@ -79,6 +95,10 @@ public class Exhibittab extends AppCompatActivity {
             artdesc.setText(getArtist(4));
             artsum.setText(getDescription(4));
             artvid.setVideoPath(getVideoPath(4));
+            uri =Uri.parse(getVideoPath(4));
+            artvid.setVideoURI(uri);
+            artvid.setMediaController(mediaController);
+            mediaController.setAnchorView(artvid);
 
             break;
         case"TheCardPlayers":
@@ -86,6 +106,10 @@ public class Exhibittab extends AppCompatActivity {
             artdesc.setText(getArtist(5));
             artsum.setText(getDescription(5));
             artvid.setVideoPath(getVideoPath(5));
+            uri =Uri.parse(getVideoPath(5));
+            artvid.setVideoURI(uri);
+            artvid.setMediaController(mediaController);
+            mediaController.setAnchorView(artvid);
 
             break;
         default:
@@ -93,6 +117,10 @@ public class Exhibittab extends AppCompatActivity {
             artdesc.setText(getArtist(0));
             artsum.setText(getDescription(0));
             artvid.setVideoPath(getVideoPath(0));
+            //uri =Uri.parse(getVideoPath(0));
+            artvid.setVideoURI(uri);
+            artvid.setMediaController(mediaController);
+            mediaController.setAnchorView(artvid);
 
             break;
     }

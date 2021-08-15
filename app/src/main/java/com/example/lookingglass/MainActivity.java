@@ -134,12 +134,12 @@ public class MainActivity extends AppCompatActivity {
                 Exhibitinfo.count++;
                 }else{
                     for (int a=0;a<9;a++){
-                        Exhibitinfo.history[9-a]=Exhibitinfo.history[9-a-1];
+                        Exhibitinfo.history[9-a]=Exhibitinfo.history[9-(a+1)];
                     }
                     Exhibitinfo.history[0]=Exhibitinfo.Qrcode;
                 }
 
-                qrres.setText(intentResult.getContents());// compare database results here
+                qrres.setText(Exhibitinfo.Qrcode);// compare database results here
 
             }
 

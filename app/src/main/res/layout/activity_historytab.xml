@@ -72,10 +72,15 @@
                 android:background = "@drawable/rectangles"
                 android:text="@string/visit_exhibit" />
 
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <VideoView
                 android:id="@+id/Artistvidls_1"
                 android:layout_width="match_parent"
                 android:layout_height="350dp"/>
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/titlels_1"
@@ -100,10 +105,14 @@
                     android:background = "@drawable/rectangles"
                 android:text="@string/visit_exhibit" />
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <VideoView
                 android:id="@+id/Artistvidls_2"
                 android:layout_width="match_parent"
                 android:layout_height="350dp"/>
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/titlels_2"
@@ -126,10 +135,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/visit_exhibit" />
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <VideoView
                 android:id="@+id/Artistvidls_3"
                 android:layout_width="match_parent"
                 android:layout_height="350dp"/>
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/titlels_3"
@@ -152,10 +165,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/visit_exhibit" />
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <VideoView
                 android:id="@+id/Artistvidls_4"
                 android:layout_width="match_parent"
                 android:layout_height="350dp"/>
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/titlels_4"
@@ -179,10 +196,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/visit_exhibit" />
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <VideoView
                 android:id="@+id/Artistvidls_5"
                 android:layout_width="match_parent"
                 android:layout_height="350dp"/>
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/titlels_5"
@@ -206,10 +227,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/visit_exhibit" />
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <VideoView
                 android:id="@+id/Artistvidls_6"
                 android:layout_width="match_parent"
                 android:layout_height="350dp"/>
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/titlels_6"
@@ -233,10 +258,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/visit_exhibit" />
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <VideoView
                 android:id="@+id/Artistvidls_7"
                 android:layout_width="match_parent"
                 android:layout_height="350dp"/>
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/titlels_7"
@@ -259,10 +288,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/visit_exhibit" />
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <VideoView
                 android:id="@+id/Artistvidls_8"
                 android:layout_width="match_parent"
                 android:layout_height="350dp"/>
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/titlels_8"
@@ -285,11 +318,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/visit_exhibit" />
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <VideoView
                 android:id="@+id/Artistvidls_9"
                 android:layout_width="match_parent"
                 android:layout_height="350dp"/>
-
+            </FrameLayout>
             <TextView
                 android:id="@+id/titlels_9"
                 android:layout_width="match_parent"
@@ -312,10 +348,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/visit_exhibit" />
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <VideoView
                 android:id="@+id/Artistvidls_10"
                 android:layout_width="match_parent"
                 android:layout_height="350dp"/>
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/titlels_10"

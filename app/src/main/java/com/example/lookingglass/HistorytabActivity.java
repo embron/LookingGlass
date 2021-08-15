@@ -915,6 +915,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 uri =Uri.parse(getVideoPath(1));
                 vidls_10.setVideoURI(uri);
                 vidls_10.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_10);
                 findViewById(R.id.lastscan_10).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -929,6 +930,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 uri =Uri.parse(getVideoPath(2));
                 vidls_10.setVideoURI(uri);
                 vidls_10.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_10);
                 findViewById(R.id.lastscan_10).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -943,6 +945,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 uri =Uri.parse(getVideoPath(3));
                 vidls_10.setVideoURI(uri);
                 vidls_10.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_10);
                 findViewById(R.id.lastscan_10).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -957,6 +960,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 uri =Uri.parse(getVideoPath(4));
                 vidls_10.setVideoURI(uri);
                 vidls_10.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_10);
                 findViewById(R.id.lastscan_10).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -971,6 +975,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 uri =Uri.parse(getVideoPath(5));
                 vidls_10.setVideoURI(uri);
                 vidls_10.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_10);
                 findViewById(R.id.lastscan_10).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
@@ -984,6 +989,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_10.setVideoPath(getVideoPath(0));
                 vidls_10.setVideoURI(uri);
                 vidls_10.setMediaController(mediaController);
+                mediaController.setAnchorView(vidls_10);
                 findViewById(R.id.lastscan_10).setOnClickListener(v -> {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);

@@ -14,7 +14,6 @@ import androidx.core.app.ActivityCompat;
 
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
-import com.google.zxing.qrcode.encoder.QRCode;
 
 import java.util.LinkedList;
 
@@ -27,8 +26,6 @@ import java.util.LinkedList;
 // Michael Aiyedun
 //Suman Poudel
 //Matthew Speer
-
-
 
 class Exhibit {
     private final String name;
@@ -79,19 +76,9 @@ class Exhibit {
 }
 
 public class MainActivity extends AppCompatActivity {
-    public static String getQrcode(){
-        return Qrcode;
-    }
-
-    public static String getHistory(int a){
-        return history[a];
-    }
     Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) getApplicationContext();
     LinkedList<Exhibit> database = new LinkedList<>();
     private TextView qrres;
-    public static String Qrcode= "error";
-    public static String[] history = new String[10];
-    public int count=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -140,24 +127,24 @@ public class MainActivity extends AppCompatActivity {
             if(intentResult.getContents()==null){
                 qrres.setText("empty");
             }else{
-                Qrcode = intentResult.getContents();
+                String test = intentResult.getContents();
+                Exhibitinfo.Qrcode=test;
 
 
 
-
-                if(count<10){
-                history[count]=Qrcode;
-                count++;
-                }if(count>=10){
+                if(Exhibitinfo.count<10){
+                //Exhibitinfo.history[Exhibitinfo.getCount()]=Exhibitinfo.getQrcode();
+                //Exhibitinfo.inccount();
+                }if(Exhibitinfo.count>=10){
                     for (int a=0;a<9;a++){
-                        int b=9-a,c=9-(a+1);
-                        history[b]=history[c];
+                        int b=9-a;
+                        //Exhibitinfo.setHistory(b,Exhibitinfo.getHistory(9-(a+1)));
                     }
-                    history[0]= Qrcode;
+                    //Exhibitinfo.setHistory(0,);[0]=Exhibitinfo.Qrcode;
                 }
 
 
-                qrres.setText(Qrcode);// compare database results here
+                qrres.setText(intentResult.getContents()); // compare database results here
             }
 
 

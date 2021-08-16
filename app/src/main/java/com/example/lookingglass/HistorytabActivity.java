@@ -80,7 +80,7 @@ public class HistorytabActivity extends AppCompatActivity {
 /////////////////1
         switch ( com.example.lookingglass.MainActivity.getHistory(0)){
             case"LunchOnTheGrass":
-                //Exhibitinfo.Qrcode ="LunchOnTheGrass";
+                com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                 titls_1.setText(getTitle(1));
                 desls_1.setText(getArtist(1));
                 vidls_1.setVideoPath(getVideoPath(1));
@@ -95,7 +95,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"ImpressionSunrise":
-                //Exhibitinfo.Qrcode ="ImpressionSunrise";
+                com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                 titls_1.setText(getTitle(2));
                 desls_1.setText(getArtist(2));
                 vidls_1.setVideoPath(getVideoPath(2));
@@ -110,7 +110,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheDanceClass":
-                //Exhibitinfo.Qrcode ="TheDanceClass";
+                com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                 titls_1.setText(getTitle(3));
                 desls_1.setText(getArtist(3));
                 vidls_1.setVideoPath(getVideoPath(3));
@@ -125,7 +125,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"LuncheonAtTheBoatingParty":
-               // Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
+                com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                 titls_1.setText(getTitle(4));
                 desls_1.setText(getArtist(4));
                 vidls_1.setVideoPath(getVideoPath(4));
@@ -140,7 +140,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheCardPlayers":
-              //  Exhibitinfo.Qrcode ="TheCardPlayers";
+                com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                 titls_1.setText(getTitle(5));
                 desls_1.setText(getArtist(5));
                 vidls_1.setVideoPath(getVideoPath(5));
@@ -172,7 +172,7 @@ public class HistorytabActivity extends AppCompatActivity {
 /////////////////2
         switch ( com.example.lookingglass.MainActivity.getHistory(1)){
             case"LunchOnTheGrass":
-              //  Exhibitinfo.Qrcode ="LunchOnTheGrass";
+                com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                 titls_2.setText(getTitle(1));
                 desls_2.setText(getArtist(1));
                 vidls_2.setVideoPath(getVideoPath(1));
@@ -187,7 +187,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"ImpressionSunrise":
-              //  Exhibitinfo.Qrcode ="ImpressionSunrise";
+                com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                 titls_2.setText(getTitle(2));
                 desls_2.setText(getArtist(2));
                 vidls_2.setVideoPath(getVideoPath(2));
@@ -202,7 +202,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheDanceClass":
-              //  Exhibitinfo.Qrcode ="TheDanceClass";
+                com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                 titls_2.setText(getTitle(3));
                 desls_2.setText(getArtist(3));
                 vidls_2.setVideoPath(getVideoPath(3));
@@ -217,7 +217,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"LuncheonAtTheBoatingParty":
-             //   Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
+                com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                 titls_2.setText(getTitle(4));
                 desls_2.setText(getArtist(4));
                 vidls_2.setVideoPath(getVideoPath(4));
@@ -232,7 +232,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheCardPlayers":
-             //   Exhibitinfo.Qrcode ="TheCardPlayers";
+                com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                 titls_2.setText(getTitle(5));
                 desls_2.setText(getArtist(5));
                 vidls_2.setVideoPath(getVideoPath(5));
@@ -264,7 +264,7 @@ public class HistorytabActivity extends AppCompatActivity {
 /////////////////3
         switch ( com.example.lookingglass.MainActivity.getHistory(2)){
             case"LunchOnTheGrass":
-            //    Exhibitinfo.Qrcode ="LunchOnTheGrass";
+                com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                 titls_3.setText(getTitle(1));
                 desls_3.setText(getArtist(1));
                 vidls_3.setVideoPath(getVideoPath(1));
@@ -279,7 +279,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"ImpressionSunrise":
-             //   Exhibitinfo.Qrcode ="ImpressionSunrise";
+                com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                 titls_3.setText(getTitle(2));
                 desls_3.setText(getArtist(2));
                 vidls_3.setVideoPath(getVideoPath(2));
@@ -294,7 +294,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheDanceClass":
-             //   Exhibitinfo.Qrcode ="TheDanceClass";
+                com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                 titls_3.setText(getTitle(3));
                 desls_3.setText(getArtist(3));
                 vidls_3.setVideoPath(getVideoPath(3));
@@ -309,7 +309,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"LuncheonAtTheBoatingParty":
-             //   Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
+                com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                 titls_3.setText(getTitle(4));
                 desls_3.setText(getArtist(4));
                 vidls_3.setVideoPath(getVideoPath(4));
@@ -324,7 +324,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheCardPlayers":
-              //  Exhibitinfo.Qrcode ="TheCardPlayers";
+                com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                 titls_3.setText(getTitle(5));
                 desls_3.setText(getArtist(5));
                 vidls_3.setVideoPath(getVideoPath(5));
@@ -356,7 +356,7 @@ public class HistorytabActivity extends AppCompatActivity {
 /////////////////4
         switch ( com.example.lookingglass.MainActivity.getHistory(3)){
             case"LunchOnTheGrass":
-             //   Exhibitinfo.Qrcode ="LunchOnTheGrass";
+                com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                 titls_4.setText(getTitle(1));
                 desls_4.setText(getArtist(1));
                 vidls_4.setVideoPath(getVideoPath(1));
@@ -371,7 +371,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"ImpressionSunrise":
-            //    Exhibitinfo.Qrcode ="ImpressionSunrise";
+                com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                 titls_4.setText(getTitle(2));
                 desls_4.setText(getArtist(2));
                 vidls_4.setVideoPath(getVideoPath(2));
@@ -386,7 +386,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheDanceClass":
-            //    Exhibitinfo.Qrcode ="TheDanceClass";
+                com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                 titls_4.setText(getTitle(3));
                 desls_4.setText(getArtist(3));
                 vidls_4.setVideoPath(getVideoPath(3));
@@ -401,7 +401,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"LuncheonAtTheBoatingParty":
-            //    Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
+                com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                 titls_4.setText(getTitle(4));
                 desls_4.setText(getArtist(4));
                 vidls_4.setVideoPath(getVideoPath(4));
@@ -416,7 +416,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheCardPlayers":
-             //   Exhibitinfo.Qrcode ="TheCardPlayers";
+                com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                 titls_4.setText(getTitle(5));
                 desls_4.setText(getArtist(5));
                 vidls_4.setVideoPath(getVideoPath(5));
@@ -448,7 +448,7 @@ public class HistorytabActivity extends AppCompatActivity {
 /////////////////5
         switch ( com.example.lookingglass.MainActivity.getHistory(4)){
             case"LunchOnTheGrass":
-              //  Exhibitinfo.Qrcode ="LunchOnTheGrass";
+                com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                 titls_5.setText(getTitle(1));
                 desls_5.setText(getArtist(1));
                 vidls_5.setVideoPath(getVideoPath(1));
@@ -463,7 +463,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"ImpressionSunrise":
-              //  Exhibitinfo.Qrcode ="ImpressionSunrise";
+                com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                 titls_5.setText(getTitle(2));
                 desls_5.setText(getArtist(2));
                 vidls_5.setVideoPath(getVideoPath(2));
@@ -478,7 +478,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheDanceClass":
-             //   Exhibitinfo.Qrcode ="TheDanceClass";
+                com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                 titls_5.setText(getTitle(3));
                 desls_5.setText(getArtist(3));
                 vidls_5.setVideoPath(getVideoPath(3));
@@ -493,7 +493,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"LuncheonAtTheBoatingParty":
-              //  Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
+                com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                 titls_5.setText(getTitle(4));
                 desls_5.setText(getArtist(4));
                 vidls_5.setVideoPath(getVideoPath(4));
@@ -508,7 +508,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheCardPlayers":
-             //   Exhibitinfo.Qrcode ="TheCardPlayers";
+                com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                 titls_5.setText(getTitle(5));
                 desls_5.setText(getArtist(5));
                 vidls_5.setVideoPath(getVideoPath(5));
@@ -540,7 +540,7 @@ public class HistorytabActivity extends AppCompatActivity {
 /////////////////6
         switch ( com.example.lookingglass.MainActivity.getHistory(5)){
             case"LunchOnTheGrass":
-             //   Exhibitinfo.Qrcode ="LunchOnTheGrass";
+                com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                 titls_6.setText(getTitle(1));
                 desls_6.setText(getArtist(1));
                 vidls_6.setVideoPath(getVideoPath(1));
@@ -555,7 +555,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"ImpressionSunrise":
-             //   Exhibitinfo.Qrcode ="ImpressionSunrise";
+                com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                 titls_6.setText(getTitle(2));
                 desls_6.setText(getArtist(2));
                 vidls_6.setVideoPath(getVideoPath(2));
@@ -570,7 +570,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheDanceClass":
-            //    Exhibitinfo.Qrcode ="TheDanceClass";
+                com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                 titls_6.setText(getTitle(3));
                 desls_6.setText(getArtist(3));
                 vidls_6.setVideoPath(getVideoPath(3));
@@ -585,7 +585,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"LuncheonAtTheBoatingParty":
-             //   Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
+                com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                 titls_6.setText(getTitle(4));
                 desls_6.setText(getArtist(4));
                 vidls_6.setVideoPath(getVideoPath(4));
@@ -600,7 +600,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheCardPlayers":
-            //    Exhibitinfo.Qrcode ="TheCardPlayers";
+                com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                 titls_6.setText(getTitle(5));
                 desls_6.setText(getArtist(5));
                 vidls_6.setVideoPath(getVideoPath(5));
@@ -632,7 +632,7 @@ public class HistorytabActivity extends AppCompatActivity {
 /////////////////7
         switch ( com.example.lookingglass.MainActivity.getHistory(6)){
             case"LunchOnTheGrass":
-              //  Exhibitinfo.Qrcode ="LunchOnTheGrass";
+                com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                 titls_7.setText(getTitle(1));
                 desls_7.setText(getArtist(1));
                 vidls_7.setVideoPath(getVideoPath(1));
@@ -647,7 +647,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"ImpressionSunrise":
-            //    Exhibitinfo.Qrcode ="ImpressionSunrise";
+                com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                 titls_7.setText(getTitle(2));
                 desls_7.setText(getArtist(2));
                 vidls_7.setVideoPath(getVideoPath(2));
@@ -662,7 +662,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheDanceClass":
-             //   Exhibitinfo.Qrcode ="TheDanceClass";
+                com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                 titls_7.setText(getTitle(3));
                 desls_7.setText(getArtist(3));
                 vidls_7.setVideoPath(getVideoPath(3));
@@ -677,7 +677,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"LuncheonAtTheBoatingParty":
-             //   Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
+                com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                 titls_7.setText(getTitle(4));
                 desls_7.setText(getArtist(4));
                 vidls_7.setVideoPath(getVideoPath(4));
@@ -692,7 +692,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheCardPlayers":
-            //    Exhibitinfo.Qrcode ="TheCardPlayers";
+                com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                 titls_7.setText(getTitle(5));
                 desls_7.setText(getArtist(5));
                 vidls_7.setVideoPath(getVideoPath(5));
@@ -724,7 +724,7 @@ public class HistorytabActivity extends AppCompatActivity {
 /////////////////8
         switch ( com.example.lookingglass.MainActivity.getHistory(7)){
             case"LunchOnTheGrass":
-             //   Exhibitinfo.Qrcode ="LunchOnTheGrass";
+                com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                 titls_8.setText(getTitle(1));
                 desls_8.setText(getArtist(1));
                 vidls_8.setVideoPath(getVideoPath(1));
@@ -739,7 +739,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"ImpressionSunrise":
-              //  Exhibitinfo.Qrcode ="ImpressionSunrise";
+                com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                 titls_8.setText(getTitle(2));
                 desls_8.setText(getArtist(2));
                 vidls_8.setVideoPath(getVideoPath(2));
@@ -754,7 +754,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheDanceClass":
-              //  Exhibitinfo.Qrcode ="TheDanceClass";
+                com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                 titls_8.setText(getTitle(3));
                 desls_8.setText(getArtist(3));
                 vidls_8.setVideoPath(getVideoPath(3));
@@ -769,7 +769,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"LuncheonAtTheBoatingParty":
-               // Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
+                com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                 titls_8.setText(getTitle(4));
                 desls_8.setText(getArtist(4));
                 vidls_8.setVideoPath(getVideoPath(4));
@@ -784,7 +784,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheCardPlayers":
-              //  Exhibitinfo.Qrcode ="TheCardPlayers";
+                com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                 titls_8.setText(getTitle(5));
                 desls_8.setText(getArtist(5));
                 vidls_8.setVideoPath(getVideoPath(5));
@@ -816,7 +816,7 @@ public class HistorytabActivity extends AppCompatActivity {
 /////////////////9
         switch ( com.example.lookingglass.MainActivity.getHistory(8)){
             case"LunchOnTheGrass":
-            //    Exhibitinfo.Qrcode ="LunchOnTheGrass";
+                com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                 titls_9.setText(getTitle(1));
                 desls_9.setText(getArtist(1));
                 vidls_9.setVideoPath(getVideoPath(1));
@@ -831,7 +831,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"ImpressionSunrise":
-            //    Exhibitinfo.Qrcode ="ImpressionSunrise";
+                com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                 titls_9.setText(getTitle(2));
                 desls_9.setText(getArtist(2));
                 vidls_9.setVideoPath(getVideoPath(2));
@@ -846,7 +846,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheDanceClass":
-             //   Exhibitinfo.Qrcode ="TheDanceClass";
+                com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                 titls_9.setText(getTitle(3));
                 desls_9.setText(getArtist(3));
                 vidls_9.setVideoPath(getVideoPath(3));
@@ -861,7 +861,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"LuncheonAtTheBoatingParty":
-             //   Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
+                com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                 titls_9.setText(getTitle(4));
                 desls_9.setText(getArtist(4));
                 vidls_9.setVideoPath(getVideoPath(4));
@@ -876,7 +876,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheCardPlayers":
-             //   Exhibitinfo.Qrcode ="TheCardPlayers";
+                com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                 titls_9.setText(getTitle(5));
                 desls_9.setText(getArtist(5));
                 vidls_9.setVideoPath(getVideoPath(5));
@@ -908,7 +908,7 @@ public class HistorytabActivity extends AppCompatActivity {
 /////////////////10
         switch ( com.example.lookingglass.MainActivity.getHistory(9)){
             case"LunchOnTheGrass":
-              //  Exhibitinfo.Qrcode ="LunchOnTheGrass";
+                com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                 titls_10.setText(getTitle(1));
                 desls_10.setText(getArtist(1));
                 vidls_10.setVideoPath(getVideoPath(1));
@@ -923,7 +923,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"ImpressionSunrise":
-              //  Exhibitinfo.Qrcode ="ImpressionSunrise";
+                com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                 titls_10.setText(getTitle(2));
                 desls_10.setText(getArtist(2));
                 vidls_10.setVideoPath(getVideoPath(2));
@@ -938,7 +938,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheDanceClass":
-              //  Exhibitinfo.Qrcode ="TheDanceClass";
+                com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                 titls_10.setText(getTitle(3));
                 desls_10.setText(getArtist(3));
                 vidls_10.setVideoPath(getVideoPath(3));
@@ -953,7 +953,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"LuncheonAtTheBoatingParty":
-              //  Exhibitinfo.Qrcode ="LuncheonAtTheBoatingParty";
+                com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                 titls_10.setText(getTitle(4));
                 desls_10.setText(getArtist(4));
                 vidls_10.setVideoPath(getVideoPath(4));
@@ -968,7 +968,7 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             case"TheCardPlayers":
-              //  Exhibitinfo.Qrcode ="TheCardPlayers";
+                com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                 titls_10.setText(getTitle(5));
                 desls_10.setText(getArtist(5));
                 vidls_10.setVideoPath(getVideoPath(5));

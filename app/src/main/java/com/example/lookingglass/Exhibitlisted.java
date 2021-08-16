@@ -45,7 +45,7 @@ public class Exhibitlisted extends AppCompatActivity {
         Uri uri3 = Uri.parse(getVideoPath(3));
         Uri uri4 = Uri.parse(getVideoPath(4));
         Uri uri5 = Uri.parse(getVideoPath(5));
-
+        findViewById(R.id.turnback).setOnClickListener(v->onBackPressed());
 
         TextView Exhhititle_1=findViewById(R.id.Exhhititle_1);
         TextView Exhidest_1=findViewById(R.id.Exhidest_1);
@@ -59,6 +59,7 @@ public class Exhibitlisted extends AppCompatActivity {
         exhiVid_1.setMediaController(mediaController);
         mediaController.setAnchorView(exhiVid_1);
         findViewById(R.id.Exhibutt_1).setOnClickListener(v -> {
+            com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
             startActivity(new Intent(getApplicationContext(),Exhibittab.class));
             overridePendingTransition(R.anim.zoom_in,R.anim.static_animation);
         });
@@ -75,6 +76,7 @@ public class Exhibitlisted extends AppCompatActivity {
         exhiVid_2.setMediaController(mediaController);
         mediaController.setAnchorView(exhiVid_2);
         findViewById(R.id.Exhibutt_2).setOnClickListener(v -> {
+            com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
             startActivity(new Intent(getApplicationContext(),Exhibittab.class));
             overridePendingTransition(R.anim.zoom_in,R.anim.static_animation);
         });
@@ -91,6 +93,7 @@ public class Exhibitlisted extends AppCompatActivity {
         exhiVid_3.setMediaController(mediaController);
         mediaController.setAnchorView(exhiVid_3);
         findViewById(R.id.Exhibutt_3).setOnClickListener(v -> {
+            com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
             startActivity(new Intent(getApplicationContext(),Exhibittab.class));
             overridePendingTransition(R.anim.zoom_in,R.anim.static_animation);
         });
@@ -106,6 +109,7 @@ public class Exhibitlisted extends AppCompatActivity {
         exhiVid_4.setMediaController(mediaController);
         mediaController.setAnchorView(exhiVid_4);
         findViewById(R.id.Exhibutt_4).setOnClickListener(v -> {
+            com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
             startActivity(new Intent(getApplicationContext(),Exhibittab.class));
             overridePendingTransition(R.anim.zoom_in,R.anim.static_animation);
         });
@@ -120,6 +124,7 @@ public class Exhibitlisted extends AppCompatActivity {
         exhiVid_5.setMediaController(mediaController);
         mediaController.setAnchorView(exhiVid_5);
         findViewById(R.id.Exhibutt_5).setOnClickListener(v -> {
+            com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
             startActivity(new Intent(getApplicationContext(),Exhibittab.class));
             overridePendingTransition(R.anim.zoom_in,R.anim.static_animation);
         });
@@ -154,5 +159,10 @@ public class Exhibitlisted extends AppCompatActivity {
         dataEntry.add(new Exhibitlisted.Exhibit("TheDanceClass", videoPath + R.raw.thedanceclassvideo, getString(R.string.thedanceclass)));
         dataEntry.add(new Exhibitlisted.Exhibit("LuncheonAtTheBoatingParty", videoPath + R.raw.luncheonattheboatingpartyvideo, getString(R.string.luncheonattheboatingparty)));
         dataEntry.add(new Exhibitlisted.Exhibit("TheCardPlayers", videoPath + R.raw.thecardplayersvideo, getString(R.string.thecardplayers)));
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.static_animation,R.anim.zoom_out);
     }
 }

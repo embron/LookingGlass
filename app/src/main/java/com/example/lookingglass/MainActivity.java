@@ -160,6 +160,10 @@ public class MainActivity extends AppCompatActivity {
         return Qrcode;
     }
 
+    public static void setQrcode(String code){
+        Qrcode=code;
+    }
+
     public static String getHistory(int a){
         return history[a];
     }

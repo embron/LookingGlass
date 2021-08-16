@@ -127,8 +127,9 @@ public class MainActivity extends AppCompatActivity {
             if(intentResult.getContents()==null){
                 qrres.setText("empty");
             }else{
-                qrres.setText(intentResult.getContents()); // compare database results here
                 Exhibitinfo.Qrcode = intentResult.getContents();
+                qrres.setText(Exhibitinfo.Qrcode); // compare database results here
+
 
                 if(Exhibitinfo.count<10){
                 Exhibitinfo.history[Exhibitinfo.count]=Exhibitinfo.Qrcode;

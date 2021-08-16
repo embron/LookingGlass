@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
     public static String[] history = new String[10];
     public int count=0;
 
-    Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) getApplicationContext();
+    Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) this.getApplication();
     LinkedList<Exhibit> database = new LinkedList<>();
     private TextView qrres;
     @Override

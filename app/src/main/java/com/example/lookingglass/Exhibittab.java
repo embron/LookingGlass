@@ -43,7 +43,7 @@ public class Exhibittab extends AppCompatActivity {
         // Exhibit Exhibit = new Exhibit(a,b,c);
         exhibitSetUp(database);
 
-        Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) getApplicationContext();
+        Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) this.getApplication();
         VideoView artvid = findViewById(R.id.Artistvid);
 
         MediaController mediaController = new MediaController(this);

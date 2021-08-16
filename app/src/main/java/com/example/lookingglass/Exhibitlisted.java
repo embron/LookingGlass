@@ -163,6 +163,6 @@ public class Exhibitlisted extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        overridePendingTransition(R.anim.static_animation,R.anim.zoom_out);
+        overridePendingTransition(R.anim.slide_from_left,R.anim.slide_to_right);
     }
 }

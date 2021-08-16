@@ -76,7 +76,7 @@ class Exhibit {
 }
 
 public class MainActivity extends AppCompatActivity {
-    Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) this.getApplication();
+    Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) getApplicationContext();
     LinkedList<Exhibit> database = new LinkedList<>();
     private TextView qrres;
     @Override
@@ -127,22 +127,24 @@ public class MainActivity extends AppCompatActivity {
             if(intentResult.getContents()==null){
                 qrres.setText("empty");
             }else{
-                Exhibitinfo.Qrcode = intentResult.getContents();
+                String test = intentResult.getContents();
+                Exhibitinfo.setQrcode(test);
 
 
 
-                if(Exhibitinfo.count<10){
-                Exhibitinfo.history[Exhibitinfo.count]=Exhibitinfo.Qrcode;
-                Exhibitinfo.count++;
-                }if(Exhibitinfo.count>=10){
+                if(Exhibitinfo.getCount()<10){
+                Exhibitinfo.setHistory(Exhibitinfo.getCount(),test);
+                Exhibitinfo.inccount();
+                }if(Exhibitinfo.getCount()>=10){
                     for (int a=0;a<9;a++){
-                        Exhibitinfo.history[(9-a)]=Exhibitinfo.history[(9-(a+1))];
+                        int b=9-a,c=9-(a+1);
+                        Exhibitinfo.setHistory(b,Exhibitinfo.getHistory(c));
                     }
-                    Exhibitinfo.history[0]=Exhibitinfo.Qrcode;
+                    Exhibitinfo.setHistory(0,test);
                 }
 
 
-                qrres.setText(Exhibitinfo.Qrcode); // compare database results here
+                qrres.setText(test);// compare database results here
             }
 
 

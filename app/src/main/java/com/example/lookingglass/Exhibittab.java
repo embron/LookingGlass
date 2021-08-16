@@ -37,13 +37,11 @@ public class Exhibittab extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        //String a = null,b=null,c=null;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exhibittab);
-        // Exhibit Exhibit = new Exhibit(a,b,c);
         exhibitSetUp(database);
 
-        Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) this.getApplication();
+        Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) getApplicationContext();
         VideoView artvid = findViewById(R.id.Artistvid);
 
         MediaController mediaController = new MediaController(this);
@@ -56,7 +54,7 @@ public class Exhibittab extends AppCompatActivity {
         findViewById(R.id.returning).setOnClickListener(v -> onBackPressed());
 
 
-    switch (Exhibitinfo.Qrcode){
+    switch (Exhibitinfo.getQrcode()){
         case"LunchOnTheGrass":
             artname.setText(getTitle(1));
             artdesc.setText(getArtist(1));
@@ -117,7 +115,6 @@ public class Exhibittab extends AppCompatActivity {
             artdesc.setText(getArtist(0));
             artsum.setText(getDescription(0));
             artvid.setVideoPath(getVideoPath(0));
-            //uri =Uri.parse(getVideoPath(0));
             artvid.setVideoURI(uri);
             artvid.setMediaController(mediaController);
             mediaController.setAnchorView(artvid);

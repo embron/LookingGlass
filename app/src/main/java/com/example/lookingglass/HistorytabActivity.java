@@ -88,10 +88,10 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_1.setVideoURI(uri);
                 vidls_1.setMediaController(mediaController);
                 mediaController.setAnchorView(vidls_1);
-                   findViewById(R.id.lastscan_1).setOnClickListener(v -> {
-                          startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                           overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                  });
+                findViewById(R.id.lastscan_1).setOnClickListener(v -> {
+                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
+                });
 
                 break;
             case"ImpressionSunrise":

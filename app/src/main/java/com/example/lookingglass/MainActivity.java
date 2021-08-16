@@ -1,4 +1,5 @@
 package com.example.lookingglass;
+
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -6,25 +7,33 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
+
 import java.util.LinkedList;
+
 // media player imports
+
 // for scrolling activtity
+
 //project member names here:
 // Alexander West
 // Michael Aiyedun
 //Suman Poudel
 //Matthew Speer
+
 class Exhibit {
     private final String name;
     private final String videoPath;
     private final String title;
     private final String artist;
     private final String description;
+
     public Exhibit()
     {
         name = "error";
@@ -42,6 +51,7 @@ class Exhibit {
         artist = textArray[1];
         description = textArray[2];
     }
+
     public String getName()
     {
         return name;
@@ -62,7 +72,9 @@ class Exhibit {
     {
         return description;
     }
+
 }
+
 public class MainActivity extends AppCompatActivity {
     Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) this.getApplication();
     LinkedList<Exhibit> database = new LinkedList<>();
@@ -77,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(getApplicationContext(),HistorytabActivity.class));
             overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
         });
+
 //Exhibit button
         findViewById(R.id.Exhibbutton).setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -85,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
         qrres = findViewById(R.id.QRRES);// qrress needs to be called later when the snan page is made
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, PackageManager.PERMISSION_GRANTED);
     }
+
     public void exhibitSetUp(LinkedList<Exhibit> dataEntry)
     {
         String videoPath = "android.resource://" + getPackageName() + "/";
@@ -94,11 +108,17 @@ public class MainActivity extends AppCompatActivity {
         dataEntry.add(new Exhibit("TheDanceClass", videoPath + R.raw.thedanceclassvideo, getString(R.string.thedanceclass)));
         dataEntry.add(new Exhibit("LuncheonAtTheBoatingParty", videoPath + R.raw.luncheonattheboatingpartyvideo, getString(R.string.luncheonattheboatingparty)));
         dataEntry.add(new Exhibit("TheCardPlayers", videoPath + R.raw.thecardplayersvideo, getString(R.string.thecardplayers)));
+
+
     }
+
+
     public void Scanbutton(View view){
         IntentIntegrator intentIntegrator = new IntentIntegrator(this);
         intentIntegrator.initiateScan();
+
     }
+
     @SuppressLint("SetTextI18n")
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -108,6 +128,7 @@ public class MainActivity extends AppCompatActivity {
                 qrres.setText("empty");
             }else{
                 Exhibitinfo.Qrcode =intentResult.getContents();
+
                 if(Exhibitinfo.count<10){
                     Exhibitinfo.history[Exhibitinfo.count]=Exhibitinfo.Qrcode;
                     Exhibitinfo.count++;
@@ -121,6 +142,7 @@ public class MainActivity extends AppCompatActivity {
                 qrres.setText(Exhibitinfo.Qrcode);// compare database results here
 
             }
+
 
         }
         super.onActivityResult(requestCode, resultCode, data);

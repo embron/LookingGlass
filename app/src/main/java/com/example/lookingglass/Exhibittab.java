@@ -56,74 +56,74 @@ public class Exhibittab extends AppCompatActivity {
         findViewById(R.id.returning).setOnClickListener(v -> onBackPressed());
 
 
-    switch (Exhibitinfo.Qrcode){
-        case"LunchOnTheGrass":
-            artname.setText(getTitle(1));
-            artdesc.setText(getArtist(1));
-            artsum.setText(getDescription(1));
-            artvid.setVideoPath(getVideoPath(1));
-            uri =Uri.parse(getVideoPath(1));
-            artvid.setVideoURI(uri);
-            artvid.setMediaController(mediaController);
-            mediaController.setAnchorView(artvid);
+        switch (Exhibitinfo.Qrcode){
+            case"LunchOnTheGrass":
+                artname.setText(getTitle(1));
+                artdesc.setText(getArtist(1));
+                artsum.setText(getDescription(1));
+                artvid.setVideoPath(getVideoPath(1));
+                uri =Uri.parse(getVideoPath(1));
+                artvid.setVideoURI(uri);
+                artvid.setMediaController(mediaController);
+                mediaController.setAnchorView(artvid);
 
-            break;
-        case"ImpressionSunrise":
-            artname.setText(getTitle(2));
-            artdesc.setText(getArtist(2));
-            artsum.setText(getDescription(2));
-            artvid.setVideoPath(getVideoPath(2));
-            uri =Uri.parse(getVideoPath(2));
-            artvid.setVideoURI(uri);
-            artvid.setMediaController(mediaController);
-            mediaController.setAnchorView(artvid);
+                break;
+            case"ImpressionSunrise":
+                artname.setText(getTitle(2));
+                artdesc.setText(getArtist(2));
+                artsum.setText(getDescription(2));
+                artvid.setVideoPath(getVideoPath(2));
+                uri =Uri.parse(getVideoPath(2));
+                artvid.setVideoURI(uri);
+                artvid.setMediaController(mediaController);
+                mediaController.setAnchorView(artvid);
 
-            break;
-        case"TheDanceClass":
-            artname.setText(getTitle(3));
-            artdesc.setText(getArtist(3));
-            artsum.setText(getDescription(3));
-            artvid.setVideoPath(getVideoPath(3));
-            uri =Uri.parse(getVideoPath(3));
-            artvid.setVideoURI(uri);
-            artvid.setMediaController(mediaController);
-            mediaController.setAnchorView(artvid);
+                break;
+            case"TheDanceClass":
+                artname.setText(getTitle(3));
+                artdesc.setText(getArtist(3));
+                artsum.setText(getDescription(3));
+                artvid.setVideoPath(getVideoPath(3));
+                uri =Uri.parse(getVideoPath(3));
+                artvid.setVideoURI(uri);
+                artvid.setMediaController(mediaController);
+                mediaController.setAnchorView(artvid);
 
-            break;
-        case"LuncheonAtTheBoatingParty":
-            artname.setText(getTitle(4));
-            artdesc.setText(getArtist(4));
-            artsum.setText(getDescription(4));
-            artvid.setVideoPath(getVideoPath(4));
-            uri =Uri.parse(getVideoPath(4));
-            artvid.setVideoURI(uri);
-            artvid.setMediaController(mediaController);
-            mediaController.setAnchorView(artvid);
+                break;
+            case"LuncheonAtTheBoatingParty":
+                artname.setText(getTitle(4));
+                artdesc.setText(getArtist(4));
+                artsum.setText(getDescription(4));
+                artvid.setVideoPath(getVideoPath(4));
+                uri =Uri.parse(getVideoPath(4));
+                artvid.setVideoURI(uri);
+                artvid.setMediaController(mediaController);
+                mediaController.setAnchorView(artvid);
 
-            break;
-        case"TheCardPlayers":
-            artname.setText(getTitle(5));
-            artdesc.setText(getArtist(5));
-            artsum.setText(getDescription(5));
-            artvid.setVideoPath(getVideoPath(5));
-            uri =Uri.parse(getVideoPath(5));
-            artvid.setVideoURI(uri);
-            artvid.setMediaController(mediaController);
-            mediaController.setAnchorView(artvid);
+                break;
+            case"TheCardPlayers":
+                artname.setText(getTitle(5));
+                artdesc.setText(getArtist(5));
+                artsum.setText(getDescription(5));
+                artvid.setVideoPath(getVideoPath(5));
+                uri =Uri.parse(getVideoPath(5));
+                artvid.setVideoURI(uri);
+                artvid.setMediaController(mediaController);
+                mediaController.setAnchorView(artvid);
 
-            break;
-        default:
-            artname.setText(getTitle(0));
-            artdesc.setText(getArtist(0));
-            artsum.setText(getDescription(0));
-            artvid.setVideoPath(getVideoPath(0));
-            //uri =Uri.parse(getVideoPath(0));
-            artvid.setVideoURI(uri);
-            artvid.setMediaController(mediaController);
-            mediaController.setAnchorView(artvid);
+                break;
+            default:
+                artname.setText(getTitle(0));
+                artdesc.setText(getArtist(0));
+                artsum.setText(getDescription(0));
+                artvid.setVideoPath(getVideoPath(0));
+                //uri =Uri.parse(getVideoPath(0));
+                artvid.setVideoURI(uri);
+                artvid.setMediaController(mediaController);
+                mediaController.setAnchorView(artvid);
 
-            break;
-    }
+                break;
+        }
 
     }
 
@@ -171,4 +171,3 @@ public class Exhibittab extends AppCompatActivity {
 
 
 }
-

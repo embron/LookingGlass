@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
                 Exhibitinfo.count++;
                 }if(Exhibitinfo.count>=10){
                     for (int a=0;a<9;a++){
-                        Exhibitinfo.history[9-a]=Exhibitinfo.history[9-(a+1)];
+                        Exhibitinfo.history[(9-a)]=Exhibitinfo.history[(9-(a+1))];
                     }
                     Exhibitinfo.history[0]=Exhibitinfo.Qrcode;
                 }

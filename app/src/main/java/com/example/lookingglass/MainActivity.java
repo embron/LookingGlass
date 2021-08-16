@@ -146,6 +146,8 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 qrres.setText(Qrcode);// compare database results here
+                startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+                overridePendingTransition(R.anim.zoom_in,R.anim.static_animation);
 
             }
 

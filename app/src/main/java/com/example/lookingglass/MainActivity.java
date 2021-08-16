@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
     Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) getApplicationContext();
     LinkedList<Exhibit> database = new LinkedList<>();
     private TextView qrres;
-    public static String Qrcode= "error";;
+    public static String Qrcode= "error";
     public static String[] history = new String[10];
     public int count=0;
     @Override

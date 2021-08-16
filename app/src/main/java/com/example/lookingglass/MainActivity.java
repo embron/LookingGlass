@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
                 qrres.setText("empty");
             }else{
                 Exhibitinfo.Qrcode = intentResult.getContents();
-                qrres.setText(Exhibitinfo.Qrcode); // compare database results here
+
 
 
                 if(Exhibitinfo.count<10){
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
-
+                qrres.setText(Exhibitinfo.Qrcode); // compare database results here
             }
 
 

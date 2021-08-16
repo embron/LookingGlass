@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exhibitlisted">
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="658dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turnback">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+########################Exhibit 1##############################################
+            <Button
+                android:id="@+id/Exhibutt_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/visit_exhibit" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <VideoView
+                    android:id="@+id/exhiVid_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/Exhhititle_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tostertext"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/Exhidest_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tost"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            ########################Exhibit 2##############################################
+            <Button
+                android:id="@+id/Exhibutt_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/visit_exhibit" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <VideoView
+                    android:id="@+id/exhiVid_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/Exhhititle_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tostertext"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/Exhidest_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tost"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            ########################Exhibit 3##############################################
+            <Button
+                android:id="@+id/Exhibutt_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/visit_exhibit" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <VideoView
+                    android:id="@+id/exhiVid_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/Exhhititle_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tostertext"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/Exhidest_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tost"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            ########################Exhibit 4##############################################
+            <Button
+                android:id="@+id/Exhibutt_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/visit_exhibit" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <VideoView
+                    android:id="@+id/exhiVid_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/Exhhititle_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tostertext"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/Exhidest_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tost"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            ########################Exhibit 5##############################################
+            <Button
+                android:id="@+id/Exhibutt_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/visit_exhibit" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <VideoView
+                    android:id="@+id/exhiVid_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/Exhhititle_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tostertext"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/Exhidest_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tost"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/turnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

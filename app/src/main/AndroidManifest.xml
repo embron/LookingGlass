@@ -8,14 +8,14 @@
     <application
         android:name=".Exhibitinfo"
         android:allowBackup="true"
+        android:configChanges="keyboardHidden|orientation|screenSize"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:configChanges="keyboardHidden|orientation|screenSize"
         android:theme="@style/Theme.LookingGlass"
         tools:ignore="Instantiatable">
-
+        <activity android:name=".Exhibitlisted"></activity>
         <activity android:name=".Exhibittab" />
         <activity android:name=".HistorytabActivity" />
         <activity android:name=".MainActivity">

@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
 
 //Exhibit button
         findViewById(R.id.Exhibbutton).setOnClickListener(v -> {
-            startActivity(new Intent(getApplicationContext(),Exhibittab.class));
+            startActivity(new Intent(getApplicationContext(),Exhibitlisted.class));
             overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
         });
         qrres = findViewById(R.id.QRRES);// qrress needs to be called later when the snan page is made

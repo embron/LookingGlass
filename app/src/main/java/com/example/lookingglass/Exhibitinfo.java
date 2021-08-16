@@ -15,6 +15,7 @@ public class Exhibitinfo extends Application{
         history= new String[10];
         count = 0;
     }
+
     public String getQrcode(){
         return Qrcode;
     }

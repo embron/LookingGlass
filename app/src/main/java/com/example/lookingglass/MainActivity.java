@@ -127,19 +127,20 @@ public class MainActivity extends AppCompatActivity {
             if(intentResult.getContents()==null){
                 qrres.setText("empty");
             }else{
-                Exhibitinfo.Qrcode =intentResult.getContents();
+                qrres.setText(intentResult.getContents()); // compare database results here
+                Exhibitinfo.Qrcode = intentResult.getContents();
 
                 if(Exhibitinfo.count<10){
                 Exhibitinfo.history[Exhibitinfo.count]=Exhibitinfo.Qrcode;
                 Exhibitinfo.count++;
-                }else{
+                }if(Exhibitinfo.count>=10){
                     for (int a=0;a<9;a++){
                         Exhibitinfo.history[9-a]=Exhibitinfo.history[9-(a+1)];
                     }
                     Exhibitinfo.history[0]=Exhibitinfo.Qrcode;
                 }
 
-                qrres.setText(Exhibitinfo.Qrcode);// compare database results here
+
 
             }
 

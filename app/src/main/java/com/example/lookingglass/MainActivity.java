@@ -75,7 +75,13 @@ class Exhibit {
 
 }
 
+
+
 public class MainActivity extends AppCompatActivity {
+    public static String Qrcode= "error";
+    public static String[] history = new String[10];
+    public int count=0;
+
     Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) getApplicationContext();
     LinkedList<Exhibit> database = new LinkedList<>();
     private TextView qrres;
@@ -146,5 +152,13 @@ public class MainActivity extends AppCompatActivity {
 
         }
         super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    public static String getQrcode(){
+        return Qrcode;
+    }
+
+    public static String getHistory(int a){
+        return history[a];
     }
 }

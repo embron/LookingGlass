@@ -44,6 +44,7 @@ public class Exhibittab extends AppCompatActivity {
         exhibitSetUp(database);
 
         Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) this.getApplication();
+        //MainActivity MainActivity =(MainActivity)this.getApplicationContext();
         VideoView artvid = findViewById(R.id.Artistvid);
 
         MediaController mediaController = new MediaController(this);
@@ -56,7 +57,7 @@ public class Exhibittab extends AppCompatActivity {
         findViewById(R.id.returning).setOnClickListener(v -> onBackPressed());
 
 
-        switch (Exhibitinfo.Qrcode){
+        switch (com.example.lookingglass.MainActivity.getQrcode()){
             case"LunchOnTheGrass":
                 artname.setText(getTitle(1));
                 artdesc.setText(getArtist(1));

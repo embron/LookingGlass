@@ -117,7 +117,6 @@ public class Exhibittab extends AppCompatActivity {
                 artdesc.setText(getArtist(0));
                 artsum.setText(getDescription(0));
                 artvid.setVideoPath(getVideoPath(0));
-                //uri =Uri.parse(getVideoPath(0));
                 artvid.setVideoURI(uri);
                 artvid.setMediaController(mediaController);
                 mediaController.setAnchorView(artvid);

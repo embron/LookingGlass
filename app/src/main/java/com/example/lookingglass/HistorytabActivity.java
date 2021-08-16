@@ -25,7 +25,7 @@ public class HistorytabActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) this.getApplication();
+        Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) getApplicationContext();
         com.example.lookingglass.databinding.ActivityHistorytabBinding binding = ActivityHistorytabBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         database = new LinkedList<>();

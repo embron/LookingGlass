@@ -76,7 +76,7 @@ class Exhibit {
 }
 
 public class MainActivity extends AppCompatActivity {
-    Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) this.getApplication();
+    Exhibitinfo Exhibitinfo = (com.example.lookingglass.Exhibitinfo) getApplicationContext();
     LinkedList<Exhibit> database = new LinkedList<>();
     private TextView qrres;
     @Override

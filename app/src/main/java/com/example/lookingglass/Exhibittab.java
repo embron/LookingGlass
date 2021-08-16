@@ -54,7 +54,7 @@ public class Exhibittab extends AppCompatActivity {
         findViewById(R.id.returning).setOnClickListener(v -> onBackPressed());
 
 
-    switch (Exhibitinfo.getQrcode()){
+    switch (MainActivity.getQrcode()){
         case"LunchOnTheGrass":
             artname.setText(getTitle(1));
             artdesc.setText(getArtist(1));

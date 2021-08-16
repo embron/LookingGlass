@@ -78,7 +78,7 @@ public class HistorytabActivity extends AppCompatActivity {
         //setSupportActionBar(toolbar);
 
 /////////////////1
-        switch ( Exhibitinfo.getHistory(0)){
+        switch ( MainActivity.getHistory(0)){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
                 titls_1.setText(getTitle(1));
@@ -170,7 +170,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
         }
 /////////////////2
-        switch ( Exhibitinfo.getHistory(1)){
+        switch ( MainActivity.getHistory(1)){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
                 titls_2.setText(getTitle(1));
@@ -262,7 +262,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
         }
 /////////////////3
-        switch ( Exhibitinfo.getHistory(2)){
+        switch ( MainActivity.getHistory(2)){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
                 titls_3.setText(getTitle(1));
@@ -354,7 +354,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
         }
 /////////////////4
-        switch ( Exhibitinfo.getHistory(3)){
+        switch ( MainActivity.getHistory(3)){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
                 titls_4.setText(getTitle(1));
@@ -446,7 +446,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
         }
 /////////////////5
-        switch ( Exhibitinfo.getHistory(4)){
+        switch ( MainActivity.getHistory(4)){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
                 titls_5.setText(getTitle(1));
@@ -538,7 +538,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
         }
 /////////////////6
-        switch ( Exhibitinfo.getHistory(5)){
+        switch ( MainActivity.getHistory(5)){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
                 titls_6.setText(getTitle(1));
@@ -630,7 +630,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
         }
 /////////////////7
-        switch ( Exhibitinfo.getHistory(6)){
+        switch ( MainActivity.getHistory(6)){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
                 titls_7.setText(getTitle(1));
@@ -722,7 +722,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
         }
 /////////////////8
-        switch ( Exhibitinfo.getHistory(7)){
+        switch ( MainActivity.getHistory(7)){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
                 titls_8.setText(getTitle(1));
@@ -814,7 +814,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
         }
 /////////////////9
-        switch ( Exhibitinfo.getHistory(8)){
+        switch ( MainActivity.getHistory(8)){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
                 titls_9.setText(getTitle(1));
@@ -906,7 +906,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
         }
 /////////////////10
-        switch ( Exhibitinfo.getHistory(9)){
+        switch ( MainActivity.getHistory(9)){
             case"LunchOnTheGrass":
                 Exhibitinfo.Qrcode ="LunchOnTheGrass";
                 titls_10.setText(getTitle(1));

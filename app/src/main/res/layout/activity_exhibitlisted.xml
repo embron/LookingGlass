@@ -7,6 +7,7 @@
     tools:context=".Exhibitlisted">
 
     <ScrollView
+        android:id="@+id/scrollView4"
         android:layout_width="410dp"
         android:layout_height="658dp"
         android:layout_marginTop="18dp"
@@ -21,7 +22,8 @@
             android:orientation="vertical"
             tools:ignore="ExtraText">
 
-########################Exhibit 1##############################################
+            ########################Exhibit 1##############################################
+
             <Button
                 android:id="@+id/Exhibutt_1"
                 android:layout_width="match_parent"
@@ -31,10 +33,11 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <VideoView
                     android:id="@+id/exhiVid_1"
                     android:layout_width="match_parent"
-                    android:layout_height="350dp"/>
+                    android:layout_height="350dp" />
             </FrameLayout>
 
             <TextView
@@ -51,6 +54,7 @@
                 android:text="@string/tost"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
             ########################Exhibit 2##############################################
+
             <Button
                 android:id="@+id/Exhibutt_2"
                 android:layout_width="match_parent"
@@ -60,10 +64,11 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <VideoView
                     android:id="@+id/exhiVid_2"
                     android:layout_width="match_parent"
-                    android:layout_height="350dp"/>
+                    android:layout_height="350dp" />
             </FrameLayout>
 
             <TextView
@@ -80,6 +85,7 @@
                 android:text="@string/tost"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
             ########################Exhibit 3##############################################
+
             <Button
                 android:id="@+id/Exhibutt_3"
                 android:layout_width="match_parent"
@@ -89,10 +95,11 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <VideoView
                     android:id="@+id/exhiVid_3"
                     android:layout_width="match_parent"
-                    android:layout_height="350dp"/>
+                    android:layout_height="350dp" />
             </FrameLayout>
 
             <TextView
@@ -109,6 +116,7 @@
                 android:text="@string/tost"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
             ########################Exhibit 4##############################################
+
             <Button
                 android:id="@+id/Exhibutt_4"
                 android:layout_width="match_parent"
@@ -118,10 +126,11 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <VideoView
                     android:id="@+id/exhiVid_4"
                     android:layout_width="match_parent"
-                    android:layout_height="350dp"/>
+                    android:layout_height="350dp" />
             </FrameLayout>
 
             <TextView
@@ -138,6 +147,7 @@
                 android:text="@string/tost"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
             ########################Exhibit 5##############################################
+
             <Button
                 android:id="@+id/Exhibutt_5"
                 android:layout_width="match_parent"
@@ -147,10 +157,11 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <VideoView
                     android:id="@+id/exhiVid_5"
                     android:layout_width="match_parent"
-                    android:layout_height="350dp"/>
+                    android:layout_height="350dp" />
             </FrameLayout>
 
             <TextView
@@ -177,5 +188,20 @@
         android:layout_marginEnd="16dp"
         android:text="@string/go_back"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Exhibitlist_title"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="19dp"
+        android:text="@string/available_exhibits"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView4"
+        app:layout_constraintEnd_toStartOf="@+id/turnback"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

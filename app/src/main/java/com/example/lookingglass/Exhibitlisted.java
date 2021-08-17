@@ -39,7 +39,11 @@ public class Exhibitlisted extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exhibitlisted);
         exhibitSetUp(database);
-        MediaController mediaController = new MediaController(this);
+        MediaController mediaController1 = new MediaController(this);
+        MediaController mediaController2 = new MediaController(this);
+        MediaController mediaController3 = new MediaController(this);
+        MediaController mediaController4 = new MediaController(this);
+        MediaController mediaController5 = new MediaController(this);
         Uri uri1 = Uri.parse(getVideoPath(1));
         Uri uri2 = Uri.parse(getVideoPath(2));
         Uri uri3 = Uri.parse(getVideoPath(3));
@@ -56,8 +60,8 @@ public class Exhibitlisted extends AppCompatActivity {
         exhiVid_1.setVideoPath(getVideoPath(1));
 
         exhiVid_1.setVideoURI(uri1);
-        exhiVid_1.setMediaController(mediaController);
-        mediaController.setAnchorView(exhiVid_1);
+        exhiVid_1.setMediaController(mediaController1);
+        mediaController1.setAnchorView(exhiVid_1);
         findViewById(R.id.Exhibutt_1).setOnClickListener(v -> {
             com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
             startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -73,8 +77,8 @@ public class Exhibitlisted extends AppCompatActivity {
         Exhidest_2.setText(getArtist(2));
         exhiVid_2.setVideoPath(getVideoPath(2));
         exhiVid_2.setVideoURI(uri2);
-        exhiVid_2.setMediaController(mediaController);
-        mediaController.setAnchorView(exhiVid_2);
+        exhiVid_2.setMediaController(mediaController2);
+        mediaController2.setAnchorView(exhiVid_2);
         findViewById(R.id.Exhibutt_2).setOnClickListener(v -> {
             com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
             startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -90,8 +94,8 @@ public class Exhibitlisted extends AppCompatActivity {
         Exhidest_3.setText(getArtist(3));
         exhiVid_3.setVideoPath(getVideoPath(3));
         exhiVid_3.setVideoURI(uri3);
-        exhiVid_3.setMediaController(mediaController);
-        mediaController.setAnchorView(exhiVid_3);
+        exhiVid_3.setMediaController(mediaController3);
+        mediaController3.setAnchorView(exhiVid_3);
         findViewById(R.id.Exhibutt_3).setOnClickListener(v -> {
             com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
             startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -106,8 +110,8 @@ public class Exhibitlisted extends AppCompatActivity {
         Exhidest_4.setText(getArtist(4));
         exhiVid_4.setVideoPath(getVideoPath(4));
         exhiVid_4.setVideoURI(uri4);
-        exhiVid_4.setMediaController(mediaController);
-        mediaController.setAnchorView(exhiVid_4);
+        exhiVid_4.setMediaController(mediaController4);
+        mediaController4.setAnchorView(exhiVid_4);
         findViewById(R.id.Exhibutt_4).setOnClickListener(v -> {
             com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
             startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -121,8 +125,8 @@ public class Exhibitlisted extends AppCompatActivity {
         Exhidest_5.setText(getArtist(5));
         exhiVid_5.setVideoPath(getVideoPath(5));
         exhiVid_5.setVideoURI(uri5);
-        exhiVid_5.setMediaController(mediaController);
-        mediaController.setAnchorView(exhiVid_5);
+        exhiVid_5.setMediaController(mediaController5);
+        mediaController5.setAnchorView(exhiVid_5);
         findViewById(R.id.Exhibutt_5).setOnClickListener(v -> {
             com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
             startActivity(new Intent(getApplicationContext(),Exhibittab.class));

@@ -184,11 +184,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 desls_1.setVisibility(View.GONE);
                 vidls_1.setVisibility(View.GONE);
                 ls1.setVisibility(View.GONE);
-                findViewById(R.id.lastscan_1).setOnClickListener(v -> {
-                    com.example.lookingglass.MainActivity.setQrcode("Error");
-                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                });
 
                 break;
         }
@@ -286,11 +281,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 desls_2.setVisibility(View.GONE);
                 vidls_2.setVisibility(View.GONE);
                 ls2.setVisibility(View.GONE);
-                findViewById(R.id.lastscan_2).setOnClickListener(v -> {
-                    com.example.lookingglass.MainActivity.setQrcode("Error");
-                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                });
 
                 break;
         }
@@ -388,11 +378,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 desls_3.setVisibility(View.GONE);
                 vidls_3.setVisibility(View.GONE);
                 ls3.setVisibility(View.GONE);
-                findViewById(R.id.lastscan_3).setOnClickListener(v -> {
-                    com.example.lookingglass.MainActivity.setQrcode("Error");
-                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                });
 
                 break;
         }
@@ -490,11 +475,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 desls_4.setVisibility(View.GONE);
                 vidls_4.setVisibility(View.GONE);
                 ls4.setVisibility(View.GONE);
-                findViewById(R.id.lastscan_4).setOnClickListener(v -> {
-                    com.example.lookingglass.MainActivity.setQrcode("Error");
-                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                });
 
                 break;
         }
@@ -592,11 +572,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 desls_5.setVisibility(View.GONE);
                 vidls_5.setVisibility(View.GONE);
                 ls5.setVisibility(View.GONE);
-                findViewById(R.id.lastscan_5).setOnClickListener(v -> {
-                    com.example.lookingglass.MainActivity.setQrcode("Error");
-                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                });
 
                 break;
         }
@@ -694,11 +669,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 desls_6.setVisibility(View.GONE);
                 vidls_6.setVisibility(View.GONE);
                 ls6.setVisibility(View.GONE);
-                findViewById(R.id.lastscan_6).setOnClickListener(v -> {
-                    com.example.lookingglass.MainActivity.setQrcode("Error");
-                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                });
 
                 break;
         }
@@ -796,11 +766,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 desls_7.setVisibility(View.GONE);
                 vidls_7.setVisibility(View.GONE);
                 ls7.setVisibility(View.GONE);
-                findViewById(R.id.lastscan_7).setOnClickListener(v -> {
-                    com.example.lookingglass.MainActivity.setQrcode("Error");
-                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                });
 
                 break;
         }
@@ -898,11 +863,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 desls_8.setVisibility(View.GONE);
                 vidls_8.setVisibility(View.GONE);
                 ls8.setVisibility(View.GONE);
-                findViewById(R.id.lastscan_8).setOnClickListener(v -> {
-                    com.example.lookingglass.MainActivity.setQrcode("Error");
-                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                });
 
                 break;
         }
@@ -1000,11 +960,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 desls_9.setVisibility(View.GONE);
                 vidls_9.setVisibility(View.GONE);
                 ls9.setVisibility(View.GONE);
-                findViewById(R.id.lastscan_9).setOnClickListener(v -> {
-                    com.example.lookingglass.MainActivity.setQrcode("Error");
-                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                });
 
                 break;
         }
@@ -1102,11 +1057,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 desls_10.setVisibility(View.GONE);
                 vidls_10.setVisibility(View.GONE);
                 ls10.setVisibility(View.GONE);
-                findViewById(R.id.lastscan_10).setOnClickListener(v -> {
-                    com.example.lookingglass.MainActivity.setQrcode("Error");
-                    startActivity(new Intent(getApplicationContext(),Exhibittab.class));
-                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                });
 
                 break;
         }

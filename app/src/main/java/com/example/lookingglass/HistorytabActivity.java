@@ -38,6 +38,18 @@ public class HistorytabActivity extends AppCompatActivity {
         TextView titls_1 = findViewById(R.id.titlels_1);
         TextView desls_1 = findViewById(R.id.destls_1);
         VideoView vidls_1 =findViewById(R.id.Artistvidls_1);
+        View ls1 = findViewById(R.id.lastscan_1);
+        View ls2 = findViewById(R.id.lastscan_1);
+        View ls3 = findViewById(R.id.lastscan_1);
+        View ls4 = findViewById(R.id.lastscan_1);
+        View ls5 = findViewById(R.id.lastscan_1);
+        View ls6 = findViewById(R.id.lastscan_1);
+        View ls7 = findViewById(R.id.lastscan_1);
+        View ls8 = findViewById(R.id.lastscan_1);
+        View ls9 = findViewById(R.id.lastscan_1);
+        View ls10 = findViewById(R.id.lastscan_1);
+
+
 
         TextView titls_2 = findViewById(R.id.titlels_2);
         TextView desls_2 = findViewById(R.id.destls_2);
@@ -171,6 +183,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_1.setVisibility(View.GONE);
                 desls_1.setVisibility(View.GONE);
                 vidls_1.setVisibility(View.GONE);
+                ls1.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_1).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -272,6 +285,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_2.setVisibility(View.GONE);
                 desls_2.setVisibility(View.GONE);
                 vidls_2.setVisibility(View.GONE);
+                ls2.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_2).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -373,6 +387,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_3.setVisibility(View.GONE);
                 desls_3.setVisibility(View.GONE);
                 vidls_3.setVisibility(View.GONE);
+                ls3.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_3).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -474,6 +489,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_4.setVisibility(View.GONE);
                 desls_4.setVisibility(View.GONE);
                 vidls_4.setVisibility(View.GONE);
+                ls4.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_4).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -575,6 +591,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_5.setVisibility(View.GONE);
                 desls_5.setVisibility(View.GONE);
                 vidls_5.setVisibility(View.GONE);
+                ls5.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_5).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -676,6 +693,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_6.setVisibility(View.GONE);
                 desls_6.setVisibility(View.GONE);
                 vidls_6.setVisibility(View.GONE);
+                ls6.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_6).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -777,6 +795,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_7.setVisibility(View.GONE);
                 desls_7.setVisibility(View.GONE);
                 vidls_7.setVisibility(View.GONE);
+                ls7.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_7).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -878,6 +897,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_8.setVisibility(View.GONE);
                 desls_8.setVisibility(View.GONE);
                 vidls_8.setVisibility(View.GONE);
+                ls8.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_8).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -979,6 +999,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_9.setVisibility(View.GONE);
                 desls_9.setVisibility(View.GONE);
                 vidls_9.setVisibility(View.GONE);
+                ls9.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_9).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -1080,6 +1101,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 titls_10.setVisibility(View.GONE);
                 desls_10.setVisibility(View.GONE);
                 vidls_10.setVisibility(View.GONE);
+                ls10.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_10).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));

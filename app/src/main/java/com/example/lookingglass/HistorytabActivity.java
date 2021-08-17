@@ -118,7 +118,7 @@ public class HistorytabActivity extends AppCompatActivity {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
-
+ 
                 break;
             case"ImpressionSunrise":
 

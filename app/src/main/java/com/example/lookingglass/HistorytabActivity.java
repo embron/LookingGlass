@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
@@ -167,6 +168,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_1.setVideoURI(uri);
                 vidls_1.setMediaController(mediaController);
                 mediaController.setAnchorView(vidls_1);
+                titls_1.setVisibility(View.GONE);
+                desls_1.setVisibility(View.GONE);
+                vidls_1.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_1).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -265,6 +269,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_2.setVideoURI(uri);
                 vidls_2.setMediaController(mediaController);
                 mediaController.setAnchorView(vidls_2);
+                titls_2.setVisibility(View.GONE);
+                desls_2.setVisibility(View.GONE);
+                vidls_2.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_2).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -363,6 +370,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_3.setVideoURI(uri);
                 vidls_3.setMediaController(mediaController);
                 mediaController.setAnchorView(vidls_3);
+                titls_3.setVisibility(View.GONE);
+                desls_3.setVisibility(View.GONE);
+                vidls_3.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_3).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -461,6 +471,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_4.setVideoURI(uri);
                 vidls_4.setMediaController(mediaController);
                 mediaController.setAnchorView(vidls_4);
+                titls_4.setVisibility(View.GONE);
+                desls_4.setVisibility(View.GONE);
+                vidls_4.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_4).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -559,6 +572,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_5.setVideoURI(uri);
                 vidls_5.setMediaController(mediaController);
                 mediaController.setAnchorView(vidls_5);
+                titls_5.setVisibility(View.GONE);
+                desls_5.setVisibility(View.GONE);
+                vidls_5.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_5).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -657,6 +673,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_6.setVideoURI(uri);
                 vidls_6.setMediaController(mediaController);
                 mediaController.setAnchorView(vidls_6);
+                titls_6.setVisibility(View.GONE);
+                desls_6.setVisibility(View.GONE);
+                vidls_6.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_6).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -755,6 +774,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_7.setVideoURI(uri);
                 vidls_7.setMediaController(mediaController);
                 mediaController.setAnchorView(vidls_7);
+                titls_7.setVisibility(View.GONE);
+                desls_7.setVisibility(View.GONE);
+                vidls_7.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_7).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -853,6 +875,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_8.setVideoURI(uri);
                 vidls_8.setMediaController(mediaController);
                 mediaController.setAnchorView(vidls_8);
+                titls_8.setVisibility(View.GONE);
+                desls_8.setVisibility(View.GONE);
+                vidls_8.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_8).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -951,6 +976,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_9.setVideoURI(uri);
                 vidls_9.setMediaController(mediaController);
                 mediaController.setAnchorView(vidls_9);
+                titls_9.setVisibility(View.GONE);
+                desls_9.setVisibility(View.GONE);
+                vidls_9.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_9).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -1049,6 +1077,9 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_10.setVideoURI(uri);
                 vidls_10.setMediaController(mediaController);
                 mediaController.setAnchorView(vidls_10);
+                titls_10.setVisibility(View.GONE);
+                desls_10.setVisibility(View.GONE);
+                vidls_10.setVisibility(View.GONE);
                 findViewById(R.id.lastscan_10).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));

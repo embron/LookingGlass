@@ -50,10 +50,10 @@ public class HistorytabActivity extends AppCompatActivity {
         TextView titls_1 = findViewById(R.id.titlels_1);
         TextView desls_1 = findViewById(R.id.destls_1);
         VideoView vidls_1 =findViewById(R.id.Artistvidls_1);
-        View ls1 = findViewById(R.id.lastscan_1);
+     /*   View ls1 = findViewById(R.id.lastscan_1);
         View ls2 = findViewById(R.id.lastscan_2);
         View ls3 = findViewById(R.id.lastscan_3);
-     /*   View ls4 = findViewById(R.id.lastscan_4);
+        View ls4 = findViewById(R.id.lastscan_4);
         View ls5 = findViewById(R.id.lastscan_5);
         View ls6 = findViewById(R.id.lastscan_6);
         View ls7 = findViewById(R.id.lastscan_7);

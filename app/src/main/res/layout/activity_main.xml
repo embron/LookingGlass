@@ -113,12 +113,12 @@
         android:layout_width="145dp"
         android:layout_height="154dp"
         android:layout_marginStart="10dp"
-        android:layout_marginBottom="325dp"
+        android:layout_marginBottom="360dp"
+        android:contentDescription="@string/looking_glass_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo3"
-        android:contentDescription="@string/looking_glass_logo" />
+        app:srcCompat="@drawable/logo3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

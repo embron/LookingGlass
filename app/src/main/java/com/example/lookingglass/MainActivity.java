@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
         IntentResult intentResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
         if(intentResult != null){
             if(intentResult.getContents()==null){
-                qrres.setText("empty");
+                qrres.setText(" ");
             }else{
                 Qrcode =intentResult.getContents();
 
@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
                     history[0]=Qrcode;
                 }
 
-                qrres.setText(Qrcode);// compare database results here
+                qrres.setText(" ");// compare database results here
                 startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                 overridePendingTransition(R.anim.zoom_in,R.anim.static_animation);
 

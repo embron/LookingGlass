@@ -103,7 +103,7 @@ public class HistorytabActivity extends AppCompatActivity {
         //setSupportActionBar(toolbar);*/
 
 /////////////////1
-        switch ( com.example.lookingglass.MainActivity.getHistory(0)){
+        switch ( com.example.lookingglass.MainActivity.getHistory(2)){
             case"LunchOnTheGrass":
 
                 titls_1.setText(getTitle(1));
@@ -310,7 +310,7 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
         }
 /////////////////3
-        switch ( com.example.lookingglass.MainActivity.getHistory(2)){
+        switch ( com.example.lookingglass.MainActivity.getHistory(0)){
             case"LunchOnTheGrass":
 
                 titls_3.setText(getTitle(1));

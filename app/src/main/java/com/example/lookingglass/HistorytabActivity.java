@@ -32,7 +32,16 @@ public class HistorytabActivity extends AppCompatActivity {
         database = new LinkedList<>();
         exhibitSetUp(database);
 
-        MediaController mediaController = new MediaController(this);
+        MediaController mediaController1 = new MediaController(this);
+        MediaController mediaController2 = new MediaController(this);
+        MediaController mediaController3 = new MediaController(this);
+        MediaController mediaController4 = new MediaController(this);
+        MediaController mediaController5 = new MediaController(this);
+        MediaController mediaController6 = new MediaController(this);
+        MediaController mediaController7 = new MediaController(this);
+        MediaController mediaController8 = new MediaController(this);
+        MediaController mediaController9 = new MediaController(this);
+        MediaController mediaController10 = new MediaController(this);
         Uri uri = Uri.parse(getVideoPath(0));
 
         TextView titls_1 = findViewById(R.id.titlels_1);
@@ -99,8 +108,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_1.setVideoPath(getVideoPath(1));
                 uri =Uri.parse(getVideoPath(1));
                 vidls_1.setVideoURI(uri);
-                vidls_1.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_1);
+                vidls_1.setMediaController(mediaController1);
+                mediaController1.setAnchorView(vidls_1);
                 findViewById(R.id.lastscan_1).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -115,8 +124,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_1.setVideoPath(getVideoPath(2));
                 uri =Uri.parse(getVideoPath(2));
                 vidls_1.setVideoURI(uri);
-                vidls_1.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_1);
+                vidls_1.setMediaController(mediaController1);
+                mediaController1.setAnchorView(vidls_1);
                 findViewById(R.id.lastscan_1).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -131,8 +140,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_1.setVideoPath(getVideoPath(3));
                 uri =Uri.parse(getVideoPath(3));
                 vidls_1.setVideoURI(uri);
-                vidls_1.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_1);
+                vidls_1.setMediaController(mediaController1);
+                mediaController1.setAnchorView(vidls_1);
                 findViewById(R.id.lastscan_1).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -147,8 +156,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_1.setVideoPath(getVideoPath(4));
                 uri =Uri.parse(getVideoPath(4));
                 vidls_1.setVideoURI(uri);
-                vidls_1.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_1);
+                vidls_1.setMediaController(mediaController1);
+                mediaController1.setAnchorView(vidls_1);
                 findViewById(R.id.lastscan_1).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -163,8 +172,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_1.setVideoPath(getVideoPath(5));
                 uri =Uri.parse(getVideoPath(5));
                 vidls_1.setVideoURI(uri);
-                vidls_1.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_1);
+                vidls_1.setMediaController(mediaController1);
+                mediaController1.setAnchorView(vidls_1);
                 findViewById(R.id.lastscan_1).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -174,12 +183,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
                // Exhibitinfo.Qrcode ="Error";
-                titls_1.setText(getTitle(0));
-                desls_1.setText(getArtist(0));
-                vidls_1.setVideoPath(getVideoPath(0));
-                vidls_1.setVideoURI(uri);
-                vidls_1.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_1);
                 titls_1.setVisibility(View.GONE);
                 desls_1.setVisibility(View.GONE);
                 vidls_1.setVisibility(View.GONE);
@@ -196,8 +199,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_2.setVideoPath(getVideoPath(1));
                 uri =Uri.parse(getVideoPath(1));
                 vidls_2.setVideoURI(uri);
-                vidls_2.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_2);
+                vidls_2.setMediaController(mediaController2);
+                mediaController2.setAnchorView(vidls_2);
                 findViewById(R.id.lastscan_2).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -212,8 +215,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_2.setVideoPath(getVideoPath(2));
                 uri =Uri.parse(getVideoPath(2));
                 vidls_2.setVideoURI(uri);
-                vidls_2.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_2);
+                vidls_2.setMediaController(mediaController2);
+                mediaController2.setAnchorView(vidls_2);
                 findViewById(R.id.lastscan_2).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -228,8 +231,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_2.setVideoPath(getVideoPath(3));
                 uri =Uri.parse(getVideoPath(3));
                 vidls_2.setVideoURI(uri);
-                vidls_2.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_2);
+                vidls_2.setMediaController(mediaController2);
+                mediaController2.setAnchorView(vidls_2);
                 findViewById(R.id.lastscan_2).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -244,8 +247,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_2.setVideoPath(getVideoPath(4));
                 uri =Uri.parse(getVideoPath(4));
                 vidls_2.setVideoURI(uri);
-                vidls_2.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_2);
+                vidls_2.setMediaController(mediaController2);
+                mediaController2.setAnchorView(vidls_2);
                 findViewById(R.id.lastscan_2).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -260,8 +263,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_2.setVideoPath(getVideoPath(5));
                 uri =Uri.parse(getVideoPath(5));
                 vidls_2.setVideoURI(uri);
-                vidls_2.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_2);
+                vidls_2.setMediaController(mediaController2);
+                mediaController2.setAnchorView(vidls_2);
                 findViewById(R.id.lastscan_2).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -271,12 +274,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
              //   Exhibitinfo.Qrcode ="Error";
-                titls_2.setText(getTitle(0));
-                desls_2.setText(getArtist(0));
-                vidls_2.setVideoPath(getVideoPath(0));
-                vidls_2.setVideoURI(uri);
-                vidls_2.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_2);
                 titls_2.setVisibility(View.GONE);
                 desls_2.setVisibility(View.GONE);
                 vidls_2.setVisibility(View.GONE);
@@ -293,8 +290,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_3.setVideoPath(getVideoPath(1));
                 uri =Uri.parse(getVideoPath(1));
                 vidls_3.setVideoURI(uri);
-                vidls_3.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_3);
+                vidls_3.setMediaController(mediaController3);
+                mediaController3.setAnchorView(vidls_3);
                 findViewById(R.id.lastscan_3).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -309,8 +306,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_3.setVideoPath(getVideoPath(2));
                 uri =Uri.parse(getVideoPath(2));
                 vidls_3.setVideoURI(uri);
-                vidls_3.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_3);
+                vidls_3.setMediaController(mediaController3);
+                mediaController3.setAnchorView(vidls_3);
                 findViewById(R.id.lastscan_3).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -325,8 +322,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_3.setVideoPath(getVideoPath(3));
                 uri =Uri.parse(getVideoPath(3));
                 vidls_3.setVideoURI(uri);
-                vidls_3.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_3);
+                vidls_3.setMediaController(mediaController3);
+                mediaController3.setAnchorView(vidls_3);
                 findViewById(R.id.lastscan_3).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -341,8 +338,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_3.setVideoPath(getVideoPath(4));
                 uri =Uri.parse(getVideoPath(4));
                 vidls_3.setVideoURI(uri);
-                vidls_3.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_3);
+                vidls_3.setMediaController(mediaController3);
+                mediaController3.setAnchorView(vidls_3);
                 findViewById(R.id.lastscan_3).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -357,8 +354,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_3.setVideoPath(getVideoPath(5));
                 uri =Uri.parse(getVideoPath(5));
                 vidls_3.setVideoURI(uri);
-                vidls_3.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_3);
+                vidls_3.setMediaController(mediaController3);
+                mediaController3.setAnchorView(vidls_3);
                 findViewById(R.id.lastscan_3).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -368,12 +365,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
              //   Exhibitinfo.Qrcode ="Error";
-                titls_3.setText(getTitle(0));
-                desls_3.setText(getArtist(0));
-                vidls_3.setVideoPath(getVideoPath(0));
-                vidls_3.setVideoURI(uri);
-                vidls_3.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_3);
                 titls_3.setVisibility(View.GONE);
                 desls_3.setVisibility(View.GONE);
                 vidls_3.setVisibility(View.GONE);
@@ -390,8 +381,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_4.setVideoPath(getVideoPath(1));
                 uri =Uri.parse(getVideoPath(1));
                 vidls_4.setVideoURI(uri);
-                vidls_4.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_4);
+                vidls_4.setMediaController(mediaController4);
+                mediaController4.setAnchorView(vidls_4);
                 findViewById(R.id.lastscan_4).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -406,8 +397,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_4.setVideoPath(getVideoPath(2));
                 uri =Uri.parse(getVideoPath(2));
                 vidls_4.setVideoURI(uri);
-                vidls_4.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_4);
+                vidls_4.setMediaController(mediaController4);
+                mediaController4.setAnchorView(vidls_4);
                 findViewById(R.id.lastscan_4).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -422,8 +413,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_4.setVideoPath(getVideoPath(3));
                 uri =Uri.parse(getVideoPath(3));
                 vidls_4.setVideoURI(uri);
-                vidls_4.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_4);
+                vidls_4.setMediaController(mediaController4);
+                mediaController4.setAnchorView(vidls_4);
                 findViewById(R.id.lastscan_4).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -438,8 +429,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_4.setVideoPath(getVideoPath(4));
                 uri =Uri.parse(getVideoPath(4));
                 vidls_4.setVideoURI(uri);
-                vidls_4.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_4);
+                vidls_4.setMediaController(mediaController4);
+                mediaController4.setAnchorView(vidls_4);
                 findViewById(R.id.lastscan_4).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -454,8 +445,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_4.setVideoPath(getVideoPath(5));
                 uri =Uri.parse(getVideoPath(5));
                 vidls_4.setVideoURI(uri);
-                vidls_4.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_4);
+                vidls_4.setMediaController(mediaController4);
+                mediaController4.setAnchorView(vidls_4);
                 findViewById(R.id.lastscan_4).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -465,12 +456,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
             //    Exhibitinfo.Qrcode ="Error";
-                titls_4.setText(getTitle(0));
-                desls_4.setText(getArtist(0));
-                vidls_4.setVideoPath(getVideoPath(0));
-                vidls_4.setVideoURI(uri);
-                vidls_4.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_4);
                 titls_4.setVisibility(View.GONE);
                 desls_4.setVisibility(View.GONE);
                 vidls_4.setVisibility(View.GONE);
@@ -487,8 +472,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_5.setVideoPath(getVideoPath(1));
                 uri =Uri.parse(getVideoPath(1));
                 vidls_5.setVideoURI(uri);
-                vidls_5.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_5);
+                vidls_5.setMediaController(mediaController5);
+                mediaController5.setAnchorView(vidls_5);
                 findViewById(R.id.lastscan_5).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -503,8 +488,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_5.setVideoPath(getVideoPath(2));
                 uri =Uri.parse(getVideoPath(2));
                 vidls_5.setVideoURI(uri);
-                vidls_5.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_5);
+                vidls_5.setMediaController(mediaController5);
+                mediaController5.setAnchorView(vidls_5);
                 findViewById(R.id.lastscan_5).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -519,8 +504,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_5.setVideoPath(getVideoPath(3));
                 uri =Uri.parse(getVideoPath(3));
                 vidls_5.setVideoURI(uri);
-                vidls_5.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_5);
+                vidls_5.setMediaController(mediaController5);
+                mediaController5.setAnchorView(vidls_5);
                 findViewById(R.id.lastscan_5).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -535,8 +520,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_5.setVideoPath(getVideoPath(4));
                 uri =Uri.parse(getVideoPath(4));
                 vidls_5.setVideoURI(uri);
-                vidls_5.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_5);
+                vidls_5.setMediaController(mediaController5);
+                mediaController5.setAnchorView(vidls_5);
                 findViewById(R.id.lastscan_5).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -551,8 +536,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_5.setVideoPath(getVideoPath(5));
                 uri =Uri.parse(getVideoPath(5));
                 vidls_5.setVideoURI(uri);
-                vidls_5.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_5);
+                vidls_5.setMediaController(mediaController5);
+                mediaController5.setAnchorView(vidls_5);
                 findViewById(R.id.lastscan_5).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -562,12 +547,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
               //  Exhibitinfo.Qrcode ="Error";
-                titls_5.setText(getTitle(0));
-                desls_5.setText(getArtist(0));
-                vidls_5.setVideoPath(getVideoPath(0));
-                vidls_5.setVideoURI(uri);
-                vidls_5.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_5);
                 titls_5.setVisibility(View.GONE);
                 desls_5.setVisibility(View.GONE);
                 vidls_5.setVisibility(View.GONE);
@@ -584,8 +563,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_6.setVideoPath(getVideoPath(1));
                 uri =Uri.parse(getVideoPath(1));
                 vidls_6.setVideoURI(uri);
-                vidls_6.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_6);
+                vidls_6.setMediaController(mediaController6);
+                mediaController6.setAnchorView(vidls_6);
                 findViewById(R.id.lastscan_6).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -600,8 +579,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_6.setVideoPath(getVideoPath(2));
                 uri =Uri.parse(getVideoPath(2));
                 vidls_6.setVideoURI(uri);
-                vidls_6.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_6);
+                vidls_6.setMediaController(mediaController6);
+                mediaController6.setAnchorView(vidls_6);
                 findViewById(R.id.lastscan_6).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -616,8 +595,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_6.setVideoPath(getVideoPath(3));
                 uri =Uri.parse(getVideoPath(3));
                 vidls_6.setVideoURI(uri);
-                vidls_6.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_6);
+                vidls_6.setMediaController(mediaController6);
+                mediaController6.setAnchorView(vidls_6);
                 findViewById(R.id.lastscan_6).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -632,8 +611,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_6.setVideoPath(getVideoPath(4));
                 uri =Uri.parse(getVideoPath(4));
                 vidls_6.setVideoURI(uri);
-                vidls_6.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_6);
+                vidls_6.setMediaController(mediaController6);
+                mediaController6.setAnchorView(vidls_6);
                 findViewById(R.id.lastscan_6).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -648,8 +627,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_6.setVideoPath(getVideoPath(5));
                 uri =Uri.parse(getVideoPath(5));
                 vidls_6.setVideoURI(uri);
-                vidls_6.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_6);
+                vidls_6.setMediaController(mediaController6);
+                mediaController6.setAnchorView(vidls_6);
                 findViewById(R.id.lastscan_6).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -659,12 +638,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
            //     Exhibitinfo.Qrcode ="Error";
-                titls_6.setText(getTitle(0));
-                desls_6.setText(getArtist(0));
-                vidls_6.setVideoPath(getVideoPath(0));
-                vidls_6.setVideoURI(uri);
-                vidls_6.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_6);
                 titls_6.setVisibility(View.GONE);
                 desls_6.setVisibility(View.GONE);
                 vidls_6.setVisibility(View.GONE);
@@ -681,8 +654,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_7.setVideoPath(getVideoPath(1));
                 uri =Uri.parse(getVideoPath(1));
                 vidls_7.setVideoURI(uri);
-                vidls_7.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_7);
+                vidls_7.setMediaController(mediaController7);
+                mediaController7.setAnchorView(vidls_7);
                 findViewById(R.id.lastscan_7).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -697,8 +670,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_7.setVideoPath(getVideoPath(2));
                 uri =Uri.parse(getVideoPath(2));
                 vidls_7.setVideoURI(uri);
-                vidls_7.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_7);
+                vidls_7.setMediaController(mediaController7);
+                mediaController7.setAnchorView(vidls_7);
                 findViewById(R.id.lastscan_7).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -713,8 +686,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_7.setVideoPath(getVideoPath(3));
                 uri =Uri.parse(getVideoPath(3));
                 vidls_7.setVideoURI(uri);
-                vidls_7.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_7);
+                vidls_7.setMediaController(mediaController7);
+                mediaController7.setAnchorView(vidls_7);
                 findViewById(R.id.lastscan_7).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -729,8 +702,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_7.setVideoPath(getVideoPath(4));
                 uri =Uri.parse(getVideoPath(4));
                 vidls_7.setVideoURI(uri);
-                vidls_7.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_7);
+                vidls_7.setMediaController(mediaController7);
+                mediaController7.setAnchorView(vidls_7);
                 findViewById(R.id.lastscan_7).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -745,8 +718,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_7.setVideoPath(getVideoPath(5));
                 uri =Uri.parse(getVideoPath(5));
                 vidls_7.setVideoURI(uri);
-                vidls_7.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_7);
+                vidls_7.setMediaController(mediaController7);
+                mediaController7.setAnchorView(vidls_7);
                 findViewById(R.id.lastscan_7).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -756,12 +729,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
              //   Exhibitinfo.Qrcode ="Error";
-                titls_7.setText(getTitle(0));
-                desls_7.setText(getArtist(0));
-                vidls_7.setVideoPath(getVideoPath(0));
-                vidls_7.setVideoURI(uri);
-                vidls_7.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_7);
                 titls_7.setVisibility(View.GONE);
                 desls_7.setVisibility(View.GONE);
                 vidls_7.setVisibility(View.GONE);
@@ -778,8 +745,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_8.setVideoPath(getVideoPath(1));
                 uri =Uri.parse(getVideoPath(1));
                 vidls_8.setVideoURI(uri);
-                vidls_8.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_8);
+                vidls_8.setMediaController(mediaController8);
+                mediaController8.setAnchorView(vidls_8);
                 findViewById(R.id.lastscan_8).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -794,8 +761,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_8.setVideoPath(getVideoPath(2));
                 uri =Uri.parse(getVideoPath(2));
                 vidls_8.setVideoURI(uri);
-                vidls_8.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_8);
+                vidls_8.setMediaController(mediaController8);
+                mediaController8.setAnchorView(vidls_8);
                 findViewById(R.id.lastscan_8).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -810,8 +777,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_8.setVideoPath(getVideoPath(3));
                 uri =Uri.parse(getVideoPath(3));
                 vidls_8.setVideoURI(uri);
-                vidls_8.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_8);
+                vidls_8.setMediaController(mediaController8);
+                mediaController8.setAnchorView(vidls_8);
                 findViewById(R.id.lastscan_8).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -826,8 +793,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_8.setVideoPath(getVideoPath(4));
                 uri =Uri.parse(getVideoPath(4));
                 vidls_8.setVideoURI(uri);
-                vidls_8.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_8);
+                vidls_8.setMediaController(mediaController8);
+                mediaController8.setAnchorView(vidls_8);
                 findViewById(R.id.lastscan_8).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -842,8 +809,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_8.setVideoPath(getVideoPath(5));
                 uri =Uri.parse(getVideoPath(5));
                 vidls_8.setVideoURI(uri);
-                vidls_8.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_8);
+                vidls_8.setMediaController(mediaController8);
+                mediaController8.setAnchorView(vidls_8);
                 findViewById(R.id.lastscan_8).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -853,12 +820,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
              //   Exhibitinfo.Qrcode ="Error";
-                titls_8.setText(getTitle(0));
-                desls_8.setText(getArtist(0));
-                vidls_8.setVideoPath(getVideoPath(0));
-                vidls_8.setVideoURI(uri);
-                vidls_8.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_8);
                 titls_8.setVisibility(View.GONE);
                 desls_8.setVisibility(View.GONE);
                 vidls_8.setVisibility(View.GONE);
@@ -875,8 +836,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_9.setVideoPath(getVideoPath(1));
                 uri =Uri.parse(getVideoPath(1));
                 vidls_9.setVideoURI(uri);
-                vidls_9.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_9);
+                vidls_9.setMediaController(mediaController9);
+                mediaController9.setAnchorView(vidls_9);
                 findViewById(R.id.lastscan_9).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -891,8 +852,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_9.setVideoPath(getVideoPath(2));
                 uri =Uri.parse(getVideoPath(2));
                 vidls_9.setVideoURI(uri);
-                vidls_9.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_9);
+                vidls_9.setMediaController(mediaController9);
+                mediaController9.setAnchorView(vidls_9);
                 findViewById(R.id.lastscan_9).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -907,8 +868,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_9.setVideoPath(getVideoPath(3));
                 uri =Uri.parse(getVideoPath(3));
                 vidls_9.setVideoURI(uri);
-                vidls_9.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_9);
+                vidls_9.setMediaController(mediaController9);
+                mediaController9.setAnchorView(vidls_9);
                 findViewById(R.id.lastscan_9).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -923,8 +884,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_9.setVideoPath(getVideoPath(4));
                 uri =Uri.parse(getVideoPath(4));
                 vidls_9.setVideoURI(uri);
-                vidls_9.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_9);
+                vidls_9.setMediaController(mediaController9);
+                mediaController9.setAnchorView(vidls_9);
                 findViewById(R.id.lastscan_9).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -939,8 +900,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_9.setVideoPath(getVideoPath(5));
                 uri =Uri.parse(getVideoPath(5));
                 vidls_9.setVideoURI(uri);
-                vidls_9.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_9);
+                vidls_9.setMediaController(mediaController9);
+                mediaController9.setAnchorView(vidls_9);
                 findViewById(R.id.lastscan_9).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -950,12 +911,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
              //   Exhibitinfo.Qrcode ="Error";
-                titls_9.setText(getTitle(0));
-                desls_9.setText(getArtist(0));
-                vidls_9.setVideoPath(getVideoPath(0));
-                vidls_9.setVideoURI(uri);
-                vidls_9.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_9);
                 titls_9.setVisibility(View.GONE);
                 desls_9.setVisibility(View.GONE);
                 vidls_9.setVisibility(View.GONE);
@@ -972,8 +927,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_10.setVideoPath(getVideoPath(1));
                 uri =Uri.parse(getVideoPath(1));
                 vidls_10.setVideoURI(uri);
-                vidls_10.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_10);
+                vidls_10.setMediaController(mediaController10);
+                mediaController10.setAnchorView(vidls_10);
                 findViewById(R.id.lastscan_10).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LunchOnTheGrass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -988,8 +943,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_10.setVideoPath(getVideoPath(2));
                 uri =Uri.parse(getVideoPath(2));
                 vidls_10.setVideoURI(uri);
-                vidls_10.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_10);
+                vidls_10.setMediaController(mediaController10);
+                mediaController10.setAnchorView(vidls_10);
                 findViewById(R.id.lastscan_10).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("ImpressionSunrise");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -1004,8 +959,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_10.setVideoPath(getVideoPath(3));
                 uri =Uri.parse(getVideoPath(3));
                 vidls_10.setVideoURI(uri);
-                vidls_10.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_10);
+                vidls_10.setMediaController(mediaController10);
+                mediaController10.setAnchorView(vidls_10);
                 findViewById(R.id.lastscan_10).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheDanceClass");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -1020,8 +975,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_10.setVideoPath(getVideoPath(4));
                 uri =Uri.parse(getVideoPath(4));
                 vidls_10.setVideoURI(uri);
-                vidls_10.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_10);
+                vidls_10.setMediaController(mediaController10);
+                mediaController10.setAnchorView(vidls_10);
                 findViewById(R.id.lastscan_10).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("LuncheonAtTheBoatingParty");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -1036,8 +991,8 @@ public class HistorytabActivity extends AppCompatActivity {
                 vidls_10.setVideoPath(getVideoPath(5));
                 uri =Uri.parse(getVideoPath(5));
                 vidls_10.setVideoURI(uri);
-                vidls_10.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_10);
+                vidls_10.setMediaController(mediaController10);
+                mediaController10.setAnchorView(vidls_10);
                 findViewById(R.id.lastscan_10).setOnClickListener(v -> {
                     com.example.lookingglass.MainActivity.setQrcode("TheCardPlayers");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
@@ -1047,12 +1002,6 @@ public class HistorytabActivity extends AppCompatActivity {
                 break;
             default:
              //   Exhibitinfo.Qrcode ="Error";
-                titls_10.setText(getTitle(0));
-                desls_10.setText(getArtist(0));
-                vidls_10.setVideoPath(getVideoPath(0));
-                vidls_10.setVideoURI(uri);
-                vidls_10.setMediaController(mediaController);
-                mediaController.setAnchorView(vidls_10);
                 titls_10.setVisibility(View.GONE);
                 desls_10.setVisibility(View.GONE);
                 vidls_10.setVisibility(View.GONE);

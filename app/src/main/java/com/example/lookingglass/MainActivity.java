@@ -15,6 +15,7 @@ import androidx.core.app.ActivityCompat;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 
 // media player imports
@@ -90,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         exhibitSetUp(database);
+        Arrays.fill(history, "Error");
 //history button
         findViewById(R.id.Histbutton).setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(),HistorytabActivity.class));

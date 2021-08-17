@@ -50,10 +50,10 @@ public class HistorytabActivity extends AppCompatActivity {
         TextView titls_1 = findViewById(R.id.titlels_1);
         TextView desls_1 = findViewById(R.id.destls_1);
         VideoView vidls_1 =findViewById(R.id.Artistvidls_1);
-     /*   View ls1 = findViewById(R.id.lastscan_1);
+         View ls1 = findViewById(R.id.lastscan_1);
         View ls2 = findViewById(R.id.lastscan_2);
         View ls3 = findViewById(R.id.lastscan_3);
-        View ls4 = findViewById(R.id.lastscan_4);
+        /*   View ls4 = findViewById(R.id.lastscan_4);
         View ls5 = findViewById(R.id.lastscan_5);
         View ls6 = findViewById(R.id.lastscan_6);
         View ls7 = findViewById(R.id.lastscan_7);
@@ -67,7 +67,7 @@ public class HistorytabActivity extends AppCompatActivity {
         TextView desls_2 = findViewById(R.id.destls_2);
         VideoView vidls_2 =findViewById(R.id.Artistvidls_2);
 
-       TextView titls_3 = findViewById(R.id.titlels_3);
+        TextView titls_3 = findViewById(R.id.titlels_3);
         TextView desls_3 = findViewById(R.id.destls_3);
         VideoView vidls_3 =findViewById(R.id.Artistvidls_3);
 
@@ -118,7 +118,7 @@ public class HistorytabActivity extends AppCompatActivity {
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
                 });
- 
+
                 break;
             case"ImpressionSunrise":
 
@@ -185,8 +185,12 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             default:
-               // Exhibitinfo.Qrcode ="Error";
-                titls_1.setText(getTitle(0));
+                // Exhibitinfo.Qrcode ="Error";
+                titls_1.setVisibility(View.GONE);
+                desls_1.setVisibility(View.GONE);
+                vidls_1.setVisibility(View.GONE);
+                ls1.setVisibility(View.GONE);
+                /*titls_1.setText(getTitle(0));
                 desls_1.setText(getArtist(0));
                 vidls_1.setVideoPath(getVideoPath(0));
                 uri1 =Uri.parse(getVideoPath(0));
@@ -197,7 +201,7 @@ public class HistorytabActivity extends AppCompatActivity {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                });
+                });*/
 
 
                 break;
@@ -285,8 +289,12 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             default:
-             //   Exhibitinfo.Qrcode ="Error";
-                titls_2.setText(getTitle(0));
+                //   Exhibitinfo.Qrcode ="Error";
+                titls_2.setVisibility(View.GONE);
+                desls_2.setVisibility(View.GONE);
+                vidls_2.setVisibility(View.GONE);
+                ls2.setVisibility(View.GONE);
+               /* titls_2.setText(getTitle(0));
                 desls_2.setText(getArtist(0));
                 vidls_2.setVideoPath(getVideoPath(0));
                 uri2 =Uri.parse(getVideoPath(0));
@@ -297,7 +305,7 @@ public class HistorytabActivity extends AppCompatActivity {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                });
+                });*/
 
                 break;
         }
@@ -384,8 +392,12 @@ public class HistorytabActivity extends AppCompatActivity {
 
                 break;
             default:
-             //   Exhibitinfo.Qrcode ="Error";
-                titls_3.setText(getTitle(0));
+                //   Exhibitinfo.Qrcode ="Error";
+                titls_3.setVisibility(View.GONE);
+                desls_3.setVisibility(View.GONE);
+                vidls_3.setVisibility(View.GONE);
+                ls3.setVisibility(View.GONE);
+                /*titls_3.setText(getTitle(0));
                 desls_3.setText(getArtist(0));
                 vidls_3.setVideoPath(getVideoPath(0));
                 uri3 =Uri.parse(getVideoPath(0));
@@ -396,7 +408,7 @@ public class HistorytabActivity extends AppCompatActivity {
                     com.example.lookingglass.MainActivity.setQrcode("Error");
                     startActivity(new Intent(getApplicationContext(),Exhibittab.class));
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                });
+                });*/
                 break;
         }
 /*////////////////4
